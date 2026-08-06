@@ -6,213 +6,260 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Charlotte Moche</title>
     <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <script>tailwind.config = { darkMode: 'class' }</script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,450;9..144,600;9..144,700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
     <link href="/public/styles.css" rel="stylesheet">
-    <script src="index.js" defer></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        .font-display {
+            font-family: 'Fraunces', serif;
+        }
+
+        .font-mono {
+            font-family: 'IBM Plex Mono', monospace;
+        }
+    </style>
 </head>
 
-<body id="body" class="bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-200 relative">
-    <div
-        class="sticky top-0 z-40 shadow-md border-b dark:border-gray-700 bg-white/70 dark:bg-gray-800/80 backdrop-blur">
-        <nav
-            class="gap-3 flex items-center justify-between h-20 lg:h-24 relative px-4 container mx-auto 2xl:px-60 z-40">
+<body id="body"
+    class="bg-[#F6F5F1] dark:bg-[#15140F] text-[#17181C] dark:text-[#F3F1EA] relative transition-colors duration-300">
+
+    <nav
+        class="sticky top-0 z-40 border-b border-[#DEDBD1] dark:border-[#2C2A22] bg-[#F6F5F1]/90 dark:bg-[#15140F]/90 backdrop-blur">
+        <div class="wrap max-w-[1180px] mx-auto px-6 flex items-center justify-between h-20">
             <a href="/" id="logo-dark" class="hidden min-w-fit max-w-min">
-                <img src="public/images/logo-dark.png" alt="Logo" class="h-14 lg:h-16 py-1 sm:-ml-2" />
+                <img src="public/images/logo-dark.png" alt="Logo" class="h-10" />
             </a>
-            <a href="/" id="logo-light" class="min-w-fit max-w-min">
-                <img src="public/images/logo-light.png" alt="Logo" class="h-14 lg:h-16 py-1 sm:-ml-2" />
+            <a href="/" id="logo-light" class="min-w-fit max-w-min font-mono text-sm tracking-wide">
+                c.moche
             </a>
-            <div class="flex items-center gap-3 sm:gap-6 text-sm font-medium">
+
+            <div class="flex items-center gap-6 text-sm font-medium">
+                <a href="#work"
+                    class="font-mono text-xs tracking-wide opacity-70 hover:opacity-100 hover:text-[#389559] transition">work</a>
+
+                <a href="#contact"
+                    class="font-mono text-xs tracking-wide opacity-70 hover:opacity-100 hover:text-[#389559] transition">contact</a>
                 <a href="public/Resume.pdf" download
-                    class="px-2 text-sm sm:px-4 py-1 bg-brand text-white dark:text-gray-900 rounded-full hover:bg-opacity-90 transition">resume</a>
-                <div id="toggle-theme"
-                    class="flex items-center gap-1.5 group cursor-pointer rounded-full border border-gray-500 dark:border-gray-700 bg-gray-800/10">
-                    <a
-                        class="w-[27px] p-[4px] rounded-full bg-white/90 stroke-gray-900 dark:stroke-white dark:opacity-60 border border-gray-500 dark:bg-transparent dark:border-none">
-                        <img src="public/images/sun.svg" alt="Light Mode" class="w-6 dark:invert" />
-                    </a>
-                    <a
-                        class="w-[27px] p-[4px] opacity-40 dark:opacity-100 dark:bg-black dark:rounded-full dark:border dark:border-gray-600">
-                        <img src="public/images/moon.svg" alt="Dark Mode" class="dark:invert w-6" />
-                    </a>
+                    class="font-mono text-xs tracking-wide border border-[#17181C] dark:border-[#F3F1EA] px-4 py-2 rounded-sm hover:bg-[#17181C] hover:text-[#F6F5F1] dark:hover:bg-[#F3F1EA] dark:hover:text-[#15140F] transition">
+                    resume ↓
+                </a>
+
+                <div id="toggle" title="toggle theme"
+                    class="w-11 h-6 border border-[#17181C] dark:border-[#F3F1EA] rounded-full relative cursor-pointer flex-shrink-0">
+                    <span id="toggle-dot"
+                        class="absolute top-0.5 left-0.5 w-[18px] h-[18px] rounded-full bg-[#17181C] dark:bg-[#F3F1EA] dark:translate-x-5 transition-transform duration-200"></span>
                 </div>
             </div>
-        </nav>
-    </div>
-
-    <main class="bg-white dark:bg-gray-900">
-        <div class="container px-4 mx-auto 2xl:px-60 gap-16 items-start py-10 sm:py-16 space-y-8">
-            <section id="about" class="space-y-12 sm:space-y-8 lg:grid lg:grid-cols-2 lg:space-y-0 lg:gap-16">
-                <div class="flex flex-col items-center lg:items-start">
-                    <div class="flex flex-col sm:flex-row items-center gap-10">
-                        <div class="w-fit shrink-0 grow">
-                            <img src="public/images/me.png" alt="Charlotte Moche"
-                                class="w-32 h-32 sm:w-40 sm:h-40 rounded-full border-4 border-brand shadow-lg" />
-                        </div>
-                        <div class="text-center lg:text-left">
-                            <h2 class="text-3xl font-semibold mb-2 tracking-tight">
-                                about me</h2>
-                            <p class="text-base text-gray-700 dark:text-gray-300 max-w-md">
-                                frontend-leaning full-stack engineer with 6 years of product experience. fine arts
-                                background informs a genuine design sensibility and high bar for interaction quality.
-                                experienced shipping zero-to-one features end-to-end, from component architecture to
-                                backend
-                                APIs, with a track record of owning product quality across the full stack.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div>
-                    <h2 class="text-3xl mb-2 font-semibold tracking-tight text-center lg:text-left">
-                        skills</h2>
-
-                    <div class="flex flex-wrap items-center justify-center lg:justify-start gap-3">
-                        <a href="https://www.javascript.com/" target="_blank"
-                            class="hover:bg-gray-100 dark:hover:bg-black hover:shadow-2xl flex gap-2 items-center border dark:lg:border-gray-600 px-4 py-1 shadow-sm rounded-full">
-                            <img src="public/images/javascript.png" alt="javascript" class="w-5 rounded-md" />
-                            JavaScript
-                        </a>
-                        <a href="https://www.typescriptlang.org/" target="_blank"
-                            class="hover:bg-gray-100 dark:hover:bg-black hover:shadow-2xl flex gap-2 items-center border dark:lg:border-gray-600 px-4 py-1 shadow-sm rounded-full">
-                            <img src="public/images/typescript.svg" alt="typescript" class="w-5 rounded-md" />
-                            TypeScript
-                        </a>
-                        <a href="https://www.react.dev/" target="_blank"
-                            class="hover:bg-gray-100 dark:hover:bg-black hover:shadow-2xl flex gap-2 items-center border dark:lg:border-gray-600 px-4 py-1 shadow-sm rounded-full">
-                            <img src="public/images/react.svg" alt="react" class="w-5 rounded-md" />
-                            React
-                        </a>
-                        <a href="https://reactnative.dev/" target="_blank"
-                            class="hover:bg-gray-100 dark:hover:bg-black hover:shadow-2xl flex gap-2 items-center border dark:lg:border-gray-600 px-4 py-1 shadow-sm rounded-full">
-                            <img src="public/images/react-native.png" alt="react" class="w-5 rounded-md dark:invert" />
-                            React Native
-                        </a>
-                        <a href="https://www.tailwindcss.com/" target="_blank"
-                            class="hover:bg-gray-100 dark:hover:bg-black hover:shadow-2xl flex gap-2 items-center border dark:lg:border-gray-600 px-4 py-1 shadow-sm rounded-full">
-                            <img src="public/images/tailwind.svg" alt="tailwind" class="w-5 rounded-md" />
-                            Tailwind
-                        </a>
-                        <a href="https://elixir-lang.org/" target="_blank"
-                            class="hover:bg-gray-100 dark:hover:bg-black hover:shadow-2xl flex gap-2 items-center border dark:lg:border-gray-600 px-4 py-1 shadow-sm rounded-full">
-                            <img src="public/images/elixir.svg" alt="elixir" class="w-5 rounded-md" />
-                            Elixir
-                        </a>
-                        <a href="https://www.phoenixframework.org/" target="_blank"
-                            class="hover:bg-gray-100 dark:hover:bg-black hover:shadow-2xl flex gap-2 items-center border dark:lg:border-gray-600 px-4 py-1 shadow-sm rounded-full">
-                            <img src="public/images/phoenix.svg" alt="phoenix" class="w-5 rounded-md" />
-                            Phoenix
-                        </a>
-                        <a href="https://www.swift.org/" target="_blank"
-                            class="hover:bg-gray-100 dark:hover:bg-black hover:shadow-2xl flex gap-2 items-center border dark:lg:border-gray-600 px-4 py-1 shadow-sm rounded-full">
-                            <img src="public/images/swift.svg" alt="swift" class="w-5 rounded-md dark:invert" />
-                            Swift
-                        </a>
-                    </div>
-                </div>
-            </section>
-
-            <section id="projects" class="lg:border-t dark:lg:border-gray-700 pt-4 lg:pt-6">
-                <h2 class="text-3xl font-semibold tracking-tight text-center lg:text-left lg:pb-4">
-                    projects</h2>
-                <div class="grid md:grid-cols-3 gap-10">
-                    <div class="flex flex-col">
-                        <p class="mt-2 text-med sm:text-lg mb-4 font-medium text-center">
-                            mobile</p>
-                        <div
-                            class="text-center p-6 rounded-lg shadow-lg dark:shadow-2xl border dark:border-gray-700 dark:bg-gray-800">
-                            <div class="pb-8">
-                                <a href="https://seascapeapp.com" target="_blank">
-                                    <img src="public/images/fish.png" alt="Seascape"
-                                        class="w-20 h-20 mx-auto rounded-xl shadow-md border dark:border-gray-600 hover:scale-105 transition-transform inline-block" />
-                                </a>
-                                <div class="pt-8 text-sm">
-                                    solo React Native project for journaling and
-                                    meditating
-                                </div>
-                            </div>
-                            <div class="pt-8 border-t border-gray-300 dark:border-gray-700">
-                                <a href="https://preludeapp.co" target="_blank">
-                                    <img src="public/images/prelude-logo.png" alt="Prelude"
-                                        class="w-20 h-20 mx-auto rounded-xl shadow-md border dark:border-gray-600 hover:scale-105 transition-transform inline-block" />
-                                </a>
-                                <div class="pt-8 text-sm">
-                                    solo SwiftUI project to track personal music
-                                    listening using Spotify’s Web API
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="flex flex-col h-full">
-                        <p class="mt-2 text-med sm:text-lg mb-4 font-medium text-center">
-                            production</p>
-                        <div
-                            class="text-center p-6 rounded-lg shadow-lg dark:shadow-2xl border dark:border-gray-700 dark:bg-gray-800">
-                            <div class="pb-8">
-                                <a href="https://peek.com" target="_blank">
-                                    <img src="public/images/peek-logo.png" alt="Peek"
-                                        class="w-20 h-20 mx-auto rounded-xl shadow-md border dark:border-gray-600 hover:scale-105 transition-transform inline-block" />
-                                </a>
-                                <div class="pt-8 text-sm">
-                                    startup offering B2B booking software and a B2C
-                                    experiences marketplace (peek.com)
-                                </div>
-                            </div>
-                            <div class="pt-8 border-t border-gray-300 dark:border-gray-700">
-                                <a href="https://zenithhealth.io" target="_blank">
-                                    <img src="public/images/zenith.jpeg" alt="Zenith"
-                                        class="w-20 h-20 mx-auto rounded-xl shadow-md border dark:border-gray-600 hover:scale-105 transition-transform inline-block" />
-                                </a>
-                                <div class="pt-8 text-sm">
-                                    startup for women's maternal health support
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="flex flex-col h-full">
-                        <p class="mt-2 text-med sm:text-lg mb-4 font-medium text-center">
-                            client</p>
-                        <div
-                            class="text-center p-6 rounded-lg shadow-lg dark:shadow-2xl border dark:border-gray-700 dark:bg-gray-800">
-                            <a href="https://agcploverhill.com" target="_blank">
-                                <img src="public/images/plover.png" alt="Client"
-                                    class="w-20 h-20 mx-auto rounded-xl bg-gray-100 dark:bg-gray-800 shadow-md hover:scale-105 transition-transform inline-block" />
-                            </a>
-                            <div class="pt-8 text-sm">
-                                freelance web development project for client
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
         </div>
+    </nav>
+
+    <header class="max-w-[1180px] mx-auto px-6 pt-24 pb-16">
+        <div class="flex items-center gap-2 font-mono text-sm tracking-wide text-[#389559] lowercase mb-5">
+            product engineer / new york
+        </div>
+
+        <h1 class="font-display font-semibold tracking-tight leading-[0.94] text-[15vw] sm:text-8xl lg:text-9xl">
+            charlotte<br>
+            <em class="italic font-light text-[#5B5A55] dark:text-[#A8A399]">moche</em>
+        </h1>
+
+        <div class="grid lg:grid-cols-[1.5fr_1fr] gap-12 mt-11 items-end">
+            <p class="text-lg leading-relaxed text-[#5B5A55] dark:text-[#A8A399] max-w-xl">
+                frontend-leaning full-stack engineer with 6 years of product experience. fine arts
+                background informs a genuine design sensibility and high bar for interaction quality.
+                experienced shipping zero-to-one features end-to-end, from component architecture to
+                backend APIs, with a track record of owning product quality across the full stack.
+            </p>
+            <div class="w-full max-w-[220px] justify-self-start lg:justify-self-end">
+                <img src="public/images/me.png" alt="Charlotte Moche"
+                    class="w-full aspect-square object-cover rounded-full border border-[#DEDBD1] dark:border-[#2C2A22]" />
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-[1180px] mx-auto px-6">
+
+        <section class="py-16 border-t border-[#DEDBD1] dark:border-[#2C2A22]">
+            <div
+                class="flex items-center gap-2 font-mono text-sm tracking-wide text-[#5B5A55] dark:text-[#A8A399] lowercase mb-9">
+                <svg class="w-4 h-4 flex-shrink-0" viewBox="0 0 24 24" fill="none">
+                    <path d="M4 12h16M4 6h10M4 18h7" stroke="currentColor" stroke-width="1.4" />
+                </svg>
+                what i build with
+            </div>
+
+            <div class="flex flex-col">
+                <div
+                    class="grid grid-cols-[140px_1fr] sm:grid-cols-[180px_1fr] gap-6 py-4 border-t border-b border-[#DEDBD1] dark:border-[#2C2A22]">
+                    <div class="font-mono text-xs text-[#5B5A55] dark:text-[#A8A399] lowercase pt-0.5">frontend</div>
+                    <div class="flex flex-wrap gap-x-5 gap-y-2">
+                        <a href="https://www.javascript.com/" target="_blank"
+                            class="border-b border-transparent hover:border-[#389559] hover:text-[#389559] transition">JavaScript</a>
+                        <a href="https://www.typescriptlang.org/" target="_blank"
+                            class="border-b border-transparent hover:border-[#389559] hover:text-[#389559] transition">TypeScript</a>
+                        <a href="https://react.dev/" target="_blank"
+                            class="border-b border-transparent hover:border-[#389559] hover:text-[#389559] transition">React</a>
+                        <a href="https://reactnative.dev/" target="_blank"
+                            class="border-b border-transparent hover:border-[#389559] hover:text-[#389559] transition">React
+                            Native</a>
+                        <a href="https://tailwindcss.com/" target="_blank"
+                            class="border-b border-transparent hover:border-[#389559] hover:text-[#389559] transition">Tailwind</a>
+                    </div>
+                </div>
+                <div
+                    class="grid grid-cols-[140px_1fr] sm:grid-cols-[180px_1fr] gap-6 py-4 border-b border-[#DEDBD1] dark:border-[#2C2A22]">
+                    <div class="font-mono text-xs text-[#5B5A55] dark:text-[#A8A399] lowercase pt-0.5">backend</div>
+                    <div class="flex flex-wrap gap-x-5 gap-y-2">
+                        <a href="https://elixir-lang.org/" target="_blank"
+                            class="border-b border-transparent hover:border-[#389559] hover:text-[#389559] transition">Elixir</a>
+                        <a href="https://www.phoenixframework.org/" target="_blank"
+                            class="border-b border-transparent hover:border-[#389559] hover:text-[#389559] transition">Phoenix</a>
+                    </div>
+                </div>
+                <div
+                    class="grid grid-cols-[140px_1fr] sm:grid-cols-[180px_1fr] gap-6 py-4 border-b border-[#DEDBD1] dark:border-[#2C2A22]">
+                    <div class="font-mono text-xs text-[#5B5A55] dark:text-[#A8A399] lowercase pt-0.5">native</div>
+                    <div class="flex flex-wrap gap-x-5 gap-y-2">
+                        <a href="https://www.swift.org/" target="_blank"
+                            class="border-b border-transparent hover:border-[#389559] hover:text-[#389559] transition">Swift</a>
+                        <a href="#"
+                            class="border-b border-transparent hover:border-[#389559] hover:text-[#389559] transition">SwiftUI</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="work" class="py-16 border-t border-[#DEDBD1] dark:border-[#2C2A22]">
+            <div
+                class="flex items-center gap-2 font-mono text-sm tracking-wide text-[#5B5A55] dark:text-[#A8A399] lowercase mb-9">
+                <svg class="w-4 h-4 flex-shrink-0" viewBox="0 0 24 24" fill="none">
+                    <path d="M4 12h16M4 6h10M4 18h7" stroke="currentColor" stroke-width="1.4" />
+                </svg>
+                selected work
+            </div>
+
+            <div
+                class="grid md:grid-cols-[1fr_1.4fr] gap-14 items-center py-11 border-b border-[#DEDBD1] dark:border-[#2C2A22]">
+                <div class="flex items-center justify-center">
+                    <img src="public/images/zenith.jpeg" alt="Zenith Health" class="rounded-lg w-24 h-24 object-contain" />
+                </div>
+                <div>
+                    <div class="font-mono text-xs text-[#389559] lowercase mb-3">production · maternal health</div>
+                    <h3 class="font-display font-semibold text-3xl mb-3 tracking-tight">Zenith Health</h3>
+                    <p class="text-[#5B5A55] dark:text-[#A8A399] leading-relaxed max-w-md">End-to-end feature ownership
+                        across React Native, Phoenix LiveView, and the backend API layer — including the realtime
+                        streaming UI for an AI chat assistant.</p>
+                    <a href="https://zenithhealth.io" target="_blank"
+                        class="inline-block mt-4 font-mono text-xs border-b border-[#17181C] dark:border-[#F3F1EA] hover:border-[#389559] hover:text-[#389559] transition">visit
+                        site →</a>
+                </div>
+            </div>
+
+            <div
+                class="grid md:grid-cols-[1fr_1.4fr] gap-14 items-center py-11 border-b border-[#DEDBD1] dark:border-[#2C2A22]">
+                <div class="flex items-center justify-center">
+                    <img src="public/images/peek-logo.png" alt="Peek" class="rounded-lg w-24 h-24 object-contain" />
+                </div>
+                <div>
+                    <div class="font-mono text-xs text-[#389559] lowercase mb-3">production · booking software</div>
+                    <h3 class="font-display font-semibold text-3xl mb-3 tracking-tight">Peek</h3>
+                    <p class="text-[#5B5A55] dark:text-[#A8A399] leading-relaxed max-w-md">Led frontend architecture and
+                        interaction design for search, filter, and sort — zero-to-one, with direct ownership over the
+                        technical and design decisions.</p>
+                    <a href="https://peek.com" target="_blank"
+                        class="inline-block mt-4 font-mono text-xs border-b border-[#17181C] dark:border-[#F3F1EA] hover:border-[#389559] hover:text-[#389559] transition">visit
+                        site →</a>
+                </div>
+
+            </div>
+
+            <div
+                class="grid md:grid-cols-[1fr_1.4fr] gap-14 items-center py-11 border-b border-[#DEDBD1] dark:border-[#2C2A22]">
+                <div class="flex items-center justify-center">
+                    <img src="public/images/prelude-logo.png" alt="Prelude" class="rounded-lg w-24 h-24 object-contain" />
+                </div>
+                <div>
+                    <div class="font-mono text-xs text-[#389559] lowercase mb-3">solo · swiftui</div>
+                    <h3 class="font-display font-semibold text-3xl mb-3 tracking-tight">Prelude</h3>
+                    <p class="text-[#5B5A55] dark:text-[#A8A399] leading-relaxed max-w-md">A native app built from
+                        scratch to visualize personal Spotify listening data — conceived, designed, and shipped
+                        independently, end to end.</p>
+                    <a href="https://preludeapp.co" target="_blank"
+                        class="inline-block mt-4 font-mono text-xs border-b border-[#17181C] dark:border-[#F3F1EA] hover:border-[#389559] hover:text-[#389559] transition">visit
+                        site →</a>
+                </div>
+            </div>
+
+            <div
+                class="grid md:grid-cols-[1fr_1.4fr] gap-14 items-center py-11 border-b border-[#DEDBD1] dark:border-[#2C2A22]">
+                <div class="flex items-center justify-center">
+                    <img src="public/images/fish.png" alt="Seascape" class="rounded-lg w-24 h-24 object-contain" />
+                </div>
+                <div>
+                    <div class="font-mono text-xs text-[#389559] lowercase mb-3">solo · react native</div>
+                    <h3 class="font-display font-semibold text-3xl mb-3 tracking-tight">Seascape</h3>
+                    <p class="text-[#5B5A55] dark:text-[#A8A399] leading-relaxed max-w-md">A journaling and meditation
+                        app, designed and built solo as a personal project outside of work.</p>
+                    <a href="https://seascapeapp.com" target="_blank"
+                        class="inline-block mt-4 font-mono text-xs border-b border-[#17181C] dark:border-[#F3F1EA] hover:border-[#389559] hover:text-[#389559] transition">visit
+                        site →</a>
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-[1fr_1.4fr] gap-14 items-center py-11">
+                <div class="flex items-center justify-center">
+                    <img src="public/images/plover.png" alt="Client project" class="rounded-lg w-24 h-24 object-contain" />
+                </div>
+                <div>
+                    <div class="font-mono text-xs text-[#389559] lowercase mb-3">client · web</div>
+                    <h3 class="font-display font-semibold text-3xl mb-3 tracking-tight">AGC Plover Hill</h3>
+                    <p class="text-[#5B5A55] dark:text-[#A8A399] leading-relaxed max-w-md">Freelance web development for
+                        a client project, from design through build.</p>
+                    <a href="https://agcploverhill.com" target="_blank"
+                        class="inline-block mt-4 font-mono text-xs border-b border-[#17181C] dark:border-[#F3F1EA] hover:border-[#389559] hover:text-[#389559] transition">visit
+                        site →</a>
+                </div>
+            </div>
+        </section>
     </main>
 
-    <section id="contact" class="border-t border-gray-200 dark:border-gray-700 py-16">
-        <div class="text-center space-y-6 px-4 container mx-auto 2xl:px-60 ">
-            <h2 class="text-2xl font-semibold tracking-tight">contact</h2>
-            <p class="text-sm text-gray-600 dark:text-gray-400">
-                open to collaboration and freelance work<br>
-                <a href="mailto:charlottebmoche@gmail.com"
-                    class="underline hover:text-brand">charlottebmoche@gmail.com</a>
-            </p>
-            <div class="flex justify-center gap-6">
-                <a href="https://github.com/charlottemoche" target="_blank">
-                    <img src="public/images/github-mark.png" class="w-6 h-6 dark:invert hover:opacity-70 transition"
-                        alt="GitHub" />
-                </a>
-                <a href="https://www.linkedin.com/in/charlotte-moche/" target="_blank">
-                    <img src="public/images/linkedin-mark.png" class="w-6 h-6 dark:invert hover:opacity-70 transition"
-                        alt="LinkedIn" />
-                </a>
+    <section id="contact" class="border-t border-[#DEDBD1] dark:border-[#2C2A22] py-24 text-center">
+        <div class="max-w-[1180px] mx-auto px-6">
+            <h2 class="font-display font-semibold tracking-tight text-5xl sm:text-6xl mb-5">contact</h2>
+            <p class="text-[#5B5A55] dark:text-[#A8A399] mb-7">open to collaboration and freelance work</p>
+            <a href="mailto:charlottebmoche@gmail.com"
+                class="font-mono text-[#389559] border-b border-[#389559] pb-0.5">charlottebmoche@gmail.com</a>
+            <div class="flex justify-center gap-6 mt-9">
+                <a href="https://github.com/charlottemoche" target="_blank"
+                    class="font-mono text-sm text-[#5B5A55] dark:text-[#A8A399] hover:text-[#389559] transition">github</a>
+                <a href="https://www.linkedin.com/in/charlotte-moche/" target="_blank"
+                    class="font-mono text-sm text-[#5B5A55] dark:text-[#A8A399] hover:text-[#389559] transition">linkedin</a>
             </div>
         </div>
     </section>
 
-    <footer class="text-center text-sm py-6 text-gray-600 bg-white dark:bg-gray-900">
-        <div class="px-4 container mx-auto 2xl:px-60">
-            &copy; 2025 charlotte moche. all rights reserved.
+    <footer class="border-t border-[#DEDBD1] dark:border-[#2C2A22] py-6">
+        <div
+            class="max-w-[1180px] mx-auto px-6 flex justify-between font-mono text-xs text-[#5B5A55] dark:text-[#A8A399]">
+            <span>&copy; 2026 charlotte moche</span>
+            <span>brooklyn, new york</span>
         </div>
     </footer>
+
+    <script>
+        const toggle = document.getElementById('toggle');
+        const root = document.documentElement;
+        if (window.matchMedia('(prefers-color-scheme: dark)').matches) root.classList.add('dark');
+        toggle.addEventListener('click', () => root.classList.toggle('dark'));
+    </script>
+
 </body>
 
 </html>
