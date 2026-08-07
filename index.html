@@ -36,23 +36,23 @@
             <a href="/" id="logo-dark" class="hidden min-w-fit max-w-min">
                 <img src="public/images/logo-dark.png" alt="Logo" class="h-10" />
             </a>
-            <a href="/" id="logo-light" class="min-w-fit max-w-min font-mono text-sm tracking-wide">
+            <a href="/" id="logo-light" class="min-w-fit max-w-min font-mono text-sm tracking-wide hidden sm:block">
                 c.moche
             </a>
 
-            <div class="flex items-center gap-6 text-sm font-medium">
+            <div class="flex items-center gap-6 text-sm font-medium w-full sm:w-auto flex justify-end">
                 <a href="#work"
                     class="font-mono text-xs tracking-wide opacity-70 hover:opacity-100 hover:text-[#389559] transition">work</a>
 
                 <a href="#contact"
                     class="font-mono text-xs tracking-wide opacity-70 hover:opacity-100 hover:text-[#389559] transition">contact</a>
                 <a href="public/Resume.pdf" download
-                    class="font-mono text-xs tracking-wide border border-[#17181C] dark:border-[#F3F1EA] px-4 py-2 rounded-sm hover:bg-[#17181C] hover:text-[#F6F5F1] dark:hover:bg-[#F3F1EA] dark:hover:text-[#15140F] transition">
+                    class="font-mono text-xs tracking-wide border border-[#17181C] dark:border-[#F3F1EA] px-4 py-2 rounded-sm hover:bg-[#17181C] hover:text-[#F6F5F1] dark:hover:bg-[#F3F1EA] dark:hover:text-[#15140F] transition whitespace-nowrap">
                     resume ↓
                 </a>
 
                 <div id="toggle" title="toggle theme"
-                    class="w-11 h-6 border border-[#17181C] dark:border-[#F3F1EA] rounded-full relative cursor-pointer flex-shrink-0">
+                    class="w-11 h-6 border border-[#17181C] dark:border-[#F3F1EA] rounded-full relative cursor-pointer flex-shrink-0 ml-auto">
                     <span id="toggle-dot"
                         class="absolute top-0.5 left-0.5 w-[18px] h-[18px] rounded-full bg-[#17181C] dark:bg-[#F3F1EA] dark:translate-x-5 transition-transform duration-200"></span>
                 </div>
@@ -60,7 +60,7 @@
         </div>
     </nav>
 
-    <header class="max-w-[1180px] mx-auto px-6 pt-24 pb-16">
+    <header class="max-w-[1180px] mx-auto px-6 pt-24 lg:pb-16">
         <div class="flex items-center gap-2 font-mono text-sm tracking-wide text-[#389559] lowercase mb-5">
             product engineer / new york
         </div>
@@ -97,7 +97,7 @@
 
             <div class="flex flex-col">
                 <div
-                    class="grid grid-cols-[140px_1fr] sm:grid-cols-[180px_1fr] gap-6 py-4 border-t border-b border-[#DEDBD1] dark:border-[#2C2A22]">
+                    class="grid sm:grid-cols-[180px_1fr] gap-6 py-4 border-t border-b border-[#DEDBD1] dark:border-[#2C2A22]">
                     <div class="font-mono text-xs text-[#5B5A55] dark:text-[#A8A399] lowercase pt-0.5">frontend</div>
                     <div class="flex flex-wrap gap-x-5 gap-y-2">
                         <a href="https://www.javascript.com/" target="_blank"
@@ -113,8 +113,7 @@
                             class="border-b border-transparent hover:border-[#389559] hover:text-[#389559] transition">Tailwind</a>
                     </div>
                 </div>
-                <div
-                    class="grid grid-cols-[140px_1fr] sm:grid-cols-[180px_1fr] gap-6 py-4 border-b border-[#DEDBD1] dark:border-[#2C2A22]">
+                <div class="grid sm:grid-cols-[180px_1fr] gap-6 py-4 border-b border-[#DEDBD1] dark:border-[#2C2A22]">
                     <div class="font-mono text-xs text-[#5B5A55] dark:text-[#A8A399] lowercase pt-0.5">backend</div>
                     <div class="flex flex-wrap gap-x-5 gap-y-2">
                         <a href="https://elixir-lang.org/" target="_blank"
@@ -123,8 +122,7 @@
                             class="border-b border-transparent hover:border-[#389559] hover:text-[#389559] transition">Phoenix</a>
                     </div>
                 </div>
-                <div
-                    class="grid grid-cols-[140px_1fr] sm:grid-cols-[180px_1fr] gap-6 py-4 border-b border-[#DEDBD1] dark:border-[#2C2A22]">
+                <div class="grid sm:grid-cols-[180px_1fr] gap-6 py-4 border-b border-[#DEDBD1] dark:border-[#2C2A22]">
                     <div class="font-mono text-xs text-[#5B5A55] dark:text-[#A8A399] lowercase pt-0.5">native</div>
                     <div class="flex flex-wrap gap-x-5 gap-y-2">
                         <a href="https://www.swift.org/" target="_blank"
@@ -136,7 +134,7 @@
             </div>
         </section>
 
-        <section id="work" class="py-16">
+        <section id="work" class="pb-16">
             <div
                 class="flex items-center gap-2 font-mono text-sm tracking-wide text-[#5B5A55] dark:text-[#A8A399] lowercase mb-9">
                 <svg class="w-4 h-4 flex-shrink-0" viewBox="0 0 24 24" fill="none">
@@ -148,7 +146,8 @@
             <div
                 class="grid md:grid-cols-[1fr_1.4fr] gap-14 items-center py-11 border-b border-[#DEDBD1] dark:border-[#2C2A22]">
                 <div class="flex items-center justify-center">
-                    <img src="public/images/zenith.jpeg" alt="Zenith Health" class="rounded-lg w-24 h-24 object-contain" />
+                    <img src="public/images/zenith.jpeg" alt="Zenith Health"
+                        class="rounded-lg w-24 h-24 object-contain" />
                 </div>
                 <div>
                     <div class="font-mono text-xs text-[#389559] lowercase mb-3">production · maternal health</div>
@@ -183,7 +182,8 @@
             <div
                 class="grid md:grid-cols-[1fr_1.4fr] gap-14 items-center py-11 border-b border-[#DEDBD1] dark:border-[#2C2A22]">
                 <div class="flex items-center justify-center">
-                    <img src="public/images/prelude-logo.png" alt="Prelude" class="rounded-lg w-24 h-24 object-contain" />
+                    <img src="public/images/prelude-logo.png" alt="Prelude"
+                        class="rounded-lg w-24 h-24 object-contain" />
                 </div>
                 <div>
                     <div class="font-mono text-xs text-[#389559] lowercase mb-3">solo · swiftui</div>
@@ -215,7 +215,8 @@
 
             <div class="grid md:grid-cols-[1fr_1.4fr] gap-14 items-center py-11">
                 <div class="flex items-center justify-center">
-                    <img src="public/images/plover.png" alt="Client project" class="rounded-lg w-24 h-24 object-contain" />
+                    <img src="public/images/plover.png" alt="Client project"
+                        class="rounded-lg w-24 h-24 object-contain" />
                 </div>
                 <div>
                     <div class="font-mono text-xs text-[#389559] lowercase mb-3">client · web</div>
@@ -232,7 +233,13 @@
 
     <section id="contact" class="border-t border-[#DEDBD1] dark:border-[#2C2A22] py-24 text-center">
         <div class="max-w-[1180px] mx-auto px-6">
-            <h2 class="font-display font-semibold tracking-tight text-5xl sm:text-6xl mb-5">contact</h2>
+            <div
+                class="flex items-center gap-2 font-mono text-sm tracking-wide text-[#5B5A55] dark:text-[#A8A399] lowercase mb-9">
+                <svg class="w-4 h-4 flex-shrink-0" viewBox="0 0 24 24" fill="none">
+                    <path d="M4 12h16M4 6h10M4 18h7" stroke="currentColor" stroke-width="1.4" />
+                </svg>
+                contact
+            </div>
             <p class="text-[#5B5A55] dark:text-[#A8A399] mb-7">Open to collaboration and freelance work.</p>
             <a href="mailto:charlottebmoche@gmail.com"
                 class="font-mono text-[#389559] border-b border-[#389559] pb-0.5">charlottebmoche@gmail.com</a>
