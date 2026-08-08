@@ -973,24 +973,12 @@ body {
     display: block;
   }
 
-  .lg\:flex {
-    display: flex;
-  }
-
   .lg\:hidden {
     display: none;
   }
 
   .lg\:grid-cols-\[1\.5fr_1fr\] {
     grid-template-columns: 1.5fr 1fr;
-  }
-
-  .lg\:items-center {
-    align-items: center;
-  }
-
-  .lg\:justify-center {
-    justify-content: center;
   }
 
   .lg\:justify-self-end {
