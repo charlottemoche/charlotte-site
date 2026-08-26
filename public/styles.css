@@ -610,12 +610,12 @@ video {
   --tw-border-opacity: 1;
   border-color: rgb(43 46 41 / var(--tw-border-opacity));
 }
-.bg-\[\#10120f\]\/90 {
-  background-color: rgb(16 18 15 / 0.9);
-}
 .bg-\[\#180c1a\] {
   --tw-bg-opacity: 1;
   background-color: rgb(24 12 26 / var(--tw-bg-opacity));
+}
+.bg-\[\#180c1a\]\/90 {
+  background-color: rgb(24 12 26 / 0.9);
 }
 .object-contain {
   -o-object-fit: contain;
@@ -674,9 +674,6 @@ video {
 .text-5xl {
   font-size: 3rem;
   line-height: 1;
-}
-.text-\[10px\] {
-  font-size: 10px;
 }
 .text-base {
   font-size: 1rem;
