@@ -6,12 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>c. moche</title>
     <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <script>tailwind.config = { darkMode: 'class' }</script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link
-        href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,450;9..144,600;9..144,700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&family=Space+Grotesk:wght@400;500;600&display=swap"
         rel="stylesheet">
+
     <link href="/public/styles.css" rel="stylesheet">
+
     <style>
         body {
             font-family: 'Inter', sans-serif;
@@ -22,280 +24,466 @@
         }
 
         .font-mono {
-            font-family: 'IBM Plex Mono', monospace;
+            font-family: 'Space Grotesk', sans-serif;
         }
     </style>
 </head>
 
-<body id="body"
-    class="bg-[#F6F5F1] dark:bg-[#15140F] text-[#17181C] dark:text-[#F3F1EA] relative transition-colors duration-300">
+<body class="bg-[#180c1a] text-[#eeeee8]">
 
-    <nav
-        class="sticky top-0 z-40 border-b border-[#DEDBD1] dark:border-[#2C2A22] bg-[#F6F5F1]/90 dark:bg-[#15140F]/90 backdrop-blur">
-        <div class="wrap max-w-[1180px] mx-auto px-6 flex items-center justify-between h-20">
-            <a href="/" id="logo-dark" class="hidden min-w-fit max-w-min">
-                <img src="public/images/logo-dark.png" alt="Logo" class="h-10" />
-            </a>
-            <a href="/" id="logo-light" class="min-w-fit max-w-min font-mono text-sm tracking-wide hidden sm:block">
+    <!-- NAV -->
+
+    <nav class="sticky top-0 z-40 border-b border-[#2b2e29] bg-[#180c1a]/90 backdrop-blur">
+        <div class="max-w-[1180px] mx-auto px-6 h-20 flex items-center justify-between">
+
+            <a href="/" class="font-mono text-sm tracking-tight">
                 c.moche
             </a>
 
-            <div class="flex items-center gap-6 text-sm font-medium w-full sm:w-auto flex justify-end">
-                <a href="#work"
-                    class="font-mono text-xs tracking-wide opacity-70 hover:opacity-100 hover:text-[#389559] transition">work</a>
+            <div class="flex items-center gap-6">
+
+                <a href="#work" class="font-mono text-xs opacity-60 hover:opacity-100 hover:text-[#f6cefc] transition">
+                    work
+                </a>
 
                 <a href="#contact"
-                    class="font-mono text-xs tracking-wide opacity-70 hover:opacity-100 hover:text-[#389559] transition">contact</a>
+                    class="font-mono text-xs opacity-60 hover:opacity-100 hover:text-[#f6cefc] transition">
+                    contact
+                </a>
+
                 <a href="public/Resume.pdf" download
-                    class="font-mono text-xs tracking-wide border border-[#17181C] dark:border-[#F3F1EA] px-4 py-2 rounded-sm hover:bg-[#17181C] hover:text-[#F6F5F1] dark:hover:bg-[#F3F1EA] dark:hover:text-[#15140F] transition whitespace-nowrap">
+                    class="font-mono text-xs border border-[#2b2e29] px-4 py-2 hover:bg-[#eeeee8] hover:text-[#10120f] transition whitespace-nowrap">
                     resume ↓
                 </a>
 
-                <div id="toggle" title="toggle theme"
-                    class="w-11 h-6 border border-[#17181C] dark:border-[#F3F1EA] rounded-full relative cursor-pointer flex-shrink-0 ml-auto">
-                    <span id="toggle-dot"
-                        class="absolute top-0.5 left-0.5 w-[18px] h-[18px] rounded-full bg-[#17181C] dark:bg-[#F3F1EA] dark:translate-x-5 transition-transform duration-200"></span>
-                </div>
             </div>
+
         </div>
     </nav>
 
-    <header class="max-w-[1180px] mx-auto px-6 pt-12 lg:pt-24 lg:pb-16">
-        <div class="lg:hidden w-full max-w-[120px] pb-4">
-                    <img src="public/images/me.png" alt="Charlotte Moche"
-                        class="w-full aspect-square object-cover rounded-full border border-[#DEDBD1] dark:border-[#2C2A22]" />
+
+    <!-- INTRO -->
+
+    <!-- INTRO -->
+
+    <header class="max-w-[1180px] mx-auto px-6 pt-16 pb-24 lg:pt-24 lg:pb-32">
+
+        <div class="flex flex-col-reverse lg:flex lg:flex-row lg:gap-20">
+            <div class="grid">
+
+                <div>
+
+                    <div class="block text-[#9f6ba0] mb-4">
+                        <div>PRODUCT ENGINEER</div>
+                    </div>
+
+                    <h1 class="font-display font-medium tracking-tight leading-none text-5xl mb-4">
+                        Charlotte Moche
+                    </h1>
+                    <p class="text-base md:text-lg leading-relaxed text-[#92958e]">
+                        Frontend-leaning full-stack engineer with 6 years of product
+                        experience. Fine arts background informs a genuine design
+                        sensibility and high bar for interaction quality. Experienced
+                        shipping zero-to-one features end-to-end, from component
+                        architecture to backend APIs, with a track record of owning
+                        product quality across the full stack.
+                    </p>
                 </div>
-        <div class="flex items-center gap-2 font-mono text-sm tracking-wide text-[#389559] lowercase mb-5">
-            product engineer / new york
+
+
+
+            </div>
+
+            <div class="grid items-center lg:ml-auto shrink-0 grow-1 pb-8 lg:pb-0">
+
+                <div>
+                    <img src="public/images/me.png" alt="Charlotte Moche"
+                        class="w-32 h-32 lg:w-40 lg:h-40 object-cover rounded-full border border-[#2b2e29]" />
+                </div>
+
+            </div>
         </div>
 
-        <h1 class="font-display font-semibold tracking-tight leading-[0.94] text-[15vw] sm:text-8xl lg:text-9xl">
-            charlotte<br>
-            <em class="italic font-light text-[#5B5A55] dark:text-[#A8A399]">moche</em>
-        </h1>
-
-        <div class="grid lg:grid-cols-[1.5fr_1fr] gap-12 mt-11 items-end">
-            <p class="text-base md:text-lg leading-relaxed text-[#5B5A55] dark:text-[#A8A399] max-w-xl">
-                Frontend-leaning full-stack engineer with 6 years of product experience. Fine arts
-                background informs a genuine design sensibility and high bar for interaction quality.
-                Experienced shipping zero-to-one features end-to-end, from component architecture to
-                backend APIs, with a track record of owning product quality across the full stack.
-                <div class="hidden lg:block w-full max-w-[200px] justify-self-center lg:justify-self-end">
-                    <img src="public/images/me.png" alt="Charlotte Moche"
-                        class="w-full aspect-square object-cover rounded-full border border-[#DEDBD1] dark:border-[#2C2A22]" />
-                </div>
-            </p>
-        </div>
     </header>
+
 
     <main class="max-w-[1180px] mx-auto px-6">
 
-        <section class="py-16">
-            <div
-                class="flex items-center gap-2 font-mono text-sm tracking-wide text-[#5B5A55] dark:text-[#A8A399] lowercase mb-9">
-                <svg class="w-4 h-4 flex-shrink-0" viewBox="0 0 24 24" fill="none">
-                    <path d="M4 12h16M4 6h10M4 18h7" stroke="currentColor" stroke-width="1.4" />
-                </svg>
-                what I build with
+
+        <!-- SKILLS -->
+
+        <section class="pb-20">
+
+            <div class="grid lg:grid-cols-[220px_1fr] gap-12">
+
+                <div class="text-[#9f6ba0]">
+                    WHAT I BUILD WITH
+                </div>
+
+                <div>
+
+                    <div class="grid sm:grid-cols-[150px_1fr] gap-6 py-5 border-t border-[#2b2e29]">
+
+                        <div class="font-mono text-xs text-[#92958e]">
+                            frontend
+                        </div>
+
+                        <div class="flex flex-wrap gap-x-6 gap-y-2 text-sm">
+
+                            <a href="https://www.typescriptlang.org/" target="_blank"
+                                class="hover:text-[#f6cefc] transition">
+                                TypeScript
+                            </a>
+
+                            <a href="https://www.javascript.com/" target="_blank"
+                                class="hover:text-[#f6cefc] transition">
+                                JavaScript
+                            </a>
+
+                            <a href="https://react.dev/" target="_blank" class="hover:text-[#f6cefc] transition">
+                                React
+                            </a>
+
+                            <a href="https://reactnative.dev/" target="_blank" class="hover:text-[#f6cefc] transition">
+                                React Native
+                            </a>
+
+                            <a href="https://tailwindcss.com/" target="_blank" class="hover:text-[#f6cefc] transition">
+                                Tailwind CSS
+                            </a>
+
+                            <span>HTML/CSS</span>
+                            <span>SwiftUI</span>
+                            <span>Figma</span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="grid sm:grid-cols-[150px_1fr] gap-6 py-5 border-t border-[#2b2e29]">
+
+                        <div class="font-mono text-xs text-[#92958e]">
+                            backend
+                        </div>
+
+                        <div class="flex flex-wrap gap-x-6 gap-y-2 text-sm">
+
+                            <a href="https://elixir-lang.org/" target="_blank" class="hover:text-[#f6cefc] transition">
+                                Elixir
+                            </a>
+
+                            <a href="https://www.phoenixframework.org/" target="_blank"
+                                class="hover:text-[#f6cefc] transition">
+                                Phoenix
+                            </a>
+
+                            <a href="https://rubyonrails.org/" target="_blank" class="hover:text-[#f6cefc] transition">
+                                Ruby on Rails
+                            </a>
+
+                            <a href="https://www.python.org/" target="_blank" class="hover:text-[#f6cefc] transition">
+                                Python
+                            </a>
+
+                            <span>REST & GraphQL APIs</span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="grid sm:grid-cols-[150px_1fr] gap-6 py-5 border-y border-[#2b2e29]">
+
+                        <div class="font-mono text-xs text-[#92958e]">
+                            tooling
+                        </div>
+
+                        <div class="flex flex-wrap gap-x-6 gap-y-2 text-sm">
+
+                            <span>Codex</span>
+                            <span>Claude Code</span>
+
+                            <a href="https://github.com/" target="_blank" class="hover:text-[#f6cefc] transition">
+                                Git/GitHub
+                            </a>
+
+                            <a href="https://sentry.io/" target="_blank" class="hover:text-[#f6cefc] transition">
+                                Sentry
+                            </a>
+
+                            <span>A/B Testing</span>
+                            <span>Automated Testing Suites</span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
             </div>
 
-            <div class="flex flex-col">
-                <div
-                    class="grid sm:grid-cols-[180px_1fr] gap-6 py-4 border-t border-b border-[#DEDBD1] dark:border-[#2C2A22]">
-                    <div class="font-mono text-xs text-[#5B5A55] dark:text-[#A8A399] lowercase pt-0.5">frontend</div>
-                    <div class="flex flex-wrap gap-x-5 gap-y-2">
-                        <a href="https://www.typescriptlang.org/" target="_blank"
-                            class="border-b border-transparent hover:border-[#389559] hover:text-[#389559] transition">TypeScript</a>
-                        <a href="https://www.javascript.com/" target="_blank"
-                            class="border-b border-transparent hover:border-[#389559] hover:text-[#389559] transition">JavaScript</a>
-                        <a href="https://react.dev/" target="_blank"
-                            class="border-b border-transparent hover:border-[#389559] hover:text-[#389559] transition">React</a>
-                        <a href="https://reactnative.dev/" target="_blank"
-                            class="border-b border-transparent hover:border-[#389559] hover:text-[#389559] transition">React
-                            Native</a>
-                        <a href="https://tailwindcss.com/" target="_blank"
-                            class="border-b border-transparent hover:border-[#389559] hover:text-[#389559] transition">Tailwind
-                            CSS</a>
-                        <a href="#"
-                            class="border-b border-transparent hover:border-[#389559] hover:text-[#389559] transition">HTML/CSS</a>
-                        <a href="https://www.swift.org/" target="_blank"
-                            class="border-b border-transparent hover:border-[#389559] hover:text-[#389559] transition">SwiftUI</a>
-                        <a href="https://www.figma.com/" target="_blank"
-                            class="border-b border-transparent hover:border-[#389559] hover:text-[#389559] transition">Figma</a>
-                    </div>
-                </div>
-                <div class="grid sm:grid-cols-[180px_1fr] gap-6 py-4 border-b border-[#DEDBD1] dark:border-[#2C2A22]">
-                    <div class="font-mono text-xs text-[#5B5A55] dark:text-[#A8A399] lowercase pt-0.5">backend</div>
-                    <div class="flex flex-wrap gap-x-5 gap-y-2">
-                        <a href="https://elixir-lang.org/" target="_blank"
-                            class="border-b border-transparent hover:border-[#389559] hover:text-[#389559] transition">Elixir</a>
-                        <a href="https://www.phoenixframework.org/" target="_blank"
-                            class="border-b border-transparent hover:border-[#389559] hover:text-[#389559] transition">Phoenix</a>
-                        <a href="https://rubyonrails.org/" target="_blank"
-                            class="border-b border-transparent hover:border-[#389559] hover:text-[#389559] transition">Ruby
-                            on Rails</a>
-                        <a href="https://www.python.org/" target="_blank"
-                            class="border-b border-transparent hover:border-[#389559] hover:text-[#389559] transition">Python</a>
-                        <a href="#"
-                            class="border-b border-transparent hover:border-[#389559] hover:text-[#389559] transition">REST
-                            & GraphQL APIs</a>
-                    </div>
-                </div>
-                <div class="grid sm:grid-cols-[180px_1fr] gap-6 py-4 border-b border-[#DEDBD1] dark:border-[#2C2A22]">
-                    <div class="font-mono text-xs text-[#5B5A55] dark:text-[#A8A399] lowercase pt-0.5">tooling</div>
-                    <div class="flex flex-wrap gap-x-5 gap-y-2">
-                        <a href="#"
-                            class="border-b border-transparent hover:border-[#389559] hover:text-[#389559] transition">Codex</a>
-                        <a href="#"
-                            class="border-b border-transparent hover:border-[#389559] hover:text-[#389559] transition">Claude
-                            Code</a>
-                        <a href="https://github.com/" target="_blank"
-                            class="border-b border-transparent hover:border-[#389559] hover:text-[#389559] transition">Git/GitHub</a>
-                        <a href="https://sentry.io/" target="_blank"
-                            class="border-b border-transparent hover:border-[#389559] hover:text-[#389559] transition">Sentry</a>
-                        <a href="#"
-                            class="border-b border-transparent hover:border-[#389559] hover:text-[#389559] transition">A/B
-                            Testing</a>
-                        <a href="#"
-                            class="border-b border-transparent hover:border-[#389559] hover:text-[#389559] transition">Automated
-                            Testing Suites</a>
-                    </div>
-                </div>
-            </div>
         </section>
 
-        <section id="work" class="pb-16">
-            <div
-                class="flex items-center gap-2 font-mono text-sm tracking-wide text-[#5B5A55] dark:text-[#A8A399] lowercase mb-9">
-                <svg class="w-4 h-4 flex-shrink-0" viewBox="0 0 24 24" fill="none">
-                    <path d="M4 12h16M4 6h10M4 18h7" stroke="currentColor" stroke-width="1.4" />
-                </svg>
-                selected work
-            </div>
 
-            <div
-                class="grid md:grid-cols-[1fr_1.4fr] gap-14 items-center py-11 border-b border-[#DEDBD1] dark:border-[#2C2A22]">
-                <div class="flex items-center justify-center">
-                    <img src="public/images/zenith.jpeg" alt="Zenith Health"
-                        class="rounded-lg w-24 h-24 object-contain" />
-                </div>
-                <div>
-                    <div class="font-mono text-xs text-[#389559] lowercase mb-3">production · maternal health</div>
-                    <h3 class="font-display font-semibold text-3xl mb-3 tracking-tight">Zenith Health</h3>
-                    <p class="text-[#5B5A55] dark:text-[#A8A399] leading-relaxed max-w-md">End-to-end feature ownership
-                        across React Native, Phoenix LiveView, and the backend API layer — including the realtime
-                        streaming UI for an AI chat assistant.</p>
-                    <a href="https://zenithhealth.io" target="_blank"
-                        class="inline-block mt-4 font-mono text-xs border-b border-[#17181C] dark:border-[#F3F1EA] hover:border-[#389559] hover:text-[#389559] transition">visit
-                        site →</a>
-                </div>
-            </div>
+        <!-- WORK -->
 
-            <div
-                class="grid md:grid-cols-[1fr_1.4fr] gap-14 items-center py-11 border-b border-[#DEDBD1] dark:border-[#2C2A22]">
-                <div class="flex items-center justify-center">
-                    <img src="public/images/peek-logo.png" alt="Peek" class="rounded-lg w-24 h-24 object-contain" />
-                </div>
-                <div>
-                    <div class="font-mono text-xs text-[#389559] lowercase mb-3">production · booking software</div>
-                    <h3 class="font-display font-semibold text-3xl mb-3 tracking-tight">Peek</h3>
-                    <p class="text-[#5B5A55] dark:text-[#A8A399] leading-relaxed max-w-md">Led frontend architecture and
-                        interaction design for search, filter, and sort — zero-to-one, with direct ownership over the
-                        technical and design decisions.</p>
-                    <a href="https://peek.com" target="_blank"
-                        class="inline-block mt-4 font-mono text-xs border-b border-[#17181C] dark:border-[#F3F1EA] hover:border-[#389559] hover:text-[#389559] transition">visit
-                        site →</a>
+        <section id="work" class="pb-20 lg:pb-28">
+
+            <div class="flex items-baseline justify-between mb-10">
+
+
+                <div class="text-[#9f6ba0]">
+                    SELECTED WORK
                 </div>
 
             </div>
 
-            <div
-                class="grid md:grid-cols-[1fr_1.4fr] gap-14 items-center py-11 border-b border-[#DEDBD1] dark:border-[#2C2A22]">
-                <div class="flex items-center justify-center">
-                    <img src="public/images/prelude-logo.png" alt="Prelude"
-                        class="rounded-lg w-24 h-24 object-contain" />
-                </div>
-                <div>
-                    <div class="font-mono text-xs text-[#389559] lowercase mb-3">solo · swiftui</div>
-                    <h3 class="font-display font-semibold text-3xl mb-3 tracking-tight">Prelude</h3>
-                    <p class="text-[#5B5A55] dark:text-[#A8A399] leading-relaxed max-w-md">A native app built from
-                        scratch to visualize personal Spotify listening data — conceived, designed, and shipped
-                        independently, end to end.</p>
-                    <a href="https://preludeapp.co" target="_blank"
-                        class="inline-block mt-4 font-mono text-xs border-b border-[#17181C] dark:border-[#F3F1EA] hover:border-[#389559] hover:text-[#389559] transition">visit
-                        site →</a>
-                </div>
+
+            <div class="border-t border-[#2b2e29]">
+
+
+                <!-- ZENITH -->
+
+                <a href="https://zenithhealth.io" target="_blank"
+                    class="group grid md:grid-cols-[90px_130px_1fr_280px_30px] gap-6 items-center py-8 border-b border-[#2b2e29] hover:bg-[#9f6ba0]/20 transition">
+
+                    <span class="font-mono text-xs text-[#f6cefc] ml-2">
+                        01
+                    </span>
+
+                    <div class="flex items-center">
+
+                        <img src="public/images/zenith.jpeg" alt="Zenith Health"
+                            class="w-16 h-16 object-contain group-hover:scale-105 transition">
+
+                    </div>
+
+                    <div>
+
+                        <h3 class="font-display text-3xl md:text-4xl font-light">
+                            Zenith Health
+                        </h3>
+
+                        <div class="font-mono text-[10px] text-[#92958e] mt-2">
+                            production · maternal health
+                        </div>
+
+                    </div>
+
+                    <p class="text-sm leading-relaxed text-[#92958e]">
+                        End-to-end feature ownership across React Native,
+                        Phoenix LiveView, and the backend API layer, including
+                        realtime streaming UI for an AI chat assistant.
+                    </p>
+
+                </a>
+
+
+                <!-- PEEK -->
+
+                <a href="https://peek.com" target="_blank"
+                    class="group grid md:grid-cols-[90px_130px_1fr_280px_30px] gap-6 items-center py-8 border-b border-[#2b2e29] hover:bg-[#9f6ba0]/20 transition">
+
+                    <span class="font-mono text-xs text-[#f6cefc] ml-2">
+                        02
+                    </span>
+
+                    <div class="flex items-center">
+
+                        <img src="public/images/peek-logo.png" alt="Peek"
+                            class="w-16 h-16 object-contain group-hover:scale-105 transition">
+
+                    </div>
+
+                    <div>
+
+                        <h3 class="font-display text-3xl md:text-4xl font-light">
+                            Peek
+                        </h3>
+
+                        <div class="font-mono text-[10px] text-[#92958e] mt-2">
+                            production · booking software
+                        </div>
+
+                    </div>
+
+                    <p class="text-sm leading-relaxed text-[#92958e]">
+                        Led frontend architecture and interaction design for
+                        search, filter, and sort — zero-to-one, with direct
+                        ownership over technical and design decisions.
+                    </p>
+
+                </a>
+
+
+                <!-- PRELUDE -->
+
+                <a href="https://preludeapp.co" target="_blank"
+                    class="group grid md:grid-cols-[90px_130px_1fr_280px_30px] gap-6 items-center py-8 border-b border-[#2b2e29] hover:bg-[#9f6ba0]/20 transition">
+
+                    <span class="font-mono text-xs text-[#f6cefc] ml-2">
+                        03
+                    </span>
+
+                    <div class="flex items-center">
+
+                        <img src="public/images/prelude-logo.png" alt="Prelude"
+                            class="w-16 h-16 object-contain group-hover:scale-105 transition">
+
+                    </div>
+
+                    <div>
+
+                        <h3 class="font-display text-3xl md:text-4xl font-light">
+                            Prelude
+                        </h3>
+
+                        <div class="font-mono text-[10px] text-[#92958e] mt-2">
+                            solo · SwiftUI
+                        </div>
+
+                    </div>
+
+                    <p class="text-sm leading-relaxed text-[#92958e]">
+                        A native app built from scratch to visualize personal
+                        Spotify listening data — conceived, designed, and
+                        shipped independently, end to end.
+                    </p>
+
+                </a>
+
+
+                <!-- SEASCAPE -->
+
+                <a href="https://seascapeapp.com" target="_blank"
+                    class="group grid md:grid-cols-[90px_130px_1fr_280px_30px] gap-6 items-center py-8 border-b border-[#2b2e29] hover:bg-[#9f6ba0]/20 transition">
+
+                    <span class="font-mono text-xs text-[#f6cefc] ml-2">
+                        04
+                    </span>
+
+                    <div class="flex items-center">
+
+                        <img src="public/images/fish.png" alt="Seascape"
+                            class="w-16 h-16 object-contain group-hover:scale-105 transition">
+
+                    </div>
+
+                    <div>
+
+                        <h3 class="font-display text-3xl md:text-4xl font-light">
+                            Seascape
+                        </h3>
+
+                        <div class="font-mono text-[10px] text-[#92958e] mt-2">
+                            solo · React Native
+                        </div>
+
+                    </div>
+
+                    <p class="text-sm leading-relaxed text-[#92958e]">
+                        A journaling and meditation app, designed and built
+                        solo as a personal project outside of work.
+                    </p>
+
+                </a>
+
+
+                <!-- PLOVER -->
+
+                <a href="https://agcploverhill.com" target="_blank"
+                    class="group grid md:grid-cols-[90px_130px_1fr_280px_30px] gap-6 items-center py-8 hover:bg-[#9f6ba0]/20 transition">
+
+                    <span class="font-mono text-xs text-[#f6cefc] ml-2">
+                        05
+                    </span>
+
+                    <div class="flex items-center">
+
+                        <img src="public/images/plover.png" alt="AGC Plover Hill"
+                            class="w-16 h-16 object-contain group-hover:scale-105 transition">
+
+                    </div>
+
+                    <div>
+
+                        <h3 class="font-display text-3xl md:text-4xl font-light">
+                            AGC Plover Hill
+                        </h3>
+
+                        <div class="font-mono text-[10px] text-[#92958e] mt-2">
+                            client · web
+                        </div>
+
+                    </div>
+
+                    <p class="text-sm leading-relaxed text-[#92958e]">
+                        Freelance web development for a client project,
+                        from design through build.
+                    </p>
+
+                </a>
+
             </div>
 
-            <div
-                class="grid md:grid-cols-[1fr_1.4fr] gap-14 items-center py-11 border-b border-[#DEDBD1] dark:border-[#2C2A22]">
-                <div class="flex items-center justify-center">
-                    <img src="public/images/fish.png" alt="Seascape" class="rounded-lg w-24 h-24 object-contain" />
-                </div>
-                <div>
-                    <div class="font-mono text-xs text-[#389559] lowercase mb-3">solo · react native</div>
-                    <h3 class="font-display font-semibold text-3xl mb-3 tracking-tight">Seascape</h3>
-                    <p class="text-[#5B5A55] dark:text-[#A8A399] leading-relaxed max-w-md">A journaling and meditation
-                        app, designed and built solo as a personal project outside of work.</p>
-                    <a href="https://seascapeapp.com" target="_blank"
-                        class="inline-block mt-4 font-mono text-xs border-b border-[#17181C] dark:border-[#F3F1EA] hover:border-[#389559] hover:text-[#389559] transition">visit
-                        site →</a>
-                </div>
-            </div>
-
-            <div class="grid md:grid-cols-[1fr_1.4fr] gap-14 items-center py-11">
-                <div class="flex items-center justify-center">
-                    <img src="public/images/plover.png" alt="Client project"
-                        class="rounded-lg w-24 h-24 object-contain" />
-                </div>
-                <div>
-                    <div class="font-mono text-xs text-[#389559] lowercase mb-3">client · web</div>
-                    <h3 class="font-display font-semibold text-3xl mb-3 tracking-tight">AGC Plover Hill</h3>
-                    <p class="text-[#5B5A55] dark:text-[#A8A399] leading-relaxed max-w-md">Freelance web development for
-                        a client project, from design through build.</p>
-                    <a href="https://agcploverhill.com" target="_blank"
-                        class="inline-block mt-4 font-mono text-xs border-b border-[#17181C] dark:border-[#F3F1EA] hover:border-[#389559] hover:text-[#389559] transition">visit
-                        site →</a>
-                </div>
-            </div>
         </section>
+
     </main>
 
-    <section id="contact" class="border-t border-[#DEDBD1] dark:border-[#2C2A22] py-24 text-center">
+
+    <!-- CONTACT -->
+
+    <section id="contact" class="border-t border-[#2b2e29] py-20 lg:py-28">
+
         <div class="max-w-[1180px] mx-auto px-6">
-            <div
-                class="flex items-center gap-2 font-mono text-sm tracking-wide text-[#5B5A55] dark:text-[#A8A399] lowercase mb-9">
-                <svg class="w-4 h-4 flex-shrink-0" viewBox="0 0 24 24" fill="none">
-                    <path d="M4 12h16M4 6h10M4 18h7" stroke="currentColor" stroke-width="1.4" />
-                </svg>
-                contact
+
+            <div class="grid lg:grid-cols-[220px_1fr] gap-12">
+
+                <div class="text-[#9f6ba0]">
+                    CONTACT
+                </div>
+
+                <div>
+
+                    <a href="mailto:charlottebmoche@gmail.com"
+                        class="font-display text-lg font-light hover:text-[#f6cefc] transition">
+                        charlottebmoche@gmail.com
+                    </a>
+
+                    <div class="flex gap-6 mt-8">
+
+                        <a href="https://github.com/charlottemoche" target="_blank"
+                            class="font-mono text-xs hover:text-[#f6cefc] transition">
+                            github ↗
+                        </a>
+
+                        <a href="https://www.linkedin.com/in/charlotte-moche/" target="_blank"
+                            class="font-mono text-xs hover:text-[#f6cefc] transition">
+                            linkedin ↗
+                        </a>
+
+                    </div>
+
+                </div>
+
             </div>
-            <p class="text-[#5B5A55] dark:text-[#A8A399] mb-7">Open to collaboration and freelance work.</p>
-            <a href="mailto:charlottebmoche@gmail.com"
-                class="font-mono text-[#389559] border-b border-[#389559] pb-0.5">charlottebmoche@gmail.com</a>
-            <div class="flex justify-center gap-6 mt-9">
-                <a href="https://github.com/charlottemoche" target="_blank"
-                    class="font-mono text-sm text-[#5B5A55] dark:text-[#A8A399] hover:text-[#389559] transition">github</a>
-                <a href="https://www.linkedin.com/in/charlotte-moche/" target="_blank"
-                    class="font-mono text-sm text-[#5B5A55] dark:text-[#A8A399] hover:text-[#389559] transition">linkedin</a>
-            </div>
+
         </div>
+
     </section>
 
-    <footer class="border-t border-[#DEDBD1] dark:border-[#2C2A22] py-6">
-        <div
-            class="max-w-[1180px] mx-auto px-6 flex justify-between font-mono text-xs text-[#5B5A55] dark:text-[#A8A399]">
-            <span>&copy; 2026 charlotte moche</span>
+
+    <!-- FOOTER -->
+
+    <footer class="border-t border-[#2b2e29] py-6">
+
+        <div class="max-w-[1180px] mx-auto px-6 flex justify-between font-mono text-[10px] text-[#92958e]">
+            <span>© 2026 charlotte moche</span>
             <span>brooklyn, new york</span>
         </div>
-    </footer>
 
-    <script>
-        const toggle = document.getElementById('toggle');
-        const root = document.documentElement;
-        if (window.matchMedia('(prefers-color-scheme: dark)').matches) root.classList.add('dark');
-        toggle.addEventListener('click', () => root.classList.toggle('dark'));
-    </script>
+    </footer>
 
 </body>
 
