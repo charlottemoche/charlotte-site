@@ -520,8 +520,8 @@ video {
 .mb-4 {
   margin-bottom: 1rem;
 }
-.ml-2 {
-  margin-left: 0.5rem;
+.ml-0 {
+  margin-left: 0px;
 }
 .mt-2 {
   margin-top: 0.5rem;
@@ -833,6 +833,10 @@ body {
   }
 }
 @media (min-width: 1024px) {
+
+  .lg\:ml-2 {
+    margin-left: 0.5rem;
+  }
 
   .lg\:ml-auto {
     margin-left: auto;
