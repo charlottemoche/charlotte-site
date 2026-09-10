@@ -9,9 +9,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Fraunces:opsz,wght@9..144,300..900&family=Inter:wght@400..700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400..600&display=swap" rel="stylesheet">
 
     <link href="/public/styles.css" rel="stylesheet">
 
@@ -21,41 +19,46 @@
         }
 
         .font-display {
-            font-family: 'Fraunces', serif;
+            font-family: 'Instrument Serif', serif;
         }
 
-        .font-playfair {
-            font-family: 'Playfair Display', serif;
+        .bg-radial {
+            background: radial-gradient(circle at 50% 50%, #37533599 0%, #f2f4ed 70%);
+        }
+
+        .section-label {
+            font-family: 'Instrument Serif', serif;
+            font-style: italic;
+            font-size: 22px;
+            color: #7a5c66;
         }
     </style>
+
 </head>
 
-<body class="bg-[#eeeeee] text-[#121212]">
+<body class="text-theme-forest z-20">
+    <div class="-z-10 inset-0 fixed bg-radial blur-2xl"></div>
 
-    <!-- NAV -->
+    <nav>
+        <div class="max-w-[1180px] mx-auto px-6 h-16 flex items-center justify-between">
 
-    <nav class="sticky top-0 z-40 border-b border-[#2b2e29] bg-[#180c1a]/90 backdrop-blur">
-        <div class="max-w-[1180px] mx-auto px-6 h-20 flex items-center justify-between">
-
-            <a href="/" class="font-playfair text-sm tracking-tight text-[#eeeeee]">
-                <img src="/favicon.ico" class="w-8 aspect-square">
+            <a href="/">
+                <img src="/favicon.ico" class="w-8 aspect-square rounded-lg">
             </a>
 
-            <div class="flex items-center gap-6 text-[#eeeeee]">
+            <div class="flex items-center gap-6">
 
-                <a href="#work"
-                    class="font-playfair text-xs opacity-60 hover:opacity-100 hover:text-[#f6cefc] transition">
+                <a href="#work" class="text-sm font-medium text-theme-forest hover:text-theme-mauve transition">
                     work
                 </a>
 
-                <a href="#contact"
-                    class="font-playfair text-xs opacity-60 hover:opacity-100 hover:text-[#f6cefc] transition">
+                <a href="#contact" class="text-sm font-medium text-theme-forest hover:text-theme-mauve transition">
                     contact
                 </a>
 
                 <a href="public/Resume.pdf" download
-                    class="font-playfair text-xs border border-[#d1afd6]/40 px-4 py-2 hover:bg-[#eeeee8] hover:text-[#10120f] transition whitespace-nowrap">
-                    resume ↓
+                    class="text-sm font-medium bg-theme-eggplant text-theme-cream rounded-full px-4 py-2 hover:bg-theme-mauve transition whitespace-nowrap">
+                    resume
                 </a>
 
             </div>
@@ -64,46 +67,30 @@
     </nav>
 
 
-    <!-- INTRO -->
+    <header class="max-w-[1180px] mx-auto px-6 pt-12 lg:pt-24 pb-24">
 
-    <!-- INTRO -->
+        <div class="flex flex-col-reverse gap-10 lg:grid lg:grid-cols-[1fr_auto] lg:items-center">
 
-    <header class="max-w-[1180px] mx-auto px-6 pt-16 pb-24 lg:pt-24 lg:pb-32">
-
-        <div class="flex flex-col-reverse lg:flex lg:flex-row lg:gap-20">
-            <div class="grid">
-
-                <div>
-
-                    <div class="block text-[#9f6ba0] mb-4">
-                        <div>PRODUCT ENGINEER</div>
-                    </div>
-
-                    <h1 class="font-display tracking-tight leading-none text-5xl mb-4">
-                        Charlotte Moche
-                    </h1>
-                    <p class="text-base lg:text-[17px] leading-relaxed text-gray-700 max-w-3xl lg:pt-2">
-                        Frontend-leaning full stack engineer with 6 years of product experience. I like building things
-                        and figuring out how they should work along the way. I naturally gravitate toward the frontend
-                        and the parts of a product that people interact with. My fine-arts background means I care a lot
-                        about the details of how something looks, feels, and behaves. I also really enjoy working with
-                        others, from bouncing ideas around, solving problems, and taking something from the first idea
-                        to a finished product. Collaboration is a big part of what makes the work fun for me.
-                    </p>
-                </div>
-
-
-
+            <div>
+                <h1 class="font-display text-6xl lg:text-8xl leading-[0.95] text-theme-mauve">
+                    charlotte moche
+                </h1>
+                <p class="text-sm font-semibold py-3 mb-3 border-b border-theme-forest/20 max-w-fit">
+                    product engineer &middot; brooklyn
+                </p>
+                <p class="mt-6 text-base lg:text-[17px] text-theme-wood max-w-2xl leading-relaxed">
+                    frontend-leaning full stack engineer with 6 years of product experience. I like building things
+                    and figuring out how they should work along the way. I naturally gravitate toward the frontend
+                    and the parts of a product that people interact with. my fine-arts background means I care a lot
+                    about the details of how something looks, feels, and behaves. I also really enjoy working with
+                    others, from bouncing ideas around, solving problems, and taking something from the first idea
+                    to a finished product.
+                </p>
             </div>
 
-            <div class="grid items-center lg:ml-auto shrink-0 grow-1 pb-8 lg:pb-0">
+            <img src="public/images/me.png" alt="Charlotte Moche"
+                class="w-36 h-36 lg:w-56 lg:h-56 object-cover rounded-full justify-self-start lg:justify-self-end" />
 
-                <div>
-                    <img src="public/images/me.png" alt="Charlotte Moche"
-                        class="w-32 h-32 lg:w-52 lg:h-52 object-cover rounded-full shadow" />
-                </div>
-
-            </div>
         </div>
 
     </header>
@@ -111,116 +98,48 @@
 
     <main class="max-w-[1180px] mx-auto px-6">
 
+        <section class="pb-24">
 
-        <!-- SKILLS -->
+            <span class="section-label">what I build with</span>
 
-        <section class="pb-20">
+            <div class="mt-6 grid sm:grid-cols-3 gap-8">
 
-            <div class="grid lg:grid-cols-[220px_1fr] gap-12">
-
-                <div class="text-[#9f6ba0]">
-                    WHAT I BUILD WITH
+                <div>
+                    <div class="text-sm font-semibold pb-3 mb-3 border-b border-theme-forest/20 max-w-fit">frontend
+                    </div>
+                    <div class="flex flex-wrap gap-x-3 gap-y-1.5 text-sm text-theme-wood">
+                        <span>TypeScript</span>
+                        <span>JavaScript</span>
+                        <span>React</span>
+                        <span>React Native</span>
+                        <span>Tailwind CSS</span>
+                        <span>SwiftUI</span>
+                        <span>Figma</span>
+                    </div>
                 </div>
 
                 <div>
-
-                    <div class="grid sm:grid-cols-[150px_1fr] gap-6 py-5 border-t border-[#2b2e29]">
-
-                        <div class="font-playfair text-xs text-[#92958e]">
-                            frontend
-                        </div>
-
-                        <div class="flex flex-wrap gap-x-6 gap-y-2 text-sm">
-
-                            <a href="https://www.typescriptlang.org/" target="_blank"
-                                class="hover:text-[#d1afd6] transition">
-                                TypeScript
-                            </a>
-
-                            <a href="https://www.javascript.com/" target="_blank"
-                                class="hover:text-[#d1afd6] transition">
-                                JavaScript
-                            </a>
-
-                            <a href="https://react.dev/" target="_blank" class="hover:text-[#d1afd6] transition">
-                                React
-                            </a>
-
-                            <a href="https://reactnative.dev/" target="_blank" class="hover:text-[#d1afd6] transition">
-                                React Native
-                            </a>
-
-                            <a href="https://tailwindcss.com/" target="_blank" class="hover:text-[#d1afd6] transition">
-                                Tailwind CSS
-                            </a>
-
-                            <span>HTML/CSS</span>
-                            <span>SwiftUI</span>
-                            <span>Figma</span>
-
-                        </div>
-
+                    <div class="text-sm font-semibold pb-3 mb-3 border-b border-theme-forest/20 max-w-fit">backend
                     </div>
-
-
-                    <div class="grid sm:grid-cols-[150px_1fr] gap-6 py-5 border-t border-[#2b2e29]">
-
-                        <div class="font-playfair text-xs text-[#92958e]">
-                            backend
-                        </div>
-
-                        <div class="flex flex-wrap gap-x-6 gap-y-2 text-sm">
-
-                            <a href="https://elixir-lang.org/" target="_blank" class="hover:text-[#d1afd6] transition">
-                                Elixir
-                            </a>
-
-                            <a href="https://www.phoenixframework.org/" target="_blank"
-                                class="hover:text-[#d1afd6] transition">
-                                Phoenix
-                            </a>
-
-                            <a href="https://rubyonrails.org/" target="_blank" class="hover:text-[#d1afd6] transition">
-                                Ruby on Rails
-                            </a>
-
-                            <a href="https://www.python.org/" target="_blank" class="hover:text-[#d1afd6] transition">
-                                Python
-                            </a>
-
-                            <span>REST & GraphQL APIs</span>
-
-                        </div>
-
+                    <div class="flex flex-wrap gap-x-3 gap-y-1.5 text-sm text-theme-wood">
+                        <span>Elixir</span>
+                        <span>Phoenix</span>
+                        <span>Ruby on Rails</span>
+                        <span>Python</span>
+                        <span>REST & GraphQL</span>
                     </div>
+                </div>
 
-
-                    <div class="grid sm:grid-cols-[150px_1fr] gap-6 py-5 border-y border-[#2b2e29]">
-
-                        <div class="font-playfair text-xs text-[#92958e]">
-                            tooling
-                        </div>
-
-                        <div class="flex flex-wrap gap-x-6 gap-y-2 text-sm">
-
-                            <span>Codex</span>
-                            <span>Claude Code</span>
-
-                            <a href="https://github.com/" target="_blank" class="hover:text-[#d1afd6] transition">
-                                Git/GitHub
-                            </a>
-
-                            <a href="https://sentry.io/" target="_blank" class="hover:text-[#d1afd6] transition">
-                                Sentry
-                            </a>
-
-                            <span>A/B Testing</span>
-                            <span>Automated Testing Suites</span>
-
-                        </div>
-
+                <div>
+                    <div class="text-sm font-semibold pb-3 mb-3 border-b border-theme-forest/20 max-w-fit">tooling
                     </div>
-
+                    <div class="flex flex-wrap gap-x-3 gap-y-1.5 text-sm text-theme-wood">
+                        <span>Claude Code</span>
+                        <span>Codex</span>
+                        <span>Git/GitHub</span>
+                        <span>Sentry</span>
+                        <span>A/B Testing</span>
+                    </div>
                 </div>
 
             </div>
@@ -228,203 +147,73 @@
         </section>
 
 
-        <!-- WORK -->
+        <section id="work" class="pb-24">
 
-        <section id="work" class="pb-20 lg:pb-28">
+            <span class="section-label">selected work</span>
 
-            <div class="flex items-baseline justify-between mb-10">
-
-
-                <div class="text-[#9f6ba0]">
-                    SELECTED WORK
-                </div>
-
-            </div>
-
-
-            <div class="border-t border-[#2b2e29]">
-
-
-                <!-- ZENITH -->
+            <div class="mt-6 divide-y divide-theme-forest/10">
 
                 <a href="https://zenithhealth.io" target="_blank"
-                    class="group grid md:grid-cols-[90px_130px_1fr_280px_30px] gap-6 items-center py-8 border-b border-[#2b2e29] hover:bg-[#9f6ba0]/20 transition">
-
-                    <span class="font-playfair text-xs text-[#d1afd6] ml-0 lg:ml-2">
-                        01
-                    </span>
-
-                    <div class="flex items-center">
-
+                    class="group grid sm:grid-cols-[1fr_1.6fr] gap-4 sm:gap-10 py-8 hover:bg-theme-cream/40 -mx-4 px-4 transition rounded-lg">
+                    <div class="flex items-start gap-4">
                         <img src="public/images/zenith.jpeg" alt="Zenith Health"
-                            class="w-16 h-16 object-contain group-hover:scale-105 transition">
-
-                    </div>
-
-                    <div>
-
-                        <h3 class="font-display text-3xl md:text-4xl font-light">
-                            Zenith Health
-                        </h3>
-
-                        <div class="font-playfair text-xs text-[#92958e] mt-2">
-                            production · maternal health
+                            class="w-10 h-10 object-contain rounded-lg mt-0.5">
+                        <div>
+                            <h3 class="text-lg font-semibold text-theme-eggplant">Zenith Health</h3>
+                            <p class="text-xs text-theme-forest mt-0.5">production, maternal health</p>
                         </div>
-
                     </div>
-
-                    <p class="text-sm leading-relaxed text-[#92958e]">
-                        End-to-end feature ownership across React Native,
-                        Phoenix LiveView, and the backend API layer, including
-                        realtime streaming UI for an AI chat assistant.
+                    <p class="text-sm text-theme-wood leading-relaxed">
+                        End-to-end feature ownership across React Native, Phoenix LiveView, and the backend API
+                        layer, including realtime streaming UI for an AI chat assistant.
                     </p>
-
                 </a>
-
-
-                <!-- PEEK -->
 
                 <a href="https://peek.com/experiences" target="_blank"
-                    class="group grid md:grid-cols-[90px_130px_1fr_280px_30px] gap-6 items-center py-8 border-b border-[#2b2e29] hover:bg-[#9f6ba0]/20 transition">
-
-                    <span class="font-playfair text-xs text-[#d1afd6] ml-0 lg:ml-2">
-                        02
-                    </span>
-
-                    <div class="flex items-center">
-
+                    class="group grid sm:grid-cols-[1fr_1.6fr] gap-4 sm:gap-10 py-8 hover:bg-theme-cream/40 -mx-4 px-4 transition rounded-lg">
+                    <div class="flex items-start gap-4">
                         <img src="public/images/peek-logo.png" alt="Peek"
-                            class="w-16 h-16 object-contain group-hover:scale-105 transition">
-
-                    </div>
-
-                    <div>
-
-                        <h3 class="font-display text-3xl md:text-4xl font-light">
-                            Peek
-                        </h3>
-
-                        <div class="font-playfair text-xs text-[#92958e] mt-2">
-                            production · booking software
+                            class="w-10 h-10 object-contain rounded-lg mt-0.5">
+                        <div>
+                            <h3 class="text-lg font-semibold text-theme-eggplant">Peek</h3>
+                            <p class="text-xs text-theme-forest mt-0.5">production, booking software</p>
                         </div>
-
                     </div>
-
-                    <p class="text-sm leading-relaxed text-[#92958e]">
-                        Led frontend architecture and interaction design for
-                        search, filter, and sort — zero-to-one, with direct
-                        ownership over technical and design decisions.
+                    <p class="text-sm text-theme-wood leading-relaxed">
+                        Led frontend architecture and interaction design for search, filter, and sort — zero to one,
+                        with direct ownership over technical and design decisions.
                     </p>
-
                 </a>
-
-
-                <!-- PRELUDE -->
 
                 <a href="https://preludeapp.co" target="_blank"
-                    class="group grid md:grid-cols-[90px_130px_1fr_280px_30px] gap-6 items-center py-8 border-b border-[#2b2e29] hover:bg-[#9f6ba0]/20 transition">
-
-                    <span class="font-playfair text-xs text-[#d1afd6] ml-0 lg:ml-2">
-                        03
-                    </span>
-
-                    <div class="flex items-center">
-
+                    class="group grid sm:grid-cols-[1fr_1.6fr] gap-4 sm:gap-10 py-8 hover:bg-theme-cream/40 -mx-4 px-4 transition rounded-lg">
+                    <div class="flex items-start gap-4">
                         <img src="public/images/prelude-logo.png" alt="Prelude"
-                            class="w-16 h-16 object-contain group-hover:scale-105 transition">
-
-                    </div>
-
-                    <div>
-
-                        <h3 class="font-display text-3xl md:text-4xl font-light">
-                            Prelude
-                        </h3>
-
-                        <div class="font-playfair text-xs text-[#92958e] mt-2">
-                            solo · SwiftUI
+                            class="w-10 h-10 object-contain rounded-lg mt-0.5">
+                        <div>
+                            <h3 class="text-lg font-semibold text-theme-eggplant">Prelude</h3>
+                            <p class="text-xs text-theme-forest mt-0.5">solo project, SwiftUI</p>
                         </div>
-
                     </div>
-
-                    <p class="text-sm leading-relaxed text-[#92958e]">
-                        A native app built from scratch to visualize personal
-                        Spotify listening data — conceived, designed, and
-                        shipped independently, end to end.
+                    <p class="text-sm text-theme-wood leading-relaxed">
+                        A native app built from scratch to visualize personal Spotify listening data — conceived,
+                        designed, and shipped independently, end to end.
                     </p>
-
                 </a>
-
-
-                <!-- SEASCAPE -->
-
-                <a href="https://seascapeapp.com" target="_blank"
-                    class="group grid md:grid-cols-[90px_130px_1fr_280px_30px] gap-6 items-center py-8 border-b border-[#2b2e29] hover:bg-[#9f6ba0]/20 transition">
-
-                    <span class="font-playfair text-xs text-[#d1afd6] ml-0 lg:ml-2">
-                        04
-                    </span>
-
-                    <div class="flex items-center">
-
-                        <img src="public/images/fish.png" alt="Seascape"
-                            class="w-16 h-16 object-contain group-hover:scale-105 transition">
-
-                    </div>
-
-                    <div>
-
-                        <h3 class="font-display text-3xl md:text-4xl font-light">
-                            Seascape
-                        </h3>
-
-                        <div class="font-playfair text-xs text-[#92958e] mt-2">
-                            solo · React Native
-                        </div>
-
-                    </div>
-
-                    <p class="text-sm leading-relaxed text-[#92958e]">
-                        A journaling and meditation app, designed and built
-                        solo as a personal project outside of work.
-                    </p>
-
-                </a>
-
-
-                <!-- PLOVER -->
 
                 <a href="https://agcploverhill.com" target="_blank"
-                    class="group grid md:grid-cols-[90px_130px_1fr_280px_30px] gap-6 items-center py-8 hover:bg-[#9f6ba0]/20 transition">
-
-                    <span class="font-playfair text-xs text-[#d1afd6] ml-0 lg:ml-2">
-                        05
-                    </span>
-
-                    <div class="flex items-center">
-
+                    class="group grid sm:grid-cols-[1fr_1.6fr] gap-4 sm:gap-10 py-8 hover:bg-theme-cream/40 -mx-4 px-4 transition rounded-lg">
+                    <div class="flex items-start gap-4">
                         <img src="public/images/plover.png" alt="AGC Plover Hill"
-                            class="w-16 h-16 object-contain group-hover:scale-105 transition">
-
-                    </div>
-
-                    <div>
-
-                        <h3 class="font-display text-3xl md:text-4xl font-light">
-                            AGC Plover Hill
-                        </h3>
-
-                        <div class="font-playfair text-xs text-[#92958e] mt-2">
-                            client · web
+                            class="w-10 h-10 object-contain rounded-lg mt-0.5">
+                        <div>
+                            <h3 class="text-lg font-semibold text-theme-eggplant">AGC Plover Hill</h3>
+                            <p class="text-xs text-theme-forest mt-0.5">freelance, web</p>
                         </div>
-
                     </div>
-
-                    <p class="text-sm leading-relaxed text-[#92958e]">
-                        Freelance web development for a client project,
-                        from design through build.
+                    <p class="text-sm text-theme-wood leading-relaxed">
+                        Freelance web development for a client project, from design through build.
                     </p>
-
                 </a>
 
             </div>
@@ -434,60 +223,41 @@
     </main>
 
 
-    <!-- CONTACT -->
+    <section id="contact" class="border-t border-theme-forest/15">
+        <div class="max-w-[1180px] mx-auto px-6 py-24">
 
-    <section id="contact" class="border-t border-[#2b2e29] py-20 lg:py-28">
+            <span class="section-label">contact</span>
 
-        <div class="max-w-[1180px] mx-auto px-6">
+            <a href="mailto:charlottebmoche@gmail.com"
+                class="block mt-4 font-display text-2xl lg:text-4xl hover:text-theme-mauve transition">
+                charlottebmoche@gmail.com
+            </a>
 
-            <div class="grid lg:grid-cols-[220px_1fr] gap-12">
+            <div class="flex gap-4 mt-8">
 
-                <div class="text-[#9f6ba0]">
-                    CONTACT
-                </div>
+                <a href="https://github.com/charlottemoche" target="_blank"
+                    class="text-sm font-medium bg-theme-cream rounded-full px-4 py-2 ring-1 ring-theme-forest/10 hover:ring-theme-mauve transition flex items-center gap-2">
+                    <img src="public/images/github-mark.png" class="w-4" />
+                    github
+                </a>
 
-                <div>
-
-                    <a href="mailto:charlottebmoche@gmail.com"
-                        class="font-display text-lg font-light hover:text-[#d1afd6] transition">
-                        charlottebmoche@gmail.com
-                    </a>
-
-                    <div class="flex gap-6 mt-8">
-
-                        <a href="https://github.com/charlottemoche" target="_blank"
-                            class="font-playfair text-sm hover:text-[#d1afd6] transition flex items-center gap-1">
-
-                            <img src="public/images/github-mark.png" class="w-4" />
-                            github
-                        </a>
-
-                        <a href="https://www.linkedin.com/in/charlotte-moche/" target="_blank"
-                            class="font-playfair text-sm hover:text-[#d1afd6] transition flex items-center gap-1">
-                            <img src="public/images/linkedin-mark.png" class="w-4" />
-                            linkedin
-                        </a>
-
-                    </div>
-
-                </div>
+                <a href="https://www.linkedin.com/in/charlotte-moche/" target="_blank"
+                    class="text-sm font-medium bg-theme-cream rounded-full px-4 py-2 ring-1 ring-theme-forest/10 hover:ring-theme-mauve transition flex items-center gap-2">
+                    <img src="public/images/linkedin-mark.png" class="w-4" />
+                    linkedin
+                </a>
 
             </div>
 
         </div>
-
     </section>
 
 
-    <!-- FOOTER -->
-
-    <footer class="border-t border-[#2b2e29] py-6">
-
-        <div class="max-w-[1180px] mx-auto px-6 flex justify-between font-playfair text-xs text-[#92958e]">
+    <footer class="py-6">
+        <div class="max-w-[1180px] mx-auto px-6 flex justify-between text-xs text-theme-forest/50">
             <span>© 2026 charlotte moche</span>
             <span>brooklyn, new york</span>
         </div>
-
     </footer>
 
 </body>
