@@ -43,12 +43,12 @@
 </head>
 
 <body class="text-theme-eggplant selection:bg-theme-mauve selection:text-theme-cream bg-theme-cream">
-    <!-- Sunset Background -->
+    <!-- Background -->
     <div class="-z-10 inset-0 fixed bg-theme-cream"></div>
 
     <!-- Navigation -->
-    <nav class="h-20">
-        <div class="max-w-[1180px] mx-auto flex items-center justify-between my-auto h-full px-6">
+    <nav class="sticky top-0 z-40 h-20 bg-theme-cream shadow">
+        <div class="mx-auto flex items-center justify-between my-auto h-full px-6 lg:px-9">
             <a href="/" class="group flex items-center gap-2">
                 <div
                     class="w-8 h-8 rounded-lg bg-theme-eggplant text-theme-cream font-display text-lg flex items-center justify-center group-hover:bg-theme-mauve transition">
@@ -69,240 +69,251 @@
         </div>
     </nav>
 
-    <!-- Header / Hero -->
-    <header class="max-w-[1180px] mx-auto px-6 pt-10 lg:pt-16 pb-20">
-        <div class="flex flex-col-reverse gap-10 lg:grid lg:grid-cols-[1fr_auto] lg:items-center">
+    <div class="lg:grid lg:grid-cols-5">
+        <div class="lg:sticky lg:top-20 h-[calc(100vh-5rem)] flex items-center bg-radial col-span-2">
+            <header class="px-6 lg:px-10 pb-20">
+                <div class="flex flex-col-reverse gap-10 lg:grid lg:grid-cols-[1fr_auto] lg:items-center">
 
-            <div>
-                <h1 id="hero-name" class="font-display text-5xl lg:text-8xl leading-[0.95] text-theme-eggplant max-w-fit">
-                    charlotte moche
-                </h1>
+                    <div>
 
-                <p class="text-sm font-semibold py-2 max-w-fit text-theme-berry flex items-center gap-2">
-                    product engineer &middot; brooklyn
-                </p>
+                        <img src="public/images/me.png" alt="Charlotte Moche"
+                            class="relative w-36 h-36 lg:w-52 lg:h-52 object-cover rounded-full shadow-xl mb-4" />
+                        <h1 id="hero-name"
+                            class="font-display text-5xl lg:text-7xl leading-[0.95] text-theme-eggplant max-w-fit">
+                            charlotte moche
+                        </h1>
 
-                <p class="text-base lg:text-[17px] text-theme-eggplant/80 max-w-2xl leading-relaxed relative z-10 pt-2">
-                    Frontend-leaning full stack engineer with 6 years of product experience. I like building things
-                    and figuring out how they should work along the way. I naturally gravitate toward the frontend
-                    and the parts of a product that people interact with. My fine-arts background means I care a lot
-                    about the details of how something looks, feels, and behaves.
-                </p>
+                        <p class="text-sm font-semibold py-2 max-w-fit text-theme-berry flex items-center gap-2">
+                            product engineer &middot; brooklyn
+                        </p>
 
-            </div>
-
-            <div class="relative justify-self-start lg:justify-self-end">
-                <img src="public/images/me.png" alt="Charlotte Moche"
-                    class="relative w-36 h-36 lg:w-56 lg:h-56 object-cover rounded-full shadow-xl" />
-            </div>
-
-        </div>
-    </header>
-
-    <main class="max-w-[1180px] mx-auto px-6">
-
-        <!-- What I Build With -->
-        <section class="pb-24">
-            <span class="section-label">what I build with</span>
-
-            <div class="mt-6 grid sm:grid-cols-3 gap-6">
-
-                <div class="rounded-2xl bg-radial shadow-md">
-                    <div class="bg-theme-white/60 rounded-2xl p-3">
-                        <div
-                            class="text-sm font-bold text-theme-berry pb-2 mb-3 border-b border-theme-eggplant max-w-fit">
+                        <p
+                            class="text-base lg:text-[17px] text-theme-eggplant/80 max-w-2xl leading-relaxed relative z-10 pt-2">
+                            Frontend-leaning full stack engineer with 6 years of product experience. I like building
+                            things
+                            and figuring out how they should work along the way. I naturally gravitate toward the
                             frontend
+                            and the parts of a product that people interact with. My fine-arts background means I
+                            care a
+                            lot
+                            about the details of how something looks, feels, and behaves.
+                        </p>
+
+                    </div>
+
+                </div>
+            </header>
+        </div>
+
+        <div class="col-span-3 pt-10">
+            <main class="mx-auto px-6 lg:px-10">
+
+                <!-- What I Build With -->
+                <section class="pb-24">
+                    <span class="section-label">what I build with</span>
+
+                    <div class="mt-6 grid sm:grid-cols-3 gap-6">
+
+                        <div class="rounded-2xl bg-radial shadow-md">
+                            <div class="bg-theme-white/60 rounded-2xl p-3 h-full">
+                                <div
+                                    class="text-sm font-bold text-theme-berry pb-2 mb-3 border-b border-theme-eggplant max-w-fit">
+                                    frontend
+                                </div>
+                                <div class="flex flex-wrap gap-x-3 gap-y-1.5 text-sm text-theme-eggplant/70">
+                                    <span>TypeScript</span>
+                                    <span>JavaScript</span>
+                                    <span>React</span>
+                                    <span>React Native</span>
+                                    <span>Tailwind CSS</span>
+                                    <span>SwiftUI</span>
+                                    <span>Figma</span>
+                                </div>
+                            </div>
                         </div>
-                        <div class="flex flex-wrap gap-x-3 gap-y-1.5 text-sm text-theme-eggplant/70">
-                            <span>TypeScript</span>
-                            <span>JavaScript</span>
-                            <span>React</span>
-                            <span>React Native</span>
-                            <span>Tailwind CSS</span>
-                            <span>SwiftUI</span>
-                            <span>Figma</span>
+
+                        <div class="rounded-2xl bg-radial shadow-md">
+                            <div class="bg-theme-white/60 rounded-2xl p-3 h-full">
+                                <div
+                                    class="text-sm font-bold text-theme-berry pb-2 mb-3 border-b border-theme-eggplant max-w-fit">
+                                    backend
+                                </div>
+                                <div class="flex flex-wrap gap-x-3 gap-y-1.5 text-sm text-theme-eggplant/70">
+                                    <span>Elixir</span>
+                                    <span>Phoenix</span>
+                                    <span>Ruby on Rails</span>
+                                    <span>Python</span>
+                                    <span>REST & GraphQL</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="rounded-2xl bg-radial shadow-md">
+                            <div class="bg-theme-white/60 rounded-2xl p-3 h-full">
+                                <div
+                                    class="text-sm font-bold text-theme-berry pb-2 mb-3 border-b border-theme-eggplant max-w-fit">
+                                    tooling
+                                </div>
+                                <div class="flex flex-wrap gap-x-3 gap-y-1.5 text-sm text-theme-eggplant/70">
+                                    <span>Claude Code</span>
+                                    <span>Codex</span>
+                                    <span>Git/GitHub</span>
+                                    <span>Sentry</span>
+                                    <span>A/B Testing</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+
+                <!-- Selected Work -->
+                <section id="work" class="pb-24">
+                    <span class="section-label">selected work</span>
+
+                    <div class="mt-6 space-y-6">
+
+                        <div class="bg-radial-2 p-0.5 rounded-2xl shadow-md">
+                            <a href="https://zenithhealth.io" target="_blank"
+                                class="group hover:-translate-y-1 transition-transform duration-300 block p-6 rounded-2xl bg-theme-white hover:bg-theme-white/95 transition-colors duration-300 shadow-md">
+                                <div class="grid sm:grid-cols-[1fr_1.6fr] gap-4 sm:gap-10 items-start">
+                                    <div class="flex items-start gap-4">
+                                        <img src="public/images/zenith.jpeg" alt="Zenith Health"
+                                            class="w-11 h-11 object-contain rounded-xl shadow-sm border border-theme-eggplant/10">
+                                        <div>
+                                            <h3
+                                                class="text-lg font-semibold text-theme-eggplant transition">
+                                                Zenith Health</h3>
+                                            <span class="inline-block mt-1 text-theme-eggplant text-xs font-medium">
+                                                production &middot; maternal health
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <p class="text-sm text-theme-eggplant/70 leading-relaxed">
+                                        End-to-end feature ownership across React Native, Phoenix LiveView, and the
+                                        backend
+                                        API
+                                        layer, including realtime streaming UI for an AI chat assistant.
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="bg-radial-2 p-0.5 rounded-2xl shadow-md">
+                            <a href="https://peek.com/experiences" target="_blank"
+                                class="group hover:-translate-y-1 transition-transform duration-300 block p-6 rounded-2xl bg-theme-white hover:bg-theme-white/95 transition-colors duration-300 shadow-md">
+                                <div class="grid sm:grid-cols-[1fr_1.6fr] gap-4 sm:gap-10 items-start">
+                                    <div class="flex items-start gap-4">
+                                        <img src="public/images/peek-logo.png" alt="Peek"
+                                            class="w-11 h-11 object-contain rounded-xl shadow-sm border border-theme-eggplant/10">
+                                        <div>
+                                            <h3
+                                                class="text-lg font-semibold text-theme-eggplant transition">
+                                                Peek</h3>
+                                            <span class="inline-block mt-1 text-theme-eggplant text-xs font-medium">
+                                                production &middot; booking software
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <p class="text-sm text-theme-eggplant/70 leading-relaxed">
+                                        Led frontend architecture and interaction design for search, filter, and
+                                        sort —
+                                        zero
+                                        to
+                                        one,
+                                        with direct ownership over technical and design decisions.
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="bg-radial-2 p-0.5 rounded-2xl shadow-md">
+                            <a href="https://preludeapp.co" target="_blank"
+                                class="group hover:-translate-y-1 transition-transform duration-300 block p-6 rounded-2xl bg-theme-white hover:bg-theme-white/95 transition-colors duration-300 shadow-md">
+                                <div class="grid sm:grid-cols-[1fr_1.6fr] gap-4 sm:gap-10 items-start">
+                                    <div class="flex items-start gap-4">
+                                        <img src="public/images/prelude-logo.png" alt="Prelude"
+                                            class="w-11 h-11 object-contain rounded-xl shadow-sm border border-theme-eggplant/10">
+                                        <div>
+                                            <h3
+                                                class="text-lg font-semibold text-theme-eggplant transition">
+                                                Prelude</h3>
+                                            <span class="inline-block mt-1 text-theme-eggplant text-xs font-medium">
+                                                solo project &middot; SwiftUI
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <p class="text-sm text-theme-eggplant/70 leading-relaxed">
+                                        A native app built from scratch to visualize personal Spotify listening data
+                                        —
+                                        conceived,
+                                        designed, and shipped independently, end to end.
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="bg-radial-2 p-0.5 rounded-2xl shadow-md">
+                            <a href="https://agcploverhill.com" target="_blank"
+                                class="group hover:-translate-y-1 transition-transform duration-300 block p-6 rounded-2xl bg-theme-white hover:bg-theme-white/95 transition-colors duration-300 shadow-md">
+                                <div class="grid sm:grid-cols-[1fr_1.6fr] gap-4 sm:gap-10 items-start">
+                                    <div class="flex items-start gap-4">
+                                        <img src="public/images/plover.png" alt="AGC Plover Hill"
+                                            class="w-11 h-11 object-contain rounded-xl shadow-sm border border-theme-eggplant/10">
+                                        <div>
+                                            <h3
+                                                class="text-lg font-semibold text-theme-eggplant transition">
+                                                AGC Plover Hill</h3>
+                                            <span class="inline-block mt-1 text-theme-eggplant text-xs font-medium">
+                                                freelance &middot; web
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <p class="text-sm text-theme-eggplant/70 leading-relaxed">
+                                        Freelance web development for a client project, from design through build.
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+
+                    </div>
+                </section>
+
+                <section id="contact">
+                    <div class="mx-auto pb-10 lg:py-20">
+                        <span class="section-label">contact</span>
+
+                        <a href="mailto:charlottebmoche@gmail.com"
+                            class="block mt-4 font-display text-2xl lg:text-5xl text-theme-eggplant hover:text-theme-mauve transition-colors duration-300">
+                            charlottebmoche@gmail.com
+                        </a>
+
+                        <div class="flex gap-4 mt-8">
+                            <a href="https://github.com/charlottemoche" target="_blank"
+                                class="text-sm font-medium bg-theme-cream rounded-full px-5 py-2 hover:bg-theme-sun transition-colors duration-300 flex items-center gap-2 shadow-md">
+                                <img src="public/images/github-mark.png" class="w-4" />
+                                github
+                            </a>
+
+                            <a href="https://www.linkedin.com/in/charlotte-moche/" target="_blank"
+                                class="text-sm font-medium bg-theme-cream rounded-full px-5 py-2 hover:bg-theme-sun transition-colors duration-300 flex items-center gap-2 shadow-md">
+                                <img src="public/images/linkedin-mark.png" class="w-4" />
+                                linkedin
+                            </a>
                         </div>
                     </div>
-                </div>
+                </section>
 
-                <div class="rounded-2xl bg-radial shadow-md">
-                    <div class="bg-theme-white/60 rounded-2xl p-3">
-                        <div
-                            class="text-sm font-bold text-theme-berry pb-2 mb-3 border-b border-theme-eggplant max-w-fit">
-                            backend
-                        </div>
-                        <div class="flex flex-wrap gap-x-3 gap-y-1.5 text-sm text-theme-eggplant/70">
-                            <span>Elixir</span>
-                            <span>Phoenix</span>
-                            <span>Ruby on Rails</span>
-                            <span>Python</span>
-                            <span>REST & GraphQL</span>
-                        </div>
+                <footer class="py-6">
+                    <div class="flex justify-between text-xs text-theme-eggplant/70">
+                        <span>© 2026 charlotte moche</span>
+                        <span>brooklyn, new york</span>
                     </div>
-                </div>
+                </footer>
 
-                <div class="rounded-2xl bg-radial shadow-md">
-                    <div class="bg-theme-white/60 rounded-2xl p-3">
-                        <div
-                            class="text-sm font-bold text-theme-berry pb-2 mb-3 border-b border-theme-eggplant max-w-fit">
-                            tooling
-                        </div>
-                        <div class="flex flex-wrap gap-x-3 gap-y-1.5 text-sm text-theme-eggplant/70">
-                            <span>Claude Code</span>
-                            <span>Codex</span>
-                            <span>Git/GitHub</span>
-                            <span>Sentry</span>
-                            <span>A/B Testing</span>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </section>
-
-        <!-- Selected Work -->
-        <section id="work" class="pb-24">
-            <span class="section-label">selected work</span>
-
-            <div class="mt-6 space-y-6">
-
-                <div class="bg-radial-2 p-0.5 rounded-2xl shadow-md">
-                    <a href="https://zenithhealth.io" target="_blank"
-                        class="group block p-6 rounded-2xl bg-theme-white hover:bg-theme-white/95 transition-colors duration-300 shadow-md">
-                        <div class="grid sm:grid-cols-[1fr_1.6fr] gap-4 sm:gap-10 items-start">
-                            <div class="flex items-start gap-4">
-                                <img src="public/images/zenith.jpeg" alt="Zenith Health"
-                                    class="w-11 h-11 object-contain rounded-xl shadow-sm border border-theme-eggplant/10">
-                                <div>
-                                    <h3
-                                        class="text-lg font-semibold text-theme-eggplant group-hover:text-theme-mauve transition">
-                                        Zenith Health</h3>
-                                    <span class="inline-block mt-1 text-theme-eggplant text-xs font-medium">
-                                        production &middot; maternal health
-                                    </span>
-                                </div>
-                            </div>
-                            <p class="text-sm text-theme-eggplant/70 leading-relaxed">
-                                End-to-end feature ownership across React Native, Phoenix LiveView, and the backend API
-                                layer, including realtime streaming UI for an AI chat assistant.
-                            </p>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="bg-radial-2 p-0.5 rounded-2xl shadow-md">
-                    <a href="https://peek.com/experiences" target="_blank"
-                        class="group block p-6 rounded-2xl bg-theme-white hover:bg-theme-white/95 transition-colors duration-300 shadow-md">
-                        <div class="grid sm:grid-cols-[1fr_1.6fr] gap-4 sm:gap-10 items-start">
-                            <div class="flex items-start gap-4">
-                                <img src="public/images/peek-logo.png" alt="Peek"
-                                    class="w-11 h-11 object-contain rounded-xl shadow-sm border border-theme-eggplant/10">
-                                <div>
-                                    <h3
-                                        class="text-lg font-semibold text-theme-eggplant group-hover:text-theme-mauve transition">
-                                        Peek</h3>
-                                    <span class="inline-block mt-1 text-theme-eggplant text-xs font-medium">
-                                        production &middot; booking software
-                                    </span>
-                                </div>
-                            </div>
-                            <p class="text-sm text-theme-eggplant/70 leading-relaxed">
-                                Led frontend architecture and interaction design for search, filter, and sort — zero to
-                                one,
-                                with direct ownership over technical and design decisions.
-                            </p>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="bg-radial-2 p-0.5 rounded-2xl shadow-md">
-                    <a href="https://preludeapp.co" target="_blank"
-                        class="group block p-6 rounded-2xl bg-theme-white hover:bg-theme-white/95 transition-colors duration-300 shadow-md">
-                        <div class="grid sm:grid-cols-[1fr_1.6fr] gap-4 sm:gap-10 items-start">
-                            <div class="flex items-start gap-4">
-                                <img src="public/images/prelude-logo.png" alt="Prelude"
-                                    class="w-11 h-11 object-contain rounded-xl shadow-sm border border-theme-eggplant/10">
-                                <div>
-                                    <h3
-                                        class="text-lg font-semibold text-theme-eggplant group-hover:text-theme-mauve transition">
-                                        Prelude</h3>
-                                    <span class="inline-block mt-1 text-theme-eggplant text-xs font-medium">
-                                        solo project &middot; SwiftUI
-                                    </span>
-                                </div>
-                            </div>
-                            <p class="text-sm text-theme-eggplant/70 leading-relaxed">
-                                A native app built from scratch to visualize personal Spotify listening data —
-                                conceived,
-                                designed, and shipped independently, end to end.
-                            </p>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="bg-radial-2 p-0.5 rounded-2xl shadow-md">
-                    <a href="https://agcploverhill.com" target="_blank"
-                        class="group block p-6 rounded-2xl bg-theme-white hover:bg-theme-white/95 transition-colors duration-300 shadow-md">
-                        <div class="grid sm:grid-cols-[1fr_1.6fr] gap-4 sm:gap-10 items-start">
-                            <div class="flex items-start gap-4">
-                                <img src="public/images/plover.png" alt="AGC Plover Hill"
-                                    class="w-11 h-11 object-contain rounded-xl shadow-sm border border-theme-eggplant/10">
-                                <div>
-                                    <h3
-                                        class="text-lg font-semibold text-theme-eggplant group-hover:text-theme-mauve transition">
-                                        AGC Plover Hill</h3>
-                                    <span class="inline-block mt-1 text-theme-eggplant text-xs font-medium">
-                                        freelance &middot; web
-                                    </span>
-                                </div>
-                            </div>
-                            <p class="text-sm text-theme-eggplant/70 leading-relaxed">
-                                Freelance web development for a client project, from design through build.
-                            </p>
-                        </div>
-                    </a>
-                </div>
-
-            </div>
-        </section>
-
-    </main>
-
-    <div class="border-t bg-theme-cream/50 backdrop-blur-sm border-theme-eggplant/10">
-        <!-- Contact Section -->
-        <section id="contact">
-            <div class="max-w-[1180px] mx-auto px-6 py-20">
-                <span class="section-label">contact</span>
-
-                <a href="mailto:charlottebmoche@gmail.com"
-                    class="block mt-4 font-display text-2xl lg:text-5xl text-theme-eggplant hover:text-theme-mauve transition-colors duration-300">
-                    charlottebmoche@gmail.com
-                </a>
-
-                <div class="flex gap-4 mt-8">
-                    <a href="https://github.com/charlottemoche" target="_blank"
-                        class="text-sm font-medium bg-theme-cream rounded-full px-5 py-2 hover:bg-theme-sun transition-colors duration-300 flex items-center gap-2 shadow-md">
-                        <img src="public/images/github-mark.png" class="w-4" />
-                        github
-                    </a>
-
-                    <a href="https://www.linkedin.com/in/charlotte-moche/" target="_blank"
-                        class="text-sm font-medium bg-theme-cream rounded-full px-5 py-2 hover:bg-theme-sun transition-colors duration-300 flex items-center gap-2 shadow-md">
-                        <img src="public/images/linkedin-mark.png" class="w-4" />
-                        linkedin
-                    </a>
-                </div>
-            </div>
-        </section>
-
-        <footer class="py-6">
-            <div class="max-w-[1180px] mx-auto px-6 flex justify-between text-xs text-theme-eggplant/70">
-                <span>© 2026 charlotte moche</span>
-                <span>brooklyn, new york</span>
-            </div>
-        </footer>
+            </main>
+        </div>
     </div>
-
 </body>
 
 </html>
