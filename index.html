@@ -106,10 +106,10 @@
         </div>
 
         <div class="col-span-3 pt-10">
-            <main class="mx-auto px-6 lg:px-10">
+            <main class="mx-auto">
 
                 <!-- What I Build With -->
-                <section class="pb-24">
+                <section class="pb-24 px-6 lg:px-10">
                     <span class="section-label">what I build with</span>
 
                     <div class="mt-6 grid sm:grid-cols-3 gap-6">
@@ -168,7 +168,7 @@
                 </section>
 
                 <!-- Selected Work -->
-                <section id="work" class="pb-24">
+                <section id="work" class="pb-24 px-6 lg:px-10">
                     <span class="section-label">selected work</span>
 
                     <div class="mt-6 space-y-6">
@@ -181,8 +181,7 @@
                                         <img src="public/images/zenith.jpeg" alt="Zenith Health"
                                             class="w-11 h-11 object-contain rounded-xl shadow-sm border border-theme-eggplant/10">
                                         <div>
-                                            <h3
-                                                class="text-lg font-semibold text-theme-eggplant transition">
+                                            <h3 class="text-lg font-semibold text-theme-eggplant transition">
                                                 Zenith Health</h3>
                                             <span class="inline-block mt-1 text-theme-eggplant text-xs font-medium">
                                                 production &middot; maternal health
@@ -207,8 +206,7 @@
                                         <img src="public/images/peek-logo.png" alt="Peek"
                                             class="w-11 h-11 object-contain rounded-xl shadow-sm border border-theme-eggplant/10">
                                         <div>
-                                            <h3
-                                                class="text-lg font-semibold text-theme-eggplant transition">
+                                            <h3 class="text-lg font-semibold text-theme-eggplant transition">
                                                 Peek</h3>
                                             <span class="inline-block mt-1 text-theme-eggplant text-xs font-medium">
                                                 production &middot; booking software
@@ -235,8 +233,7 @@
                                         <img src="public/images/prelude-logo.png" alt="Prelude"
                                             class="w-11 h-11 object-contain rounded-xl shadow-sm border border-theme-eggplant/10">
                                         <div>
-                                            <h3
-                                                class="text-lg font-semibold text-theme-eggplant transition">
+                                            <h3 class="text-lg font-semibold text-theme-eggplant transition">
                                                 Prelude</h3>
                                             <span class="inline-block mt-1 text-theme-eggplant text-xs font-medium">
                                                 solo project &middot; SwiftUI
@@ -261,8 +258,7 @@
                                         <img src="public/images/plover.png" alt="AGC Plover Hill"
                                             class="w-11 h-11 object-contain rounded-xl shadow-sm border border-theme-eggplant/10">
                                         <div>
-                                            <h3
-                                                class="text-lg font-semibold text-theme-eggplant transition">
+                                            <h3 class="text-lg font-semibold text-theme-eggplant transition">
                                                 AGC Plover Hill</h3>
                                             <span class="inline-block mt-1 text-theme-eggplant text-xs font-medium">
                                                 freelance &middot; web
@@ -279,37 +275,39 @@
                     </div>
                 </section>
 
-                <section id="contact">
-                    <div class="mx-auto pb-10 lg:py-20">
-                        <span class="section-label">contact</span>
+                <div class="max-lg:bg-radial lg:bg-theme-cream px-6 pt-6 lg:px-10">
+                    <section id="contact">
+                        <div class="mx-auto pb-10 lg:py-20">
+                            <span class="section-label">contact</span>
 
-                        <a href="mailto:charlottebmoche@gmail.com"
-                            class="block mt-4 font-display text-2xl lg:text-5xl text-theme-eggplant hover:text-theme-mauve transition-colors duration-300">
-                            charlottebmoche@gmail.com
-                        </a>
-
-                        <div class="flex gap-4 mt-8">
-                            <a href="https://github.com/charlottemoche" target="_blank"
-                                class="text-sm font-medium bg-theme-cream rounded-full px-5 py-2 hover:bg-theme-sun transition-colors duration-300 flex items-center gap-2 shadow-md">
-                                <img src="public/images/github-mark.png" class="w-4" />
-                                github
+                            <a href="mailto:charlottebmoche@gmail.com"
+                                class="block mt-4 font-display text-2xl lg:text-5xl text-theme-eggplant hover:text-theme-mauve transition-colors duration-300">
+                                charlottebmoche@gmail.com
                             </a>
 
-                            <a href="https://www.linkedin.com/in/charlotte-moche/" target="_blank"
-                                class="text-sm font-medium bg-theme-cream rounded-full px-5 py-2 hover:bg-theme-sun transition-colors duration-300 flex items-center gap-2 shadow-md">
-                                <img src="public/images/linkedin-mark.png" class="w-4" />
-                                linkedin
-                            </a>
+                            <div class="flex gap-4 mt-4 lg:mt-8">
+                                <a href="https://github.com/charlottemoche" target="_blank"
+                                    class="text-sm font-medium bg-theme-cream rounded-full px-5 py-2 hover:bg-theme-sun transition-colors duration-300 flex items-center gap-2 shadow-md">
+                                    <img src="public/images/github-mark.png" class="w-4" />
+                                    github
+                                </a>
+
+                                <a href="https://www.linkedin.com/in/charlotte-moche/" target="_blank"
+                                    class="text-sm font-medium bg-theme-cream rounded-full px-5 py-2 hover:bg-theme-sun transition-colors duration-300 flex items-center gap-2 shadow-md">
+                                    <img src="public/images/linkedin-mark.png" class="w-4" />
+                                    linkedin
+                                </a>
+                            </div>
                         </div>
-                    </div>
-                </section>
+                    </section>
 
-                <footer class="py-6">
-                    <div class="flex justify-between text-xs text-theme-eggplant/70">
-                        <span>© 2026 charlotte moche</span>
-                        <span>brooklyn, new york</span>
-                    </div>
-                </footer>
+                    <footer class="py-6">
+                        <div class="flex justify-between text-xs text-theme-eggplant/70">
+                            <span>© 2026 charlotte moche</span>
+                            <span>brooklyn, new york</span>
+                        </div>
+                    </footer>
+                </div>
 
             </main>
         </div>
