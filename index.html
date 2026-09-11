@@ -46,31 +46,9 @@
     <!-- Background -->
     <div class="-z-10 inset-0 fixed bg-theme-cream"></div>
 
-    <!-- Navigation -->
-    <nav class="sticky top-0 z-40 h-20 bg-theme-cream shadow">
-        <div class="mx-auto flex items-center justify-between my-auto h-full px-6 lg:px-9">
-            <a href="/" class="group flex items-center gap-2">
-                <div
-                    class="w-8 h-8 rounded-lg bg-theme-eggplant text-theme-cream font-display text-lg flex items-center justify-center group-hover:bg-theme-mauve transition">
-                    cm
-                </div>
-            </a>
-
-            <div class="flex items-center gap-6">
-                <a href="#work"
-                    class="text-sm font-medium text-theme-eggplant transition-colors hover:text-theme-berry">work</a>
-                <a href="#contact"
-                    class="text-sm font-medium text-theme-eggplant transition-colors hover:text-theme-berry">contact</a>
-                <a href="public/Resume.pdf" download
-                    class="text-sm font-medium bg-theme-mauve text-theme-cream hover:text-theme-eggplant rounded-full px-5 py-2 hover:bg-theme-tangerine transition-colors duration-300 whitespace-nowrap shadow-md">
-                    resume
-                </a>
-            </div>
-        </div>
-    </nav>
 
     <div class="lg:grid lg:grid-cols-5">
-        <div class="lg:sticky lg:top-20 h-[calc(100vh-5rem)] flex items-center bg-radial col-span-2">
+        <div class="lg:sticky top-0 h-screen flex items-center bg-radial col-span-2">
             <header class="px-6 lg:px-10 pb-20">
                 <div class="flex flex-col-reverse gap-10 lg:grid lg:grid-cols-[1fr_auto] lg:items-center">
 
@@ -105,8 +83,23 @@
             </header>
         </div>
 
-        <div class="col-span-3 pt-10">
-            <main class="mx-auto">
+        <div class="col-span-3">
+            <!-- Navigation -->
+            <nav class="fixed w-full lg:sticky top-0 z-40 h-20 bg-theme-cream shadow">
+                <div class="mx-auto flex items-center justify-end my-auto h-full px-6 lg:px-9">
+                    <div class="flex items-center gap-6">
+                        <a href="#work"
+                            class="text-sm font-medium text-theme-eggplant transition-colors hover:text-theme-berry">work</a>
+                        <a href="#contact"
+                            class="text-sm font-medium text-theme-eggplant transition-colors hover:text-theme-berry">contact</a>
+                        <a href="public/Resume.pdf" download
+                            class="text-sm font-medium bg-theme-mauve text-theme-cream hover:text-theme-eggplant rounded-full px-5 py-2 hover:bg-theme-tangerine transition-colors duration-300 whitespace-nowrap shadow-md">
+                            resume
+                        </a>
+                    </div>
+                </div>
+            </nav>
+            <main class="mx-auto pt-10">
 
                 <!-- What I Build With -->
                 <section class="pb-24 px-6 lg:px-10">
