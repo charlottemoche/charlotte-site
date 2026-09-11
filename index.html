@@ -24,26 +24,22 @@
         }
 
         .bg-radial {
-            background:
-                radial-gradient(circle at 15% 15%, #978bcf40 0%, transparent 45%),
-                radial-gradient(circle at 85% 20%, #542c5630 0%, transparent 45%),
-                radial-gradient(circle at 90% 85%, #adbb9540 0%, transparent 40%),
-                #f2f4ed;
+            background: linear-gradient(160deg, #95a3ea60 0%, #b97a8b60 32%, #f3917c60 62%, #fec28880 100%);
         }
 
         .section-label {
             font-family: 'Instrument Serif', serif;
             font-style: italic;
             font-size: 22px;
-            color: #7a5c66;
+            color: #360139;
         }
     </style>
 </head>
 
-<body class="text-theme-forest selection:bg-theme-perriwinkle selection:text-theme-eggplant">
+<body class="text-theme-eggplant selection:bg-theme-mauve selection:text-theme-cream">
 
-    <!-- Ambient Glow Overlay -->
-    <div class="-z-10 inset-0 fixed bg-radial blur-2xl"></div>
+    <!-- Sunset Background -->
+    <div class="-z-10 inset-0 fixed bg-radial"></div>
 
     <!-- Navigation -->
     <nav class="max-w-[1180px] mx-auto px-6 h-20 flex items-center justify-between">
@@ -55,11 +51,11 @@
         </a>
 
         <div class="flex items-center gap-6">
-            <a href="#work" class="text-sm font-medium text-theme-forest hover:text-theme-mauve transition">work</a>
+            <a href="#work" class="text-sm font-medium text-theme-eggplant hover:text-theme-cream transition">work</a>
             <a href="#contact"
-                class="text-sm font-medium text-theme-forest hover:text-theme-mauve transition">contact</a>
+                class="text-sm font-medium text-theme-eggplant hover:text-theme-cream transition">contact</a>
             <a href="public/Resume.pdf" download
-                class="text-sm font-medium bg-theme-eggplant text-theme-cream rounded-full px-5 py-2 hover:bg-theme-mauve transition whitespace-nowrap shadow-sm">
+                class="text-sm font-medium bg-theme-mauve text-theme-cream hover:text-theme-eggplant rounded-full px-5 py-2 hover:bg-theme-tangerine transition-colors duration-300 whitespace-nowrap shadow-md">
                 resume
             </a>
         </div>
@@ -74,13 +70,11 @@
                     charlotte moche
                 </h1>
 
-                <p class="text-sm font-semibold py-2 max-w-fit text-theme-mauve flex items-center gap-2">
+                <p class="text-sm font-semibold py-2 max-w-fit text-theme-berry flex items-center gap-2">
                     product engineer &middot; brooklyn
                 </p>
 
-                <!-- Glowing Bio Card -->
-
-                <p class="text-base lg:text-[17px] text-theme-wood max-w-2xl leading-relaxed relative z-10 pt-2">
+                <p class="text-base lg:text-[17px] text-theme-eggplant/80 max-w-2xl leading-relaxed relative z-10 pt-2">
                     Frontend-leaning full stack engineer with 6 years of product experience. I like building things
                     and figuring out how they should work along the way. I naturally gravitate toward the frontend
                     and the parts of a product that people interact with. My fine-arts background means I care a lot
@@ -89,13 +83,9 @@
 
             </div>
 
-            <!-- Avatar with Vibrant Glow Ring -->
             <div class="relative justify-self-start lg:justify-self-end">
-                <div
-                    class="absolute -inset-1 rounded-full bg-gradient-to-tr from-theme-perriwinkle via-theme-mauve to-theme-matcha opacity-70 blur-md hidden lg:block">
-                </div>
                 <img src="public/images/me.png" alt="Charlotte Moche"
-                    class="relative w-36 h-36 lg:w-56 lg:h-56 object-cover rounded-full ring-4 ring-theme-cream/90 shadow-xl" />
+                    class="relative w-36 h-36 lg:w-56 lg:h-56 object-cover rounded-full shadow-xl" />
             </div>
 
         </div>
@@ -109,12 +99,11 @@
 
             <div class="mt-6 grid sm:grid-cols-3 gap-6">
 
-                <div class="p-5 rounded-2xl bg-theme-cream/40 shadow-sm border border-theme-forest/10">
-                    <div
-                        class="text-sm font-bold text-theme-eggplant pb-2 mb-3 border-b-2 border-theme-perriwinkle max-w-fit">
+                <div class="p-5 rounded-2xl bg-theme-cream/50 shadow-md">
+                    <div class="text-sm font-bold text-theme-berry pb-2 mb-3 border-b border-theme-eggplant max-w-fit">
                         frontend
                     </div>
-                    <div class="flex flex-wrap gap-x-3 gap-y-1.5 text-sm text-theme-wood">
+                    <div class="flex flex-wrap gap-x-3 gap-y-1.5 text-sm text-theme-eggplant/70">
                         <span>TypeScript</span>
                         <span>JavaScript</span>
                         <span>React</span>
@@ -125,12 +114,11 @@
                     </div>
                 </div>
 
-                <div class="p-5 rounded-2xl bg-theme-cream/40 shadow-sm border border-theme-forest/10">
-                    <div
-                        class="text-sm font-bold text-theme-eggplant pb-2 mb-3 border-b-2 border-theme-mauve max-w-fit">
+                <div class="p-5 rounded-2xl bg-theme-cream/50 shadow-md">
+                    <div class="text-sm font-bold text-theme-berry pb-2 mb-3 border-b border-theme-eggplant max-w-fit">
                         backend
                     </div>
-                    <div class="flex flex-wrap gap-x-3 gap-y-1.5 text-sm text-theme-wood">
+                    <div class="flex flex-wrap gap-x-3 gap-y-1.5 text-sm text-theme-eggplant/70">
                         <span>Elixir</span>
                         <span>Phoenix</span>
                         <span>Ruby on Rails</span>
@@ -139,12 +127,11 @@
                     </div>
                 </div>
 
-                <div class="p-5 rounded-2xl bg-theme-cream/40 shadow-sm border border-theme-forest/10">
-                    <div
-                        class="text-sm font-bold text-theme-eggplant pb-2 mb-3 border-b-2 border-theme-matcha max-w-fit">
+                <div class="p-5 rounded-2xl bg-theme-cream/50 shadow-md">
+                    <div class="text-sm font-bold text-theme-berry pb-2 mb-3 border-b border-theme-eggplant max-w-fit">
                         tooling
                     </div>
-                    <div class="flex flex-wrap gap-x-3 gap-y-1.5 text-sm text-theme-wood">
+                    <div class="flex flex-wrap gap-x-3 gap-y-1.5 text-sm text-theme-eggplant/70">
                         <span>Claude Code</span>
                         <span>Codex</span>
                         <span>Git/GitHub</span>
@@ -156,18 +143,18 @@
             </div>
         </section>
 
-        <!-- Selected Work (Consistent Base with Cohesive Color Touches) -->
+        <!-- Selected Work -->
         <section id="work" class="pb-24">
             <span class="section-label">selected work</span>
 
             <div class="mt-6 space-y-4">
 
                 <a href="https://zenithhealth.io" target="_blank"
-                    class="group block p-6 rounded-2xl bg-theme-cream/40 backdrop-blur-md border-2 border-theme-mauve/20 hover:border-theme-perriwinkle hover:bg-theme-cream/80 transition duration-300 shadow-sm">
+                    class="group block p-6 rounded-2xl bg-theme-cream/60 hover:bg-theme-cream/90 border-2 border-transparent hover:border-theme-mauve transition duration-300 shadow-md">
                     <div class="grid sm:grid-cols-[1fr_1.6fr] gap-4 sm:gap-10 items-start">
                         <div class="flex items-start gap-4">
                             <img src="public/images/zenith.jpeg" alt="Zenith Health"
-                                class="w-11 h-11 object-contain rounded-xl shadow-sm border border-theme-forest/10">
+                                class="w-11 h-11 object-contain rounded-xl shadow-sm border border-theme-eggplant/10">
                             <div>
                                 <h3
                                     class="text-lg font-semibold text-theme-eggplant group-hover:text-theme-mauve transition">
@@ -177,7 +164,7 @@
                                 </span>
                             </div>
                         </div>
-                        <p class="text-sm text-theme-wood leading-relaxed">
+                        <p class="text-sm text-theme-eggplant/70 leading-relaxed">
                             End-to-end feature ownership across React Native, Phoenix LiveView, and the backend API
                             layer, including realtime streaming UI for an AI chat assistant.
                         </p>
@@ -185,11 +172,11 @@
                 </a>
 
                 <a href="https://peek.com/experiences" target="_blank"
-                    class="group block p-6 rounded-2xl bg-theme-cream/40 backdrop-blur-md border-2 border-theme-mauve/20 hover:border-theme-mauve hover:bg-theme-cream/80 transition duration-300 shadow-sm">
+                    class="group block p-6 rounded-2xl bg-theme-cream/60 hover:bg-theme-cream/90 border-2 border-transparent hover:border-theme-mauve transition duration-300 shadow-md">
                     <div class="grid sm:grid-cols-[1fr_1.6fr] gap-4 sm:gap-10 items-start">
                         <div class="flex items-start gap-4">
                             <img src="public/images/peek-logo.png" alt="Peek"
-                                class="w-11 h-11 object-contain rounded-xl shadow-sm border border-theme-forest/10">
+                                class="w-11 h-11 object-contain rounded-xl shadow-sm border border-theme-eggplant/10">
                             <div>
                                 <h3
                                     class="text-lg font-semibold text-theme-eggplant group-hover:text-theme-mauve transition">
@@ -199,7 +186,7 @@
                                 </span>
                             </div>
                         </div>
-                        <p class="text-sm text-theme-wood leading-relaxed">
+                        <p class="text-sm text-theme-eggplant/70 leading-relaxed">
                             Led frontend architecture and interaction design for search, filter, and sort — zero to one,
                             with direct ownership over technical and design decisions.
                         </p>
@@ -207,11 +194,11 @@
                 </a>
 
                 <a href="https://preludeapp.co" target="_blank"
-                    class="group block p-6 rounded-2xl bg-theme-cream/40 backdrop-blur-md border-2 border-theme-mauve/20 hover:border-theme-perriwinkle hover:bg-theme-cream/80 transition duration-300 shadow-sm">
+                    class="group block p-6 rounded-2xl bg-theme-cream/60 hover:bg-theme-cream/90 border-2 border-transparent hover:border-theme-mauve transition duration-300 shadow-md">
                     <div class="grid sm:grid-cols-[1fr_1.6fr] gap-4 sm:gap-10 items-start">
                         <div class="flex items-start gap-4">
                             <img src="public/images/prelude-logo.png" alt="Prelude"
-                                class="w-11 h-11 object-contain rounded-xl shadow-sm border border-theme-forest/10">
+                                class="w-11 h-11 object-contain rounded-xl shadow-sm border border-theme-eggplant/10">
                             <div>
                                 <h3
                                     class="text-lg font-semibold text-theme-eggplant group-hover:text-theme-mauve transition">
@@ -221,7 +208,7 @@
                                 </span>
                             </div>
                         </div>
-                        <p class="text-sm text-theme-wood leading-relaxed">
+                        <p class="text-sm text-theme-eggplant/70 leading-relaxed">
                             A native app built from scratch to visualize personal Spotify listening data — conceived,
                             designed, and shipped independently, end to end.
                         </p>
@@ -229,11 +216,11 @@
                 </a>
 
                 <a href="https://agcploverhill.com" target="_blank"
-                    class="group block p-6 rounded-2xl bg-theme-cream/40 backdrop-blur-md border-2 border-theme-mauve/20 hover:border-theme-matcha hover:bg-theme-cream/80 transition duration-300 shadow-sm">
+                    class="group block p-6 rounded-2xl bg-theme-cream/60 hover:bg-theme-cream/90 border-2 border-transparent hover:border-theme-mauve transition duration-300 shadow-md">
                     <div class="grid sm:grid-cols-[1fr_1.6fr] gap-4 sm:gap-10 items-start">
                         <div class="flex items-start gap-4">
                             <img src="public/images/plover.png" alt="AGC Plover Hill"
-                                class="w-11 h-11 object-contain rounded-xl shadow-sm border border-theme-forest/10">
+                                class="w-11 h-11 object-contain rounded-xl shadow-sm border border-theme-eggplant/10">
                             <div>
                                 <h3
                                     class="text-lg font-semibold text-theme-eggplant group-hover:text-theme-mauve transition">
@@ -243,7 +230,7 @@
                                 </span>
                             </div>
                         </div>
-                        <p class="text-sm text-theme-wood leading-relaxed">
+                        <p class="text-sm text-theme-eggplant/70 leading-relaxed">
                             Freelance web development for a client project, from design through build.
                         </p>
                     </div>
@@ -255,24 +242,24 @@
     </main>
 
     <!-- Contact Section -->
-    <section id="contact" class="border-t border-theme-mauve/20 bg-theme-cream/30 backdrop-blur-md">
+    <section id="contact" class="border-t border-theme-mauve/30">
         <div class="max-w-[1180px] mx-auto px-6 py-20">
             <span class="section-label">contact</span>
 
             <a href="mailto:charlottebmoche@gmail.com"
-                class="block mt-4 font-display text-3xl lg:text-5xl text-theme-eggplant hover:text-theme-mauve transition">
+                class="block mt-4 font-display text-3xl lg:text-5xl text-theme-eggplant hover:text-theme-mauve transition-colors duration-300">
                 charlottebmoche@gmail.com
             </a>
 
             <div class="flex gap-4 mt-8">
                 <a href="https://github.com/charlottemoche" target="_blank"
-                    class="text-sm font-medium bg-theme-cream rounded-full px-5 py-2 ring-1 ring-theme-forest/15 hover:ring-theme-perriwinkle transition flex items-center gap-2 shadow-sm">
+                    class="text-sm font-medium bg-theme-cream rounded-full px-5 py-2 hover:bg-theme-sun transition-colors duration-300 flex items-center gap-2 shadow-md">
                     <img src="public/images/github-mark.png" class="w-4" />
                     github
                 </a>
 
                 <a href="https://www.linkedin.com/in/charlotte-moche/" target="_blank"
-                    class="text-sm font-medium bg-theme-cream rounded-full px-5 py-2 ring-1 ring-theme-forest/15 hover:ring-theme-perriwinkle transition flex items-center gap-2 shadow-sm">
+                    class="text-sm font-medium bg-theme-cream rounded-full px-5 py-2 hover:bg-theme-sun transition-colors duration-300 flex items-center gap-2 shadow-md">
                     <img src="public/images/linkedin-mark.png" class="w-4" />
                     linkedin
                 </a>
@@ -280,8 +267,8 @@
         </div>
     </section>
 
-    <footer class="py-6 border-t border-theme-forest/10">
-        <div class="max-w-[1180px] mx-auto px-6 flex justify-between text-xs text-theme-forest/60">
+    <footer class="py-6">
+        <div class="max-w-[1180px] mx-auto px-6 flex justify-between text-xs text-theme-eggplant/70">
             <span>© 2026 charlotte moche</span>
             <span>brooklyn, new york</span>
         </div>

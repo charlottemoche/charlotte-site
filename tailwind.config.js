@@ -1,12 +1,13 @@
 /** @type {import('tailwindcss').Config} */
+
 let theme = {
-  perriwinkle: '#978bcf',
-  mauve: '#542c56',
+  perriwinkle: '#95a3ea',
+  mauve: '#bd4e68',
+  berry: '#95334a',
   eggplant: '#360139',
-  cream: '#f2f4ed',
-  matcha: '#adbb95',
-  forest: '#375335',
-  wood: '#1f2d22'
+  cream: '#f4f4ed',
+  sun: '#fec988',
+  tangerine: '#fc8b5b',
 }
 
 module.exports = {
