@@ -9,103 +9,126 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400..600&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400..600&display=swap"
+        rel="stylesheet">
 
-    <link href="/public/styles.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'theme-perriwinkle': '#978bcf',
+                        'theme-mauve': '#542c56',
+                        'theme-eggplant': '#360139',
+                        'theme-cream': '#f2f4ed',
+                        'theme-matcha': '#adbb95',
+                        'theme-forest': '#375335',
+                        'theme-wood': '#1f2d22'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['Instrument Serif', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
 
     <style>
-        body {
-            font-family: 'Inter', sans-serif;
-        }
-
-        .font-display {
-            font-family: 'Instrument Serif', serif;
-        }
-
-        .bg-radial {
-            background: radial-gradient(circle at 50% 50%, #37533599 0%, #f2f4ed 70%);
+        /* Ambient Radial Multi-Color Background */
+        .bg-multi-radial {
+            background:
+                radial-gradient(circle at 15% 20%, rgba(151, 139, 207, 0.22) 0%, transparent 45%),
+                radial-gradient(circle at 85% 30%, rgba(84, 44, 86, 0.18) 0%, transparent 40%),
+                radial-gradient(circle at 50% 65%, rgba(173, 187, 149, 0.35) 0%, transparent 50%),
+                radial-gradient(circle at 50% 50%, #37533580 0%, #f2f4ed 75%);
         }
 
         .section-label {
             font-family: 'Instrument Serif', serif;
             font-style: italic;
-            font-size: 22px;
-            color: #7a5c66;
+            font-size: 24px;
+            color: #542c56;
         }
     </style>
-
 </head>
 
-<body class="text-theme-forest z-20">
-    <div class="-z-10 inset-0 fixed bg-radial blur-2xl"></div>
+<body class="text-theme-forest selection:bg-theme-perriwinkle selection:text-theme-eggplant">
 
-    <nav>
-        <div class="max-w-[1180px] mx-auto px-6 h-16 flex items-center justify-between">
+    <!-- Ambient Glow Overlay -->
+    <div class="-z-10 inset-0 fixed bg-multi-radial blur-2xl"></div>
 
-            <a href="/">
-                <img src="/favicon.ico" class="w-8 aspect-square rounded-lg">
-            </a>
-
-            <div class="flex items-center gap-6">
-
-                <a href="#work" class="text-sm font-medium text-theme-forest hover:text-theme-mauve transition">
-                    work
-                </a>
-
-                <a href="#contact" class="text-sm font-medium text-theme-forest hover:text-theme-mauve transition">
-                    contact
-                </a>
-
-                <a href="public/Resume.pdf" download
-                    class="text-sm font-medium bg-theme-eggplant text-theme-cream rounded-full px-4 py-2 hover:bg-theme-mauve transition whitespace-nowrap">
-                    resume
-                </a>
-
+    <!-- Navigation -->
+    <nav class="max-w-[1180px] mx-auto px-6 h-20 flex items-center justify-between">
+        <a href="/" class="group flex items-center gap-2">
+            <div
+                class="w-8 h-8 rounded-lg bg-theme-eggplant text-theme-cream font-display text-lg flex items-center justify-center group-hover:bg-theme-mauve transition">
+                cm
             </div>
+        </a>
 
+        <div class="flex items-center gap-6">
+            <a href="#work" class="text-sm font-medium text-theme-forest hover:text-theme-mauve transition">work</a>
+            <a href="#contact"
+                class="text-sm font-medium text-theme-forest hover:text-theme-mauve transition">contact</a>
+            <a href="public/Resume.pdf" download
+                class="text-sm font-medium bg-theme-eggplant text-theme-cream rounded-full px-5 py-2 hover:bg-theme-mauve transition whitespace-nowrap shadow-sm">
+                resume
+            </a>
         </div>
     </nav>
 
-
-    <header class="max-w-[1180px] mx-auto px-6 pt-12 lg:pt-24 pb-24">
-
+    <!-- Header / Hero -->
+    <header class="max-w-[1180px] mx-auto px-6 pt-10 lg:pt-16 pb-20">
         <div class="flex flex-col-reverse gap-10 lg:grid lg:grid-cols-[1fr_auto] lg:items-center">
 
             <div>
-                <h1 class="font-display text-6xl lg:text-8xl leading-[0.95] text-theme-mauve">
+                <h1 class="font-display text-5xl lg:text-8xl leading-[0.95] text-theme-eggplant">
                     charlotte moche
                 </h1>
-                <p class="text-sm font-semibold py-3 mb-3 border-b border-theme-forest/20 max-w-fit">
+
+                <p class="text-sm font-semibold py-2 max-w-fit text-theme-mauve flex items-center gap-2">
                     product engineer &middot; brooklyn
                 </p>
-                <p class="mt-6 text-base lg:text-[17px] text-theme-wood max-w-2xl leading-relaxed">
+
+                <!-- Glowing Bio Card -->
+
+                <p class="text-base lg:text-[17px] text-theme-wood max-w-2xl leading-relaxed relative z-10 pt-2">
                     Frontend-leaning full stack engineer with 6 years of product experience. I like building things
                     and figuring out how they should work along the way. I naturally gravitate toward the frontend
                     and the parts of a product that people interact with. My fine-arts background means I care a lot
-                    about the details of how something looks, feels, and behaves. I also really enjoy working with
-                    others, from bouncing ideas around, solving problems, and taking something from the first idea
-                    to a finished product.
+                    about the details of how something looks, feels, and behaves.
                 </p>
+
             </div>
 
-            <img src="public/images/me.png" alt="Charlotte Moche"
-                class="w-36 h-36 lg:w-56 lg:h-56 object-cover rounded-full justify-self-start lg:justify-self-end" />
+            <!-- Avatar with Vibrant Glow Ring -->
+            <div class="relative justify-self-start lg:justify-self-end">
+                <div
+                    class="absolute -inset-1 rounded-full bg-gradient-to-tr from-theme-perriwinkle via-theme-mauve to-theme-matcha opacity-70 blur-md hidden lg:block">
+                </div>
+                <img src="public/images/me.png" alt="Charlotte Moche"
+                    class="relative w-36 h-36 lg:w-56 lg:h-56 object-cover rounded-full ring-4 ring-theme-cream/90 shadow-xl" />
+            </div>
 
         </div>
-
     </header>
-
 
     <main class="max-w-[1180px] mx-auto px-6">
 
+        <!-- What I Build With -->
         <section class="pb-24">
-
             <span class="section-label">what I build with</span>
 
-            <div class="mt-6 grid sm:grid-cols-3 gap-8">
+            <div class="mt-6 grid sm:grid-cols-3 gap-6">
 
-                <div>
-                    <div class="text-sm font-semibold pb-3 mb-3 border-b border-theme-forest/20 max-w-fit">frontend
+                <div
+                    class="p-5 rounded-2xl bg-theme-cream/50 backdrop-blur-sm border border-theme-perriwinkle/40 shadow-sm">
+                    <div
+                        class="text-sm font-bold text-theme-eggplant pb-2 mb-3 border-b-2 border-theme-perriwinkle max-w-fit">
+                        frontend
                     </div>
                     <div class="flex flex-wrap gap-x-3 gap-y-1.5 text-sm text-theme-wood">
                         <span>TypeScript</span>
@@ -118,8 +141,10 @@
                     </div>
                 </div>
 
-                <div>
-                    <div class="text-sm font-semibold pb-3 mb-3 border-b border-theme-forest/20 max-w-fit">backend
+                <div class="p-5 rounded-2xl bg-theme-cream/50 backdrop-blur-sm border border-theme-mauve/30 shadow-sm">
+                    <div
+                        class="text-sm font-bold text-theme-eggplant pb-2 mb-3 border-b-2 border-theme-mauve max-w-fit">
+                        backend
                     </div>
                     <div class="flex flex-wrap gap-x-3 gap-y-1.5 text-sm text-theme-wood">
                         <span>Elixir</span>
@@ -130,8 +155,10 @@
                     </div>
                 </div>
 
-                <div>
-                    <div class="text-sm font-semibold pb-3 mb-3 border-b border-theme-forest/20 max-w-fit">tooling
+                <div class="p-5 rounded-2xl bg-theme-cream/50 backdrop-blur-sm border border-theme-matcha/50 shadow-sm">
+                    <div
+                        class="text-sm font-bold text-theme-eggplant pb-2 mb-3 border-b-2 border-theme-matcha max-w-fit">
+                        tooling
                     </div>
                     <div class="flex flex-wrap gap-x-3 gap-y-1.5 text-sm text-theme-wood">
                         <span>Claude Code</span>
@@ -143,118 +170,138 @@
                 </div>
 
             </div>
-
         </section>
 
-
+        <!-- Selected Work (Consistent Base with Cohesive Color Touches) -->
         <section id="work" class="pb-24">
-
             <span class="section-label">selected work</span>
 
-            <div class="mt-2 lg:mt-6 divide-y divide-theme-forest/10">
+            <div class="mt-6 space-y-4">
 
                 <a href="https://zenithhealth.io" target="_blank"
-                    class="group grid sm:grid-cols-[1fr_1.6fr] gap-4 sm:gap-10 py-8 hover:bg-theme-cream/40 -mx-4 px-4 transition rounded-lg">
-                    <div class="flex items-start gap-4">
-                        <img src="public/images/zenith.jpeg" alt="Zenith Health"
-                            class="w-10 h-10 object-contain rounded-lg mt-0.5">
-                        <div>
-                            <h3 class="text-lg font-semibold text-theme-eggplant">Zenith Health</h3>
-                            <p class="text-xs text-theme-forest mt-0.5">production, maternal health</p>
+                    class="group block p-6 rounded-2xl bg-theme-cream/40 backdrop-blur-md border border-theme-forest/15 hover:border-theme-perriwinkle hover:bg-theme-cream/80 transition duration-300 shadow-sm">
+                    <div class="grid sm:grid-cols-[1fr_1.6fr] gap-4 sm:gap-10 items-start">
+                        <div class="flex items-start gap-4">
+                            <img src="public/images/zenith.jpeg" alt="Zenith Health"
+                                class="w-11 h-11 object-contain rounded-xl shadow-sm border border-theme-forest/10">
+                            <div>
+                                <h3
+                                    class="text-lg font-semibold text-theme-eggplant group-hover:text-theme-mauve transition">
+                                    Zenith Health</h3>
+                                <span
+                                    class="inline-block mt-1 text-theme-eggplant text-xs font-medium">
+                                    production &middot; maternal health
+                                </span>
+                            </div>
                         </div>
+                        <p class="text-sm text-theme-wood leading-relaxed">
+                            End-to-end feature ownership across React Native, Phoenix LiveView, and the backend API
+                            layer, including realtime streaming UI for an AI chat assistant.
+                        </p>
                     </div>
-                    <p class="text-sm text-theme-wood leading-relaxed">
-                        End-to-end feature ownership across React Native, Phoenix LiveView, and the backend API
-                        layer, including realtime streaming UI for an AI chat assistant.
-                    </p>
                 </a>
 
                 <a href="https://peek.com/experiences" target="_blank"
-                    class="group grid sm:grid-cols-[1fr_1.6fr] gap-4 sm:gap-10 py-8 hover:bg-theme-cream/40 -mx-4 px-4 transition rounded-lg">
-                    <div class="flex items-start gap-4">
-                        <img src="public/images/peek-logo.png" alt="Peek"
-                            class="w-10 h-10 object-contain rounded-lg mt-0.5">
-                        <div>
-                            <h3 class="text-lg font-semibold text-theme-eggplant">Peek</h3>
-                            <p class="text-xs text-theme-forest mt-0.5">production, booking software</p>
+                    class="group block p-6 rounded-2xl bg-theme-cream/40 backdrop-blur-md border border-theme-forest/15 hover:border-theme-mauve hover:bg-theme-cream/80 transition duration-300 shadow-sm">
+                    <div class="grid sm:grid-cols-[1fr_1.6fr] gap-4 sm:gap-10 items-start">
+                        <div class="flex items-start gap-4">
+                            <img src="public/images/peek-logo.png" alt="Peek"
+                                class="w-11 h-11 object-contain rounded-xl shadow-sm border border-theme-forest/10">
+                            <div>
+                                <h3
+                                    class="text-lg font-semibold text-theme-eggplant group-hover:text-theme-mauve transition">
+                                    Peek</h3>
+                                <span
+                                    class="inline-block mt-1 text-theme-eggplant text-xs font-medium">
+                                    production &middot; booking software
+                                </span>
+                            </div>
                         </div>
+                        <p class="text-sm text-theme-wood leading-relaxed">
+                            Led frontend architecture and interaction design for search, filter, and sort — zero to one,
+                            with direct ownership over technical and design decisions.
+                        </p>
                     </div>
-                    <p class="text-sm text-theme-wood leading-relaxed">
-                        Led frontend architecture and interaction design for search, filter, and sort — zero to one,
-                        with direct ownership over technical and design decisions.
-                    </p>
                 </a>
 
                 <a href="https://preludeapp.co" target="_blank"
-                    class="group grid sm:grid-cols-[1fr_1.6fr] gap-4 sm:gap-10 py-8 hover:bg-theme-cream/40 -mx-4 px-4 transition rounded-lg">
-                    <div class="flex items-start gap-4">
-                        <img src="public/images/prelude-logo.png" alt="Prelude"
-                            class="w-10 h-10 object-contain rounded-lg mt-0.5">
-                        <div>
-                            <h3 class="text-lg font-semibold text-theme-eggplant">Prelude</h3>
-                            <p class="text-xs text-theme-forest mt-0.5">solo project, SwiftUI</p>
+                    class="group block p-6 rounded-2xl bg-theme-cream/40 backdrop-blur-md border border-theme-forest/15 hover:border-theme-perriwinkle hover:bg-theme-cream/80 transition duration-300 shadow-sm">
+                    <div class="grid sm:grid-cols-[1fr_1.6fr] gap-4 sm:gap-10 items-start">
+                        <div class="flex items-start gap-4">
+                            <img src="public/images/prelude-logo.png" alt="Prelude"
+                                class="w-11 h-11 object-contain rounded-xl shadow-sm border border-theme-forest/10">
+                            <div>
+                                <h3
+                                    class="text-lg font-semibold text-theme-eggplant group-hover:text-theme-mauve transition">
+                                    Prelude</h3>
+                                <span
+                                    class="inline-block mt-1 text-theme-eggplant text-xs font-medium">
+                                    solo project &middot; SwiftUI
+                                </span>
+                            </div>
                         </div>
+                        <p class="text-sm text-theme-wood leading-relaxed">
+                            A native app built from scratch to visualize personal Spotify listening data — conceived,
+                            designed, and shipped independently, end to end.
+                        </p>
                     </div>
-                    <p class="text-sm text-theme-wood leading-relaxed">
-                        A native app built from scratch to visualize personal Spotify listening data — conceived,
-                        designed, and shipped independently, end to end.
-                    </p>
                 </a>
 
                 <a href="https://agcploverhill.com" target="_blank"
-                    class="group grid sm:grid-cols-[1fr_1.6fr] gap-4 sm:gap-10 py-8 hover:bg-theme-cream/40 -mx-4 px-4 transition rounded-lg">
-                    <div class="flex items-start gap-4">
-                        <img src="public/images/plover.png" alt="AGC Plover Hill"
-                            class="w-10 h-10 object-contain rounded-lg mt-0.5">
-                        <div>
-                            <h3 class="text-lg font-semibold text-theme-eggplant">AGC Plover Hill</h3>
-                            <p class="text-xs text-theme-forest mt-0.5">freelance, web</p>
+                    class="group block p-6 rounded-2xl bg-theme-cream/40 backdrop-blur-md border border-theme-forest/15 hover:border-theme-matcha hover:bg-theme-cream/80 transition duration-300 shadow-sm">
+                    <div class="grid sm:grid-cols-[1fr_1.6fr] gap-4 sm:gap-10 items-start">
+                        <div class="flex items-start gap-4">
+                            <img src="public/images/plover.png" alt="AGC Plover Hill"
+                                class="w-11 h-11 object-contain rounded-xl shadow-sm border border-theme-forest/10">
+                            <div>
+                                <h3
+                                    class="text-lg font-semibold text-theme-eggplant group-hover:text-theme-mauve transition">
+                                    AGC Plover Hill</h3>
+                                <span
+                                    class="inline-block mt-1 text-theme-eggplant text-xs font-medium">
+                                    freelance &middot; web
+                                </span>
+                            </div>
                         </div>
+                        <p class="text-sm text-theme-wood leading-relaxed">
+                            Freelance web development for a client project, from design through build.
+                        </p>
                     </div>
-                    <p class="text-sm text-theme-wood leading-relaxed">
-                        Freelance web development for a client project, from design through build.
-                    </p>
                 </a>
 
             </div>
-
         </section>
 
     </main>
 
-
-    <section id="contact" class="border-t border-theme-forest/15">
-        <div class="max-w-[1180px] mx-auto px-6 py-24">
-
+    <!-- Contact Section -->
+    <section id="contact" class="border-t border-theme-mauve/20 bg-theme-cream/30 backdrop-blur-md">
+        <div class="max-w-[1180px] mx-auto px-6 py-20">
             <span class="section-label">contact</span>
 
             <a href="mailto:charlottebmoche@gmail.com"
-                class="block mt-4 font-display text-2xl lg:text-4xl hover:text-theme-mauve transition">
+                class="block mt-4 font-display text-3xl lg:text-5xl text-theme-eggplant hover:text-theme-mauve transition">
                 charlottebmoche@gmail.com
             </a>
 
             <div class="flex gap-4 mt-8">
-
                 <a href="https://github.com/charlottemoche" target="_blank"
-                    class="text-sm font-medium bg-theme-cream rounded-full px-4 py-2 ring-1 ring-theme-forest/10 hover:ring-theme-mauve transition flex items-center gap-2">
+                    class="text-sm font-medium bg-theme-cream rounded-full px-5 py-2 ring-1 ring-theme-forest/15 hover:ring-theme-perriwinkle transition flex items-center gap-2 shadow-sm">
                     <img src="public/images/github-mark.png" class="w-4" />
                     github
                 </a>
 
                 <a href="https://www.linkedin.com/in/charlotte-moche/" target="_blank"
-                    class="text-sm font-medium bg-theme-cream rounded-full px-4 py-2 ring-1 ring-theme-forest/10 hover:ring-theme-mauve transition flex items-center gap-2">
+                    class="text-sm font-medium bg-theme-cream rounded-full px-5 py-2 ring-1 ring-theme-forest/15 hover:ring-theme-perriwinkle transition flex items-center gap-2 shadow-sm">
                     <img src="public/images/linkedin-mark.png" class="w-4" />
                     linkedin
                 </a>
-
             </div>
-
         </div>
     </section>
 
-
-    <footer class="py-6">
-        <div class="max-w-[1180px] mx-auto px-6 flex justify-between text-xs text-theme-forest/50">
+    <footer class="py-6 border-t border-theme-forest/10">
+        <div class="max-w-[1180px] mx-auto px-6 flex justify-between text-xs text-theme-forest/60">
             <span>© 2026 charlotte moche</span>
             <span>brooklyn, new york</span>
         </div>

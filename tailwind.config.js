@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 let theme = {
+  perriwinkle: '#978bcf',
   mauve: '#542c56',
   eggplant: '#360139',
   cream: '#f2f4ed',
