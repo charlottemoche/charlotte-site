@@ -42,7 +42,8 @@
     <div class="-z-10 inset-0 fixed bg-radial"></div>
 
     <!-- Navigation -->
-    <nav class="max-w-[1180px] mx-auto px-6 h-20 flex items-center justify-between">
+    <nav class="h-20">
+        <div class="max-w-[1180px] mx-auto flex items-center justify-between my-auto h-full px-6">
         <a href="/" class="group flex items-center gap-2">
             <div
                 class="w-8 h-8 rounded-lg bg-theme-eggplant text-theme-cream font-display text-lg flex items-center justify-center group-hover:bg-theme-mauve transition">
@@ -58,6 +59,7 @@
                 class="text-sm font-medium bg-theme-mauve text-theme-cream hover:text-theme-eggplant rounded-full px-5 py-2 hover:bg-theme-tangerine transition-colors duration-300 whitespace-nowrap shadow-md">
                 resume
             </a>
+        </div>
         </div>
     </nav>
 
@@ -241,38 +243,40 @@
 
     </main>
 
-    <!-- Contact Section -->
-    <section id="contact" class="border-t border-theme-mauve/30">
-        <div class="max-w-[1180px] mx-auto px-6 py-20">
-            <span class="section-label">contact</span>
+    <div class="border-t bg-theme-cream/50 backdrop-blur-sm border-theme-eggplant/10">
+        <!-- Contact Section -->
+        <section id="contact">
+            <div class="max-w-[1180px] mx-auto px-6 py-20">
+                <span class="section-label">contact</span>
 
-            <a href="mailto:charlottebmoche@gmail.com"
-                class="block mt-4 font-display text-3xl lg:text-5xl text-theme-eggplant hover:text-theme-mauve transition-colors duration-300">
-                charlottebmoche@gmail.com
-            </a>
-
-            <div class="flex gap-4 mt-8">
-                <a href="https://github.com/charlottemoche" target="_blank"
-                    class="text-sm font-medium bg-theme-cream rounded-full px-5 py-2 hover:bg-theme-sun transition-colors duration-300 flex items-center gap-2 shadow-md">
-                    <img src="public/images/github-mark.png" class="w-4" />
-                    github
+                <a href="mailto:charlottebmoche@gmail.com"
+                    class="block mt-4 font-display text-3xl lg:text-5xl text-theme-eggplant hover:text-theme-mauve transition-colors duration-300">
+                    charlottebmoche@gmail.com
                 </a>
 
-                <a href="https://www.linkedin.com/in/charlotte-moche/" target="_blank"
-                    class="text-sm font-medium bg-theme-cream rounded-full px-5 py-2 hover:bg-theme-sun transition-colors duration-300 flex items-center gap-2 shadow-md">
-                    <img src="public/images/linkedin-mark.png" class="w-4" />
-                    linkedin
-                </a>
+                <div class="flex gap-4 mt-8">
+                    <a href="https://github.com/charlottemoche" target="_blank"
+                        class="text-sm font-medium bg-theme-cream rounded-full px-5 py-2 hover:bg-theme-sun transition-colors duration-300 flex items-center gap-2 shadow-md">
+                        <img src="public/images/github-mark.png" class="w-4" />
+                        github
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/charlotte-moche/" target="_blank"
+                        class="text-sm font-medium bg-theme-cream rounded-full px-5 py-2 hover:bg-theme-sun transition-colors duration-300 flex items-center gap-2 shadow-md">
+                        <img src="public/images/linkedin-mark.png" class="w-4" />
+                        linkedin
+                    </a>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <footer class="py-6">
-        <div class="max-w-[1180px] mx-auto px-6 flex justify-between text-xs text-theme-eggplant/70">
-            <span>© 2026 charlotte moche</span>
-            <span>brooklyn, new york</span>
-        </div>
-    </footer>
+        <footer class="py-6">
+            <div class="max-w-[1180px] mx-auto px-6 flex justify-between text-xs text-theme-eggplant/70">
+                <span>© 2026 charlotte moche</span>
+                <span>brooklyn, new york</span>
+            </div>
+        </footer>
+    </div>
 
 </body>
 
