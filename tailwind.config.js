@@ -8,7 +8,7 @@ let theme = {
   cream: '#fffef9',
   sun: '#fec988',
   tangerine: '#fc8b5b',
-  white: '#fbfafa'
+  white: '#fbf6f2'
 }
 
 module.exports = {
