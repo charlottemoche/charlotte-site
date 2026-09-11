@@ -572,11 +572,11 @@ video {
 .h-36 {
   height: 9rem;
 }
+.h-\[100svh\] {
+  height: 100svh;
+}
 .h-full {
   height: 100%;
-}
-.h-screen {
-  height: 100vh;
 }
 .w-11 {
   width: 2.75rem;
@@ -975,6 +975,10 @@ body {
     height: 13rem;
   }
 
+  .lg\:h-screen {
+    height: 100vh;
+  }
+
   .lg\:w-52 {
     width: 13rem;
   }
@@ -1009,6 +1013,10 @@ body {
   .lg\:py-20 {
     padding-top: 5rem;
     padding-bottom: 5rem;
+  }
+
+  .lg\:pt-0 {
+    padding-top: 0px;
   }
 
   .lg\:text-5xl {
