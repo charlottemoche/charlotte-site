@@ -12,45 +12,30 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400..600&display=swap"
         rel="stylesheet">
-
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        'theme-perriwinkle': '#978bcf',
-                        'theme-mauve': '#542c56',
-                        'theme-eggplant': '#360139',
-                        'theme-cream': '#f2f4ed',
-                        'theme-matcha': '#adbb95',
-                        'theme-forest': '#375335',
-                        'theme-wood': '#1f2d22'
-                    },
-                    fontFamily: {
-                        sans: ['Inter', 'sans-serif'],
-                        display: ['Instrument Serif', 'serif'],
-                    }
-                }
-            }
-        }
-    </script>
+    <link href="/public/styles.css" rel="stylesheet">
 
     <style>
-        /* Ambient Radial Multi-Color Background */
-        .bg-multi-radial {
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        .font-display {
+            font-family: 'Instrument Serif', serif;
+        }
+
+        .bg-radial {
             background:
-                radial-gradient(circle at 15% 20%, rgba(151, 139, 207, 0.22) 0%, transparent 45%),
-                radial-gradient(circle at 85% 30%, rgba(84, 44, 86, 0.18) 0%, transparent 40%),
-                radial-gradient(circle at 50% 65%, rgba(173, 187, 149, 0.35) 0%, transparent 50%),
-                radial-gradient(circle at 50% 50%, #37533580 0%, #f2f4ed 75%);
+                radial-gradient(circle at 15% 15%, #978bcf40 0%, transparent 45%),
+                radial-gradient(circle at 85% 20%, #542c5630 0%, transparent 45%),
+                radial-gradient(circle at 90% 85%, #adbb9540 0%, transparent 40%),
+                #f2f4ed;
         }
 
         .section-label {
             font-family: 'Instrument Serif', serif;
             font-style: italic;
-            font-size: 24px;
-            color: #542c56;
+            font-size: 22px;
+            color: #7a5c66;
         }
     </style>
 </head>
@@ -58,7 +43,7 @@
 <body class="text-theme-forest selection:bg-theme-perriwinkle selection:text-theme-eggplant">
 
     <!-- Ambient Glow Overlay -->
-    <div class="-z-10 inset-0 fixed bg-multi-radial blur-2xl"></div>
+    <div class="-z-10 inset-0 fixed bg-radial blur-2xl"></div>
 
     <!-- Navigation -->
     <nav class="max-w-[1180px] mx-auto px-6 h-20 flex items-center justify-between">
@@ -124,8 +109,7 @@
 
             <div class="mt-6 grid sm:grid-cols-3 gap-6">
 
-                <div
-                    class="p-5 rounded-2xl bg-theme-cream/40 shadow-sm">
+                <div class="p-5 rounded-2xl bg-theme-cream/40 shadow-sm border border-theme-forest/10">
                     <div
                         class="text-sm font-bold text-theme-eggplant pb-2 mb-3 border-b-2 border-theme-perriwinkle max-w-fit">
                         frontend
@@ -141,7 +125,7 @@
                     </div>
                 </div>
 
-                <div class="p-5 rounded-2xl bg-theme-cream/40 shadow-sm">
+                <div class="p-5 rounded-2xl bg-theme-cream/40 shadow-sm border border-theme-forest/10">
                     <div
                         class="text-sm font-bold text-theme-eggplant pb-2 mb-3 border-b-2 border-theme-mauve max-w-fit">
                         backend
@@ -155,7 +139,7 @@
                     </div>
                 </div>
 
-                <div class="p-5 rounded-2xl bg-theme-cream/40 shadow-sm">
+                <div class="p-5 rounded-2xl bg-theme-cream/40 shadow-sm border border-theme-forest/10">
                     <div
                         class="text-sm font-bold text-theme-eggplant pb-2 mb-3 border-b-2 border-theme-matcha max-w-fit">
                         tooling
@@ -188,8 +172,7 @@
                                 <h3
                                     class="text-lg font-semibold text-theme-eggplant group-hover:text-theme-mauve transition">
                                     Zenith Health</h3>
-                                <span
-                                    class="inline-block mt-1 text-theme-eggplant text-xs font-medium">
+                                <span class="inline-block mt-1 text-theme-eggplant text-xs font-medium">
                                     production &middot; maternal health
                                 </span>
                             </div>
@@ -211,8 +194,7 @@
                                 <h3
                                     class="text-lg font-semibold text-theme-eggplant group-hover:text-theme-mauve transition">
                                     Peek</h3>
-                                <span
-                                    class="inline-block mt-1 text-theme-eggplant text-xs font-medium">
+                                <span class="inline-block mt-1 text-theme-eggplant text-xs font-medium">
                                     production &middot; booking software
                                 </span>
                             </div>
@@ -234,8 +216,7 @@
                                 <h3
                                     class="text-lg font-semibold text-theme-eggplant group-hover:text-theme-mauve transition">
                                     Prelude</h3>
-                                <span
-                                    class="inline-block mt-1 text-theme-eggplant text-xs font-medium">
+                                <span class="inline-block mt-1 text-theme-eggplant text-xs font-medium">
                                     solo project &middot; SwiftUI
                                 </span>
                             </div>
@@ -257,8 +238,7 @@
                                 <h3
                                     class="text-lg font-semibold text-theme-eggplant group-hover:text-theme-mauve transition">
                                     AGC Plover Hill</h3>
-                                <span
-                                    class="inline-block mt-1 text-theme-eggplant text-xs font-medium">
+                                <span class="inline-block mt-1 text-theme-eggplant text-xs font-medium">
                                     freelance &middot; web
                                 </span>
                             </div>
