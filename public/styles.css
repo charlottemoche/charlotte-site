@@ -679,11 +679,12 @@ video {
   --tw-bg-opacity: 1;
   background-color: rgb(189 78 104 / var(--tw-bg-opacity));
 }
+.bg-theme-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(251 246 242 / var(--tw-bg-opacity));
+}
 .bg-theme-white\/60 {
   background-color: rgb(251 246 242 / 0.6);
-}
-.bg-theme-white\/95 {
-  background-color: rgb(251 246 242 / 0.95);
 }
 .object-contain {
   -o-object-fit: contain;
@@ -923,13 +924,12 @@ body {
   --tw-bg-opacity: 1;
   background-color: rgb(252 139 91 / var(--tw-bg-opacity));
 }
-.hover\:bg-theme-white:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(251 246 242 / var(--tw-bg-opacity));
+.hover\:bg-theme-white\/95:hover {
+  background-color: rgb(251 246 242 / 0.95);
 }
-.hover\:text-theme-cream:hover {
+.hover\:text-theme-berry:hover {
   --tw-text-opacity: 1;
-  color: rgb(255 254 249 / var(--tw-text-opacity));
+  color: rgb(149 51 74 / var(--tw-text-opacity));
 }
 .hover\:text-theme-eggplant:hover {
   --tw-text-opacity: 1;
