@@ -36,30 +36,30 @@
     </style>
 </head>
 
-<body class="text-theme-eggplant selection:bg-theme-mauve selection:text-theme-cream">
-
+<body class="text-theme-eggplant selection:bg-theme-mauve selection:text-theme-cream bg-theme-cream">
     <!-- Sunset Background -->
-    <div class="-z-10 inset-0 fixed bg-radial"></div>
+    <div class="-z-10 inset-0 fixed bg-theme-cream"></div>
 
     <!-- Navigation -->
     <nav class="h-20">
         <div class="max-w-[1180px] mx-auto flex items-center justify-between my-auto h-full px-6">
-        <a href="/" class="group flex items-center gap-2">
-            <div
-                class="w-8 h-8 rounded-lg bg-theme-eggplant text-theme-cream font-display text-lg flex items-center justify-center group-hover:bg-theme-mauve transition">
-                cm
-            </div>
-        </a>
-
-        <div class="flex items-center gap-6">
-            <a href="#work" class="text-sm font-medium text-theme-eggplant hover:text-theme-cream transition">work</a>
-            <a href="#contact"
-                class="text-sm font-medium text-theme-eggplant hover:text-theme-cream transition">contact</a>
-            <a href="public/Resume.pdf" download
-                class="text-sm font-medium bg-theme-mauve text-theme-cream hover:text-theme-eggplant rounded-full px-5 py-2 hover:bg-theme-tangerine transition-colors duration-300 whitespace-nowrap shadow-md">
-                resume
+            <a href="/" class="group flex items-center gap-2">
+                <div
+                    class="w-8 h-8 rounded-lg bg-theme-eggplant text-theme-cream font-display text-lg flex items-center justify-center group-hover:bg-theme-mauve transition">
+                    cm
+                </div>
             </a>
-        </div>
+
+            <div class="flex items-center gap-6">
+                <a href="#work"
+                    class="text-sm font-medium text-theme-eggplant hover:text-theme-cream transition">work</a>
+                <a href="#contact"
+                    class="text-sm font-medium text-theme-eggplant hover:text-theme-cream transition">contact</a>
+                <a href="public/Resume.pdf" download
+                    class="text-sm font-medium bg-theme-mauve text-theme-cream hover:text-theme-eggplant rounded-full px-5 py-2 hover:bg-theme-tangerine transition-colors duration-300 whitespace-nowrap shadow-md">
+                    resume
+                </a>
+            </div>
         </div>
     </nav>
 
@@ -101,44 +101,53 @@
 
             <div class="mt-6 grid sm:grid-cols-3 gap-6">
 
-                <div class="p-5 rounded-2xl bg-theme-cream/50 shadow-md">
-                    <div class="text-sm font-bold text-theme-berry pb-2 mb-3 border-b border-theme-eggplant max-w-fit">
-                        frontend
-                    </div>
-                    <div class="flex flex-wrap gap-x-3 gap-y-1.5 text-sm text-theme-eggplant/70">
-                        <span>TypeScript</span>
-                        <span>JavaScript</span>
-                        <span>React</span>
-                        <span>React Native</span>
-                        <span>Tailwind CSS</span>
-                        <span>SwiftUI</span>
-                        <span>Figma</span>
-                    </div>
-                </div>
-
-                <div class="p-5 rounded-2xl bg-theme-cream/50 shadow-md">
-                    <div class="text-sm font-bold text-theme-berry pb-2 mb-3 border-b border-theme-eggplant max-w-fit">
-                        backend
-                    </div>
-                    <div class="flex flex-wrap gap-x-3 gap-y-1.5 text-sm text-theme-eggplant/70">
-                        <span>Elixir</span>
-                        <span>Phoenix</span>
-                        <span>Ruby on Rails</span>
-                        <span>Python</span>
-                        <span>REST & GraphQL</span>
+                <div class="p-1 rounded-2xl bg-radial shadow-md">
+                    <div class="bg-theme-white/90 rounded-2xl p-3">
+                        <div
+                            class="text-sm font-bold text-theme-berry pb-2 mb-3 border-b border-theme-eggplant max-w-fit">
+                            frontend
+                        </div>
+                        <div class="flex flex-wrap gap-x-3 gap-y-1.5 text-sm text-theme-eggplant/70">
+                            <span>TypeScript</span>
+                            <span>JavaScript</span>
+                            <span>React</span>
+                            <span>React Native</span>
+                            <span>Tailwind CSS</span>
+                            <span>SwiftUI</span>
+                            <span>Figma</span>
+                        </div>
                     </div>
                 </div>
 
-                <div class="p-5 rounded-2xl bg-theme-cream/50 shadow-md">
-                    <div class="text-sm font-bold text-theme-berry pb-2 mb-3 border-b border-theme-eggplant max-w-fit">
-                        tooling
+                <div class="p-1 rounded-2xl bg-radial shadow-md">
+                    <div class="bg-theme-white/90 rounded-2xl p-3">
+                        <div
+                            class="text-sm font-bold text-theme-berry pb-2 mb-3 border-b border-theme-eggplant max-w-fit">
+                            backend
+                        </div>
+                        <div class="flex flex-wrap gap-x-3 gap-y-1.5 text-sm text-theme-eggplant/70">
+                            <span>Elixir</span>
+                            <span>Phoenix</span>
+                            <span>Ruby on Rails</span>
+                            <span>Python</span>
+                            <span>REST & GraphQL</span>
+                        </div>
                     </div>
-                    <div class="flex flex-wrap gap-x-3 gap-y-1.5 text-sm text-theme-eggplant/70">
-                        <span>Claude Code</span>
-                        <span>Codex</span>
-                        <span>Git/GitHub</span>
-                        <span>Sentry</span>
-                        <span>A/B Testing</span>
+                </div>
+
+                <div class="p-1 rounded-2xl bg-radial shadow-md">
+                    <div class="bg-theme-white/90 rounded-2xl p-3">
+                        <div
+                            class="text-sm font-bold text-theme-berry pb-2 mb-3 border-b border-theme-eggplant max-w-fit">
+                            tooling
+                        </div>
+                        <div class="flex flex-wrap gap-x-3 gap-y-1.5 text-sm text-theme-eggplant/70">
+                            <span>Claude Code</span>
+                            <span>Codex</span>
+                            <span>Git/GitHub</span>
+                            <span>Sentry</span>
+                            <span>A/B Testing</span>
+                        </div>
                     </div>
                 </div>
 
@@ -151,92 +160,94 @@
 
             <div class="mt-6 space-y-4">
 
-                <a href="https://zenithhealth.io" target="_blank"
-                    class="group block p-6 rounded-2xl bg-theme-cream/60 hover:bg-theme-cream/90 border-2 border-transparent hover:border-theme-mauve transition duration-300 shadow-md">
-                    <div class="grid sm:grid-cols-[1fr_1.6fr] gap-4 sm:gap-10 items-start">
-                        <div class="flex items-start gap-4">
-                            <img src="public/images/zenith.jpeg" alt="Zenith Health"
-                                class="w-11 h-11 object-contain rounded-xl shadow-sm border border-theme-eggplant/10">
-                            <div>
-                                <h3
-                                    class="text-lg font-semibold text-theme-eggplant group-hover:text-theme-mauve transition">
-                                    Zenith Health</h3>
-                                <span class="inline-block mt-1 text-theme-eggplant text-xs font-medium">
-                                    production &middot; maternal health
-                                </span>
+                    <a href="https://zenithhealth.io" target="_blank"
+                        class="group block p-6 rounded-2xl bg-theme-white/90 hover:bg-theme-white border-2 border-theme-mauve hover:border-theme-mauve transition duration-300 shadow-md">
+                        <div class="grid sm:grid-cols-[1fr_1.6fr] gap-4 sm:gap-10 items-start">
+                            <div class="flex items-start gap-4">
+                                <img src="public/images/zenith.jpeg" alt="Zenith Health"
+                                    class="w-11 h-11 object-contain rounded-xl shadow-sm border border-theme-eggplant/10">
+                                <div>
+                                    <h3
+                                        class="text-lg font-semibold text-theme-eggplant group-hover:text-theme-mauve transition">
+                                        Zenith Health</h3>
+                                    <span class="inline-block mt-1 text-theme-eggplant text-xs font-medium">
+                                        production &middot; maternal health
+                                    </span>
+                                </div>
                             </div>
+                            <p class="text-sm text-theme-eggplant/70 leading-relaxed">
+                                End-to-end feature ownership across React Native, Phoenix LiveView, and the backend API
+                                layer, including realtime streaming UI for an AI chat assistant.
+                            </p>
                         </div>
-                        <p class="text-sm text-theme-eggplant/70 leading-relaxed">
-                            End-to-end feature ownership across React Native, Phoenix LiveView, and the backend API
-                            layer, including realtime streaming UI for an AI chat assistant.
-                        </p>
-                    </div>
-                </a>
+                    </a>
 
-                <a href="https://peek.com/experiences" target="_blank"
-                    class="group block p-6 rounded-2xl bg-theme-cream/60 hover:bg-theme-cream/90 border-2 border-transparent hover:border-theme-mauve transition duration-300 shadow-md">
-                    <div class="grid sm:grid-cols-[1fr_1.6fr] gap-4 sm:gap-10 items-start">
-                        <div class="flex items-start gap-4">
-                            <img src="public/images/peek-logo.png" alt="Peek"
-                                class="w-11 h-11 object-contain rounded-xl shadow-sm border border-theme-eggplant/10">
-                            <div>
-                                <h3
-                                    class="text-lg font-semibold text-theme-eggplant group-hover:text-theme-mauve transition">
-                                    Peek</h3>
-                                <span class="inline-block mt-1 text-theme-eggplant text-xs font-medium">
-                                    production &middot; booking software
-                                </span>
+                    <a href="https://peek.com/experiences" target="_blank"
+                        class="group block p-6 rounded-2xl bg-theme-white/90 hover:bg-theme-white border-2 border-theme-mauve hover:border-theme-mauve transition duration-300 shadow-md">
+                        <div class="grid sm:grid-cols-[1fr_1.6fr] gap-4 sm:gap-10 items-start">
+                            <div class="flex items-start gap-4">
+                                <img src="public/images/peek-logo.png" alt="Peek"
+                                    class="w-11 h-11 object-contain rounded-xl shadow-sm border border-theme-eggplant/10">
+                                <div>
+                                    <h3
+                                        class="text-lg font-semibold text-theme-eggplant group-hover:text-theme-mauve transition">
+                                        Peek</h3>
+                                    <span class="inline-block mt-1 text-theme-eggplant text-xs font-medium">
+                                        production &middot; booking software
+                                    </span>
+                                </div>
                             </div>
+                            <p class="text-sm text-theme-eggplant/70 leading-relaxed">
+                                Led frontend architecture and interaction design for search, filter, and sort — zero to
+                                one,
+                                with direct ownership over technical and design decisions.
+                            </p>
                         </div>
-                        <p class="text-sm text-theme-eggplant/70 leading-relaxed">
-                            Led frontend architecture and interaction design for search, filter, and sort — zero to one,
-                            with direct ownership over technical and design decisions.
-                        </p>
-                    </div>
-                </a>
+                    </a>
 
-                <a href="https://preludeapp.co" target="_blank"
-                    class="group block p-6 rounded-2xl bg-theme-cream/60 hover:bg-theme-cream/90 border-2 border-transparent hover:border-theme-mauve transition duration-300 shadow-md">
-                    <div class="grid sm:grid-cols-[1fr_1.6fr] gap-4 sm:gap-10 items-start">
-                        <div class="flex items-start gap-4">
-                            <img src="public/images/prelude-logo.png" alt="Prelude"
-                                class="w-11 h-11 object-contain rounded-xl shadow-sm border border-theme-eggplant/10">
-                            <div>
-                                <h3
-                                    class="text-lg font-semibold text-theme-eggplant group-hover:text-theme-mauve transition">
-                                    Prelude</h3>
-                                <span class="inline-block mt-1 text-theme-eggplant text-xs font-medium">
-                                    solo project &middot; SwiftUI
-                                </span>
+                    <a href="https://preludeapp.co" target="_blank"
+                        class="group block p-6 rounded-2xl bg-theme-white/90 hover:bg-theme-white border-2 border-theme-mauve hover:border-theme-mauve transition duration-300 shadow-md">
+                        <div class="grid sm:grid-cols-[1fr_1.6fr] gap-4 sm:gap-10 items-start">
+                            <div class="flex items-start gap-4">
+                                <img src="public/images/prelude-logo.png" alt="Prelude"
+                                    class="w-11 h-11 object-contain rounded-xl shadow-sm border border-theme-eggplant/10">
+                                <div>
+                                    <h3
+                                        class="text-lg font-semibold text-theme-eggplant group-hover:text-theme-mauve transition">
+                                        Prelude</h3>
+                                    <span class="inline-block mt-1 text-theme-eggplant text-xs font-medium">
+                                        solo project &middot; SwiftUI
+                                    </span>
+                                </div>
                             </div>
+                            <p class="text-sm text-theme-eggplant/70 leading-relaxed">
+                                A native app built from scratch to visualize personal Spotify listening data —
+                                conceived,
+                                designed, and shipped independently, end to end.
+                            </p>
                         </div>
-                        <p class="text-sm text-theme-eggplant/70 leading-relaxed">
-                            A native app built from scratch to visualize personal Spotify listening data — conceived,
-                            designed, and shipped independently, end to end.
-                        </p>
-                    </div>
-                </a>
+                    </a>
 
-                <a href="https://agcploverhill.com" target="_blank"
-                    class="group block p-6 rounded-2xl bg-theme-cream/60 hover:bg-theme-cream/90 border-2 border-transparent hover:border-theme-mauve transition duration-300 shadow-md">
-                    <div class="grid sm:grid-cols-[1fr_1.6fr] gap-4 sm:gap-10 items-start">
-                        <div class="flex items-start gap-4">
-                            <img src="public/images/plover.png" alt="AGC Plover Hill"
-                                class="w-11 h-11 object-contain rounded-xl shadow-sm border border-theme-eggplant/10">
-                            <div>
-                                <h3
-                                    class="text-lg font-semibold text-theme-eggplant group-hover:text-theme-mauve transition">
-                                    AGC Plover Hill</h3>
-                                <span class="inline-block mt-1 text-theme-eggplant text-xs font-medium">
-                                    freelance &middot; web
-                                </span>
+                    <a href="https://agcploverhill.com" target="_blank"
+                        class="group block p-6 rounded-2xl bg-theme-white/90 hover:bg-theme-white border-2 border-theme-mauve hover:border-theme-mauve transition duration-300 shadow-md">
+                        <div class="grid sm:grid-cols-[1fr_1.6fr] gap-4 sm:gap-10 items-start">
+                            <div class="flex items-start gap-4">
+                                <img src="public/images/plover.png" alt="AGC Plover Hill"
+                                    class="w-11 h-11 object-contain rounded-xl shadow-sm border border-theme-eggplant/10">
+                                <div>
+                                    <h3
+                                        class="text-lg font-semibold text-theme-eggplant group-hover:text-theme-mauve transition">
+                                        AGC Plover Hill</h3>
+                                    <span class="inline-block mt-1 text-theme-eggplant text-xs font-medium">
+                                        freelance &middot; web
+                                    </span>
+                                </div>
                             </div>
+                            <p class="text-sm text-theme-eggplant/70 leading-relaxed">
+                                Freelance web development for a client project, from design through build.
+                            </p>
                         </div>
-                        <p class="text-sm text-theme-eggplant/70 leading-relaxed">
-                            Freelance web development for a client project, from design through build.
-                        </p>
-                    </div>
-                </a>
+                    </a>
 
             </div>
         </section>

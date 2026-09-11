@@ -5,9 +5,10 @@ let theme = {
   mauve: '#bd4e68',
   berry: '#95334a',
   eggplant: '#360139',
-  cream: '#f4f4ed',
+  cream: '#fffef9',
   sun: '#fec988',
   tangerine: '#fc8b5b',
+  white: '#fbfafa'
 }
 
 module.exports = {
