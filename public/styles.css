@@ -718,9 +718,6 @@ video {
 .pb-2 {
   padding-bottom: 0.5rem;
 }
-.pb-20 {
-  padding-bottom: 5rem;
-}
 .pb-24 {
   padding-bottom: 6rem;
 }
@@ -1015,6 +1012,10 @@ body {
 
   .lg\:py-20 {
     padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
+  .lg\:pb-20 {
     padding-bottom: 5rem;
   }
 
