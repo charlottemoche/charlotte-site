@@ -572,8 +572,8 @@ video {
 .h-36 {
   height: 9rem;
 }
-.h-\[100svh\] {
-  height: 100svh;
+.h-\[calc\(100svh-5rem\)\] {
+  height: calc(100svh - 5rem);
 }
 .h-full {
   height: 100%;
@@ -729,6 +729,9 @@ video {
 }
 .pt-2 {
   padding-top: 0.5rem;
+}
+.pt-20 {
+  padding-top: 5rem;
 }
 .pt-6 {
   padding-top: 1.5rem;
