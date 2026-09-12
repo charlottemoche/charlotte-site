@@ -664,6 +664,9 @@ video {
 .border-theme-eggplant\/10 {
   border-color: rgb(54 1 57 / 0.1);
 }
+.bg-theme-berry\/20 {
+  background-color: rgb(149 51 74 / 0.2);
+}
 .bg-theme-cream {
   --tw-bg-opacity: 1;
   background-color: rgb(255 254 249 / var(--tw-bg-opacity));
