@@ -2,13 +2,11 @@
 
 let theme = {
   perriwinkle: '#95a3ea',
-  mauve: '#bd4e68',
-  berry: '#95334a',
-  eggplant: '#360139',
+  lake: '#4e75bd',
+  forest: '#083428',
   cream: '#fffef9',
-  sun: '#fec988',
-  tangerine: '#fc8b5b',
-  white: '#fbf6f2'
+  sea: '#0f6d5b',
+  white: '#fbf6f2',
 }
 
 module.exports = {
