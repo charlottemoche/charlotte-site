@@ -676,6 +676,9 @@ video {
   --tw-bg-opacity: 1;
   background-color: rgb(78 117 189 / var(--tw-bg-opacity));
 }
+.bg-theme-lake\/20 {
+  background-color: rgb(78 117 189 / 0.2);
+}
 .bg-theme-white {
   --tw-bg-opacity: 1;
   background-color: rgb(251 246 242 / var(--tw-bg-opacity));
@@ -988,9 +991,22 @@ body {
     align-items: center;
   }
 
+  .lg\:border-t {
+    border-top-width: 1px;
+  }
+
+  .lg\:border-theme-forest\/20 {
+    border-color: rgb(8 52 40 / 0.2);
+  }
+
   .lg\:bg-theme-cream {
     --tw-bg-opacity: 1;
     background-color: rgb(255 254 249 / var(--tw-bg-opacity));
+  }
+
+  .lg\:bg-theme-white {
+    --tw-bg-opacity: 1;
+    background-color: rgb(251 246 242 / var(--tw-bg-opacity));
   }
 
   .lg\:px-10 {
