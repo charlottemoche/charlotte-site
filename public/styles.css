@@ -604,9 +604,6 @@ video {
 .gap-2 {
   gap: 0.5rem;
 }
-.gap-3 {
-  gap: 0.75rem;
-}
 .gap-4 {
   gap: 1rem;
 }
@@ -929,8 +926,8 @@ body {
   --tw-text-opacity: 1;
   color: rgb(255 254 249 / var(--tw-text-opacity));
 }
-.hover\:border-theme-sea\/30:hover {
-  border-color: rgb(15 109 91 / 0.3);
+.hover\:border-theme-forest\/70:hover {
+  border-color: rgb(9 60 46 / 0.7);
 }
 .hover\:bg-theme-lake\/10:hover {
   background-color: rgb(78 117 189 / 0.1);
@@ -948,6 +945,9 @@ body {
 }
 .hover\:underline:hover {
   text-decoration-line: underline;
+}
+.hover\:underline-offset-2:hover {
+  text-underline-offset: 2px;
 }
 .group:hover .group-hover\:text-theme-sea {
   --tw-text-opacity: 1;
