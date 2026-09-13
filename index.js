@@ -33,7 +33,7 @@ function typeRole(text, i = 0) {
     roleEl.textContent += text[i];
     setTimeout(() => typeRole(text, i + 1), 60);
   } else {
-    setTimeout(eraseRole, 1500);
+    setTimeout(eraseRole, 1000);
   }
 }
 
