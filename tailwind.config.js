@@ -4,7 +4,7 @@ let theme = {
   lake: '#4e75bd',
   forest: '#093c2e',
   sea: '#0f6d5b',
-  cream: '#fefdf9',
+  cream: '#fbfaf7',
   white: '#ffffff',
 }
 
