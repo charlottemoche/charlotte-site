@@ -622,6 +622,9 @@ video {
 .border-b {
   border-bottom-width: 1px;
 }
+.border-l-\[3px\] {
+  border-left-width: 3px;
+}
 .border-t {
   border-top-width: 1px;
 }
@@ -632,8 +635,8 @@ video {
 .border-theme-forest\/10 {
   border-color: rgb(9 60 46 / 0.1);
 }
-.border-theme-forest\/20 {
-  border-color: rgb(9 60 46 / 0.2);
+.border-theme-forest\/30 {
+  border-color: rgb(9 60 46 / 0.3);
 }
 .bg-theme-cream {
   --tw-bg-opacity: 1;
