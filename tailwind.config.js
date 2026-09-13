@@ -1,11 +1,10 @@
 /** @type {import('tailwindcss').Config} */
 
 let theme = {
-  perriwinkle: '#95a3ea',
   lake: '#4e75bd',
   forest: '#093c2e',
-  cream: '#fffef9',
   sea: '#0f6d5b',
+  cream: '#fffef9',
   white: '#fbf6f2',
 }
 
