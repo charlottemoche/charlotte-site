@@ -1,18 +1,19 @@
-const heroName = document.getElementById('hero-name');
+const nav = document.querySelector('nav');
+const navLinks = document.querySelectorAll('nav a[href^="#"]');
 
-heroName.addEventListener('mousemove', e => {
-  const rect = heroName.getBoundingClientRect();
-  const x = e.clientX - rect.left;
-  const y = e.clientY - rect.top;
-  heroName.style.background = `radial-gradient(circle at ${x}px ${y}px, #95a3ea 0%, #b97a8b 32%, #f3917c 62%, #fec288 100%)`;
-  heroName.style.webkitBackgroundClip = 'text';
-  heroName.style.backgroundClip = 'text';
-  heroName.style.webkitTextFillColor = 'transparent';
+const targets = new Map();
+navLinks.forEach(link => {
+  const target = document.querySelector(link.getAttribute('href'));
+  if (target) targets.set(link, target);
 });
 
-heroName.addEventListener('mouseleave', () => {
-  heroName.style.background = '';
-  heroName.style.webkitBackgroundClip = '';
-  heroName.style.backgroundClip = '';
-  heroName.style.webkitTextFillColor = '';
+navLinks.forEach(link => {
+  link.addEventListener('click', e => {
+    e.preventDefault();
+    const target = targets.get(link);
+    if (!target) return;
+
+    const targetTop = target.getBoundingClientRect().top + window.scrollY - nav.offsetHeight - 16;
+    window.scrollTo({ top: targetTop, behavior: 'smooth' });
+  });
 });
