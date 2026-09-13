@@ -624,9 +624,6 @@ video {
 .bg-theme-lake\/10 {
   background-color: rgb(78 117 189 / 0.1);
 }
-.bg-theme-white\/40 {
-  background-color: rgb(251 246 242 / 0.4);
-}
 .bg-theme-white\/50 {
   background-color: rgb(251 246 242 / 0.5);
 }
@@ -684,9 +681,6 @@ video {
 }
 .pt-2 {
   padding-top: 0.5rem;
-}
-.pt-6 {
-  padding-top: 1.5rem;
 }
 .pt-8 {
   padding-top: 2rem;
@@ -860,13 +854,12 @@ body {
 .hover\:border-theme-sea\/30:hover {
   border-color: rgb(15 109 91 / 0.3);
 }
+.hover\:bg-theme-lake\/20:hover {
+  background-color: rgb(78 117 189 / 0.2);
+}
 .hover\:bg-theme-sea:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(15 109 91 / var(--tw-bg-opacity));
-}
-.hover\:bg-theme-white:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(251 246 242 / var(--tw-bg-opacity));
 }
 .hover\:text-theme-sea:hover {
   --tw-text-opacity: 1;
