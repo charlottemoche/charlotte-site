@@ -22,6 +22,7 @@ const roles = [
   "Product engineer based in Brooklyn",
   "Painting major turned coder",
   "Bread baker and watercolor enthusiast",
+  "Sub-par musical instrument player"
 ];
 
 const roleEl = document.getElementById('role-text');
