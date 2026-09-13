@@ -4,8 +4,8 @@ let theme = {
   lake: '#4e75bd',
   forest: '#093c2e',
   sea: '#0f6d5b',
-  cream: '#fffef9',
-  white: '#fbf6f2',
+  cream: '#fefdf9',
+  white: '#ffffff',
 }
 
 module.exports = {

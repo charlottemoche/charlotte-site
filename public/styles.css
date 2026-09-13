@@ -670,10 +670,7 @@ video {
 }
 .bg-theme-cream {
   --tw-bg-opacity: 1;
-  background-color: rgb(255 254 249 / var(--tw-bg-opacity));
-}
-.bg-theme-cream\/90 {
-  background-color: rgb(255 254 249 / 0.9);
+  background-color: rgb(254 253 249 / var(--tw-bg-opacity));
 }
 .bg-theme-forest {
   --tw-bg-opacity: 1;
@@ -689,8 +686,8 @@ video {
   --tw-bg-opacity: 1;
   background-color: rgb(15 109 91 / var(--tw-bg-opacity));
 }
-.bg-theme-white\/50 {
-  background-color: rgb(251 246 242 / 0.5);
+.bg-theme-white\/70 {
+  background-color: rgb(255 255 255 / 0.7);
 }
 .object-contain {
   -o-object-fit: contain;
@@ -786,7 +783,7 @@ video {
 }
 .text-theme-cream {
   --tw-text-opacity: 1;
-  color: rgb(255 254 249 / var(--tw-text-opacity));
+  color: rgb(254 253 249 / var(--tw-text-opacity));
 }
 .text-theme-forest {
   --tw-text-opacity: 1;
@@ -894,37 +891,33 @@ body {
     scrollbar-width: none;
     /* Firefox */
 }
-.selection\:bg-theme-lake *::-moz-selection {
-  --tw-bg-opacity: 1;
-  background-color: rgb(78 117 189 / var(--tw-bg-opacity));
+.selection\:bg-theme-lake\/20 *::-moz-selection {
+  background-color: rgb(78 117 189 / 0.2);
 }
-.selection\:bg-theme-lake *::selection {
-  --tw-bg-opacity: 1;
-  background-color: rgb(78 117 189 / var(--tw-bg-opacity));
+.selection\:bg-theme-lake\/20 *::selection {
+  background-color: rgb(78 117 189 / 0.2);
 }
-.selection\:text-theme-cream *::-moz-selection {
+.selection\:text-theme-sea *::-moz-selection {
   --tw-text-opacity: 1;
-  color: rgb(255 254 249 / var(--tw-text-opacity));
+  color: rgb(15 109 91 / var(--tw-text-opacity));
 }
-.selection\:text-theme-cream *::selection {
+.selection\:text-theme-sea *::selection {
   --tw-text-opacity: 1;
-  color: rgb(255 254 249 / var(--tw-text-opacity));
+  color: rgb(15 109 91 / var(--tw-text-opacity));
 }
-.selection\:bg-theme-lake::-moz-selection {
-  --tw-bg-opacity: 1;
-  background-color: rgb(78 117 189 / var(--tw-bg-opacity));
+.selection\:bg-theme-lake\/20::-moz-selection {
+  background-color: rgb(78 117 189 / 0.2);
 }
-.selection\:bg-theme-lake::selection {
-  --tw-bg-opacity: 1;
-  background-color: rgb(78 117 189 / var(--tw-bg-opacity));
+.selection\:bg-theme-lake\/20::selection {
+  background-color: rgb(78 117 189 / 0.2);
 }
-.selection\:text-theme-cream::-moz-selection {
+.selection\:text-theme-sea::-moz-selection {
   --tw-text-opacity: 1;
-  color: rgb(255 254 249 / var(--tw-text-opacity));
+  color: rgb(15 109 91 / var(--tw-text-opacity));
 }
-.selection\:text-theme-cream::selection {
+.selection\:text-theme-sea::selection {
   --tw-text-opacity: 1;
-  color: rgb(255 254 249 / var(--tw-text-opacity));
+  color: rgb(15 109 91 / var(--tw-text-opacity));
 }
 .hover\:border-theme-forest\/70:hover {
   border-color: rgb(9 60 46 / 0.7);
