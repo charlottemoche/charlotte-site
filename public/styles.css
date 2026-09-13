@@ -1089,11 +1089,6 @@ body {
     padding-right: 0px;
   }
 
-  .lg\:px-4 {
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
-
   .lg\:py-8 {
     padding-top: 2rem;
     padding-bottom: 2rem;
@@ -1105,6 +1100,10 @@ body {
 
   .lg\:pl-16 {
     padding-left: 4rem;
+  }
+
+  .lg\:pl-3 {
+    padding-left: 0.75rem;
   }
 
   .lg\:pr-0 {
