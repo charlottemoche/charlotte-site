@@ -665,6 +665,9 @@ video {
 .border-theme-forest\/40 {
   border-color: rgb(9 60 46 / 0.4);
 }
+.border-theme-forest\/70 {
+  border-color: rgb(9 60 46 / 0.7);
+}
 .bg-theme-cream {
   --tw-bg-opacity: 1;
   background-color: rgb(255 254 249 / var(--tw-bg-opacity));
@@ -752,9 +755,6 @@ video {
 }
 .pt-4 {
   padding-top: 1rem;
-}
-.text-2xl {
-  font-size: 1.875rem;
 }
 .text-4xl {
   font-size: 3.25rem;
@@ -1061,10 +1061,6 @@ body {
 
   .lg\:pr-16 {
     padding-right: 4rem;
-  }
-
-  .lg\:text-4xl {
-    font-size: 3.25rem;
   }
 
   .lg\:text-5xl {
