@@ -1040,16 +1040,16 @@ body {
     display: none;
   }
 
-  .lg\:h-36 {
-    height: 9rem;
+  .lg\:h-44 {
+    height: 11rem;
   }
 
   .lg\:h-screen {
     height: 100vh;
   }
 
-  .lg\:w-36 {
-    width: 9rem;
+  .lg\:w-44 {
+    width: 11rem;
   }
 
   .lg\:grid-cols-12 {
