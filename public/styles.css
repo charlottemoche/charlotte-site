@@ -803,9 +803,6 @@ video {
   font-size: 0.75rem;
   line-height: 1rem;
 }
-.font-light {
-  font-weight: 300;
-}
 .font-medium {
   font-weight: 500;
 }
@@ -852,9 +849,6 @@ video {
 }
 .text-theme-forest\/70 {
   color: rgb(9 60 46 / 0.7);
-}
-.text-theme-forest\/80 {
-  color: rgb(9 60 46 / 0.8);
 }
 .text-theme-sea {
   --tw-text-opacity: 1;
@@ -1044,8 +1038,16 @@ body {
     display: none;
   }
 
+  .lg\:h-36 {
+    height: 9rem;
+  }
+
   .lg\:h-screen {
     height: 100vh;
+  }
+
+  .lg\:w-36 {
+    width: 9rem;
   }
 
   .lg\:grid-cols-12 {
