@@ -686,8 +686,8 @@ video {
   --tw-bg-opacity: 1;
   background-color: rgb(15 109 91 / var(--tw-bg-opacity));
 }
-.bg-theme-white\/70 {
-  background-color: rgb(255 255 255 / 0.7);
+.bg-theme-white\/60 {
+  background-color: rgb(255 255 255 / 0.6);
 }
 .object-contain {
   -o-object-fit: contain;
