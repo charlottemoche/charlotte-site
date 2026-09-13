@@ -635,8 +635,8 @@ video {
 .border-theme-forest\/10 {
   border-color: rgb(9 60 46 / 0.1);
 }
-.border-theme-forest\/30 {
-  border-color: rgb(9 60 46 / 0.3);
+.border-theme-forest\/40 {
+  border-color: rgb(9 60 46 / 0.4);
 }
 .bg-theme-cream {
   --tw-bg-opacity: 1;
@@ -967,6 +967,12 @@ body {
 
   .lg\:grid-cols-12 {
     grid-template-columns: repeat(12, minmax(0, 1fr));
+  }
+
+  .lg\:space-y-6 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-y-reverse: 0;
+    margin-top: calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));
   }
 
   .lg\:border-b-0 {
