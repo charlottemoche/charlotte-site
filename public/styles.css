@@ -632,6 +632,9 @@ video {
 .border-theme-forest\/10 {
   border-color: rgb(9 60 46 / 0.1);
 }
+.border-theme-forest\/20 {
+  border-color: rgb(9 60 46 / 0.2);
+}
 .bg-theme-cream {
   --tw-bg-opacity: 1;
   background-color: rgb(255 254 249 / var(--tw-bg-opacity));
@@ -771,6 +774,11 @@ video {
   --tw-text-opacity: 1;
   color: rgb(15 109 91 / var(--tw-text-opacity));
 }
+.shadow {
+  --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
 .shadow-sm {
   --tw-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
   --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
@@ -793,6 +801,9 @@ video {
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
+}
+.duration-300 {
+  transition-duration: 300ms;
 }
 
 @font-face {
@@ -881,12 +892,15 @@ body {
 .hover\:border-theme-sea\/30:hover {
   border-color: rgb(15 109 91 / 0.3);
 }
-.hover\:bg-theme-lake\/20:hover {
-  background-color: rgb(78 117 189 / 0.2);
+.hover\:bg-theme-lake\/10:hover {
+  background-color: rgb(78 117 189 / 0.1);
 }
-.hover\:bg-theme-sea:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(15 109 91 / var(--tw-bg-opacity));
+.hover\:bg-theme-lake\/30:hover {
+  background-color: rgb(78 117 189 / 0.3);
+}
+.hover\:text-theme-forest:hover {
+  --tw-text-opacity: 1;
+  color: rgb(9 60 46 / var(--tw-text-opacity));
 }
 .hover\:text-theme-sea:hover {
   --tw-text-opacity: 1;
