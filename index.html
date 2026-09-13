@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400..600&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&display=swap"
         rel="stylesheet">
     <link href="/public/styles.css" rel="stylesheet">
 
@@ -25,281 +25,224 @@
             font-family: 'Instrument Serif', serif;
         }
 
-        .bg-radial {
-            background: linear-gradient(160deg, #95a3ea60 0%, #4e75bd60 32%, #95693360 62%, #1c340890 100%);
-        }
-
-        .bg-radial-2 {
-            background: linear-gradient(160deg, #95a3ea 0%, #4e75bd 32%, #956933 62%, #1c3408 100%);
-        }
-
         .section-label {
             font-family: 'Instrument Serif', serif;
             font-style: italic;
-            font-size: 22px;
+            font-size: 1.5rem;
             color: #083428;
+            display: block;
+            margin-bottom: 1.5rem;
         }
     </style>
 </head>
 
-<body class="text-theme-forest selection:bg-theme-lake selection:text-theme-cream bg-theme-cream">
-    <!-- Background -->
-    <div class="-z-10 inset-0 fixed bg-theme-cream"></div>
+<body class="text-theme-forest bg-theme-cream selection:bg-theme-lake selection:text-theme-cream min-h-screen">
 
+    <div class="max-w-7xl mx-auto lg:grid lg:grid-cols-12 min-h-screen">
 
-    <div class="lg:grid lg:grid-cols-5">
-        <div class="lg:sticky top-0 h-screen flex items-center bg-radial col-span-2">
-            <header class="px-6 lg:px-10 lg:pb-20">
-                <div class="flex flex-col-reverse gap-10 lg:grid lg:grid-cols-[1fr_auto] lg:items-center">
+        <!-- Left Sidebar / Hero -->
+        <aside
+            class="lg:col-span-5 lg:sticky lg:top-0 lg:h-screen flex flex-col justify-between p-8 lg:p-16 border-b lg:border-b-0 lg:border-r border-theme-forest/10">
+            <div>
+                <img src="public/images/me.png" alt="Charlotte Moche"
+                    class="w-28 h-28 lg:w-36 lg:h-36 object-cover rounded-full shadow-sm mb-6 border border-theme-forest/10" />
 
-                    <div class="pt-10 lg:pt-0">
+                <h1 id="hero-name"
+                    class="font-display text-5xl lg:text-6xl leading-none text-theme-forest tracking-tight">
+                    charlotte moche
+                </h1>
 
-                        <img src="public/images/me.png" alt="Charlotte Moche"
-                            class="relative w-36 h-36 lg:w-52 lg:h-52 object-cover rounded-full shadow-xl mb-4" />
-                        <h1 id="hero-name"
-                            class="font-display text-5xl lg:text-7xl leading-[0.95] text-theme-forest max-w-fit">
-                            charlotte moche
-                        </h1>
+                <p class="text-xs font-semibold py-3 text-theme-sea">
+                    product engineer &middot; brooklyn
+                </p>
 
-                        <p class="text-sm font-semibold py-2 max-w-fit text-theme-sea flex items-center gap-2">
-                            product engineer &middot; brooklyn
-                        </p>
+                <p class="text-sm lg:text-base text-theme-forest/80 leading-relaxed pt-2">
+                    Frontend-leaning full stack engineer with 6 years of product experience. I naturally gravitate
+                    toward the interaction layer—my fine-arts background drives a focus on how software looks, feels,
+                    and performs.
+                </p>
+            </div>
 
-                        <p
-                            class="text-base lg:text-[17px] text-theme-forest/80 max-w-2xl leading-relaxed relative z-10 pt-2">
-                            Frontend-leaning full stack engineer with 6 years of product experience. I like building
-                            things
-                            and figuring out how they should work along the way. I naturally gravitate toward the
-                            frontend
-                            and the parts of a product that people interact with. My fine-arts background means I
-                            care a
-                            lot
-                            about the details of how something looks, feels, and behaves.
-                        </p>
+            <div class="hidden lg:flex items-center gap-4 pt-8">
+                <a href="https://github.com/charlottemoche" target="_blank"
+                    class="text-xs font-semibold text-theme-forest/70 hover:text-theme-sea transition-colors">GitHub</a>
+                <span class="text-theme-forest/30">&middot;</span>
+                <a href="https://www.linkedin.com/in/charlotte-moche/" target="_blank"
+                    class="text-xs font-semibold text-theme-forest/70 hover:text-theme-sea transition-colors">LinkedIn</a>
+            </div>
+        </aside>
 
-                    </div>
+        <!-- Right Main Content Area -->
+        <div class="lg:col-span-7 flex flex-col justify-between">
 
-                </div>
-            </header>
-        </div>
-
-        <div class="col-span-3">
-            <!-- Navigation -->
-            <nav class="fixed w-full lg:sticky top-0 z-40 h-20 bg-theme-cream shadow">
-                <div class="mx-auto flex items-center justify-end my-auto h-full px-6 lg:px-9">
-                    <div class="flex items-center gap-6">
-                        <a href="#work"
-                            class="text-sm font-medium text-theme-forest transition-colors hover:text-theme-sea">work</a>
-                        <a href="#contact"
-                            class="text-sm font-medium text-theme-forest transition-colors hover:text-theme-sea">contact</a>
-                        <a href="public/Resume.pdf" download
-                            class="text-sm font-medium bg-theme-lake text-theme-cream rounded-full px-5 py-2 hover:bg-theme-sea transition-colors duration-300 whitespace-nowrap shadow-md">
-                            resume
-                        </a>
-                    </div>
+            <!-- Header / Navigation -->
+            <nav
+                class="sticky top-0 z-40 bg-theme-cream/90 backdrop-blur-md border-b border-theme-forest/10 px-8 lg:px-16 py-4 flex items-center justify-between">
+                <span class="text-xs font-semibold text-theme-forest/50 lg:hidden">c.
+                    moche</span>
+                <div class="flex items-center gap-6 ml-auto">
+                    <a href="#work"
+                        class="text-sm font-medium text-theme-forest hover:text-theme-sea transition-colors">work</a>
+                    <a href="#contact"
+                        class="text-sm font-medium text-theme-forest hover:text-theme-sea transition-colors">contact</a>
+                    <a href="public/Resume.pdf" download
+                        class="text-xs font-semibold bg-theme-forest text-theme-cream rounded-full px-4 py-2 hover:bg-theme-sea transition-colors">
+                        resume
+                    </a>
                 </div>
             </nav>
-            <main class="mx-auto pt-10">
+
+            <main class="p-8 lg:p-16 space-y-20">
 
                 <!-- What I Build With -->
-                <section class="pb-24 px-6 lg:px-10">
+                <section>
                     <span class="section-label">what I build with</span>
 
-                    <div class="mt-6 grid sm:grid-cols-3 gap-6">
-
-                        <div class="border-l-2 border-theme-lake rounded-r-2xl">
-                            <div class="bg-theme-white shadow rounded-r-2xl p-3 h-full">
-                                <div class="text-sm font-bold text-theme-sea pb-2 mb-2 max-w-fit">
-                                    frontend
-                                </div>
-                                <div class="flex flex-wrap gap-x-3 gap-y-1.5 text-sm text-theme-forest/70">
-                                    <span>TypeScript</span>
-                                    <span>JavaScript</span>
-                                    <span>React</span>
-                                    <span>React Native</span>
-                                    <span>Tailwind CSS</span>
-                                    <span>SwiftUI</span>
-                                    <span>Figma</span>
-                                </div>
-                            </div>
+                    <div class="grid sm:grid-cols-3 gap-6">
+                        <div class="p-4 rounded-xl border border-theme-forest/10 bg-theme-white/50">
+                            <h2 class="text-xs font-bold text-theme-sea mb-3">frontend</h2>
+                            <ul class="space-y-1 text-sm text-theme-forest/80">
+                                <li>TypeScript / JS</li>
+                                <li>React / React Native</li>
+                                <li>Tailwind CSS</li>
+                                <li>SwiftUI</li>
+                                <li>Figma</li>
+                            </ul>
                         </div>
 
-                        <div class="border-l-2 border-theme-lake rounded-r-2xl">
-                            <div class="bg-theme-white shadow rounded-r-2xl p-3 h-full">
-                                <div class="text-sm font-bold text-theme-sea pb-2 mb-2 max-w-fit">
-                                    backend
-                                </div>
-                                <div class="flex flex-wrap gap-x-3 gap-y-1.5 text-sm text-theme-forest/70">
-                                    <span>Elixir</span>
-                                    <span>Phoenix</span>
-                                    <span>Ruby on Rails</span>
-                                    <span>Python</span>
-                                    <span>REST & GraphQL</span>
-                                </div>
-                            </div>
+                        <div class="p-4 rounded-xl border border-theme-forest/10 bg-theme-white/50">
+                            <h2 class="text-xs font-bold text-theme-sea mb-3">backend</h2>
+                            <ul class="space-y-1 text-sm text-theme-forest/80">
+                                <li>Elixir / Phoenix</li>
+                                <li>Ruby on Rails</li>
+                                <li>Python</li>
+                                <li>REST & GraphQL</li>
+                            </ul>
                         </div>
 
-                        <div class="border-l-2 border-theme-lake rounded-r-2xl">
-                            <div class="bg-theme-white shadow rounded-r-2xl p-3 h-full">
-                                <div class="text-sm font-bold text-theme-sea pb-2 mb-2 max-w-fit">
-                                    tooling
-                                </div>
-                                <div class="flex flex-wrap gap-x-3 gap-y-1.5 text-sm text-theme-forest/70">
-                                    <span>Claude Code</span>
-                                    <span>Codex</span>
-                                    <span>Git/GitHub</span>
-                                    <span>Sentry</span>
-                                    <span>A/B Testing</span>
-                                </div>
-                            </div>
+                        <div class="p-4 rounded-xl border border-theme-forest/10 bg-theme-white/50">
+                            <h2 class="text-xs font-bold text-theme-sea mb-3">tooling</h2>
+                            <ul class="space-y-1 text-sm text-theme-forest/80">
+                                <li>Claude Code / Codex</li>
+                                <li>Git / GitHub</li>
+                                <li>Sentry</li>
+                                <li>A/B Testing</li>
+                            </ul>
                         </div>
-
                     </div>
                 </section>
 
                 <!-- Selected Work -->
-                <section id="work" class="pb-24 px-6 lg:px-10">
+                <section id="work">
                     <span class="section-label">selected work</span>
 
-                    <div class="mt-6 space-y-6">
+                    <div class="space-y-4">
 
-                        <div class="bg-radial-2 p-0.5 rounded-2xl shadow-md">
-                            <a href="https://zenithhealth.io" target="_blank"
-                                class="group hover:-translate-y-1 transition-transform duration-300 block p-6 rounded-2xl bg-theme-white/95 hover:bg-theme-white transition-colors duration-300 shadow-md">
-                                <div class="grid sm:grid-cols-[1fr_1.6fr] gap-4 sm:gap-10 items-start">
-                                    <div class="flex items-start gap-4">
-                                        <img src="public/images/zenith.jpeg" alt="Zenith Health"
-                                            class="w-11 h-11 object-contain rounded-xl shadow-sm border border-theme-forest/10">
-                                        <div>
-                                            <h3 class="text-lg font-semibold text-theme-forest transition">
-                                                Zenith Health</h3>
-                                            <span class="inline-block mt-1 text-theme-sea text-xs font-medium">
-                                                production &middot; maternal health
-                                            </span>
-                                        </div>
+                        <a href="https://zenithhealth.io" target="_blank"
+                            class="group block p-6 rounded-xl border border-theme-forest/10 bg-theme-white/40 hover:bg-theme-white hover:border-theme-sea/30 transition-all">
+                            <div class="flex items-center gap-4">
+                                <img src="public/images/zenith.jpeg" alt="Zenith Health"
+                                    class="w-12 h-12 rounded-lg object-contain border border-theme-forest/10 flex-shrink-0">
+                                <div class="space-y-1">
+                                    <div class="flex items-center justify-between">
+                                        <h3
+                                            class="font-semibold text-theme-forest group-hover:text-theme-sea transition-colors">
+                                            Zenith Health</h3>
+                                        <span
+                                            class="text-xs text-theme-sea font-medium bg-theme-lake/10 px-2 py-0.5 rounded">production</span>
                                     </div>
-                                    <p class="text-sm text-theme-forest/70 leading-relaxed">
-                                        End-to-end feature ownership across React Native, Phoenix LiveView, and the
-                                        backend
-                                        API
-                                        layer, including realtime streaming UI for an AI chat assistant.
+                                    <p class="text-sm text-theme-forest/70 leading-relaxed pt-1">
+                                        End-to-end feature ownership across React Native, Phoenix LiveView, and backend
+                                        API layer, including realtime streaming UI for an AI chat assistant.
                                     </p>
                                 </div>
-                            </a>
-                        </div>
+                            </div>
+                        </a>
 
-                        <div class="bg-radial-2 p-0.5 rounded-2xl shadow-md">
-                            <a href="https://peek.com/experiences" target="_blank"
-                                class="group hover:-translate-y-1 transition-transform duration-300 block p-6 rounded-2xl bg-theme-white/95 hover:bg-theme-white transition-colors duration-300 shadow-md">
-                                <div class="grid sm:grid-cols-[1fr_1.6fr] gap-4 sm:gap-10 items-start">
-                                    <div class="flex items-start gap-4">
-                                        <img src="public/images/peek-logo.png" alt="Peek"
-                                            class="w-11 h-11 object-contain rounded-xl shadow-sm border border-theme-forest/10">
-                                        <div>
-                                            <h3 class="text-lg font-semibold text-theme-forest transition">
-                                                Peek</h3>
-                                            <span class="inline-block mt-1 text-theme-sea text-xs font-medium">
-                                                production &middot; booking software
-                                            </span>
-                                        </div>
+                        <a href="https://peek.com/experiences" target="_blank"
+                            class="group block p-6 rounded-xl border border-theme-forest/10 bg-theme-white/40 hover:bg-theme-white hover:border-theme-sea/30 transition-all">
+                            <div class="flex items-center gap-4">
+                                <img src="public/images/peek-logo.png" alt="Peek"
+                                    class="w-12 h-12 rounded-lg object-contain border border-theme-forest/10 flex-shrink-0">
+                                <div class="space-y-1">
+                                    <div class="flex items-center justify-between">
+                                        <h3
+                                            class="font-semibold text-theme-forest group-hover:text-theme-sea transition-colors">
+                                            Peek</h3>
+                                        <span
+                                            class="text-xs text-theme-sea font-medium bg-theme-lake/10 px-2 py-0.5 rounded">production</span>
                                     </div>
-                                    <p class="text-sm text-theme-forest/70 leading-relaxed">
-                                        Led frontend architecture and interaction design for search, filter, and
-                                        sort —
-                                        zero
-                                        to
-                                        one,
-                                        with direct ownership over technical and design decisions.
+                                    <p class="text-sm text-theme-forest/70 leading-relaxed pt-1">
+                                        Led frontend architecture and interaction design for search, filter, and sort
+                                        from 0 to 1 with direct technical and design ownership.
                                     </p>
                                 </div>
-                            </a>
-                        </div>
+                            </div>
+                        </a>
 
-                        <div class="bg-radial-2 p-0.5 rounded-2xl shadow-md">
-                            <a href="https://preludeapp.co" target="_blank"
-                                class="group hover:-translate-y-1 transition-transform duration-300 block p-6 rounded-2xl bg-theme-white/95 hover:bg-theme-white transition-colors duration-300 shadow-md">
-                                <div class="grid sm:grid-cols-[1fr_1.6fr] gap-4 sm:gap-10 items-start">
-                                    <div class="flex items-start gap-4">
-                                        <img src="public/images/prelude-logo.png" alt="Prelude"
-                                            class="w-11 h-11 object-contain rounded-xl shadow-sm border border-theme-forest/10">
-                                        <div>
-                                            <h3 class="text-lg font-semibold text-theme-forest transition">
-                                                Prelude</h3>
-                                            <span class="inline-block mt-1 text-theme-sea text-xs font-medium">
-                                                solo project &middot; SwiftUI
-                                            </span>
-                                        </div>
+                        <a href="https://preludeapp.co" target="_blank"
+                            class="group block p-6 rounded-xl border border-theme-forest/10 bg-theme-white/40 hover:bg-theme-white hover:border-theme-sea/30 transition-all">
+                            <div class="flex items-center gap-4">
+                                <img src="public/images/prelude-logo.png" alt="Prelude"
+                                    class="w-12 h-12 rounded-lg object-contain border border-theme-forest/10 flex-shrink-0">
+                                <div class="space-y-1">
+                                    <div class="flex items-center justify-between">
+                                        <h3
+                                            class="font-semibold text-theme-forest group-hover:text-theme-sea transition-colors">
+                                            Prelude</h3>
+                                        <span
+                                            class="text-xs text-theme-sea font-medium bg-theme-lake/10 px-2 py-0.5 rounded">solo
+                                            project</span>
                                     </div>
-                                    <p class="text-sm text-theme-forest/70 leading-relaxed">
-                                        A native app built from scratch to visualize personal Spotify listening data
-                                        —
-                                        conceived,
-                                        designed, and shipped independently, end to end.
+                                    <p class="text-sm text-theme-forest/70 leading-relaxed pt-1">
+                                        Native iOS app built from scratch to visualize personal Spotify listening data —
+                                        conceived, designed, and shipped independently.
                                     </p>
                                 </div>
-                            </a>
-                        </div>
+                            </div>
+                        </a>
 
-                        <div class="bg-radial-2 p-0.5 rounded-2xl shadow-md">
-                            <a href="https://agcploverhill.com" target="_blank"
-                                class="group hover:-translate-y-1 transition-transform duration-300 block p-6 rounded-2xl bg-theme-white/95 hover:bg-theme-white transition-colors duration-300 shadow-md">
-                                <div class="grid sm:grid-cols-[1fr_1.6fr] gap-4 sm:gap-10 items-start">
-                                    <div class="flex items-start gap-4">
-                                        <img src="public/images/plover.png" alt="AGC Plover Hill"
-                                            class="w-11 h-11 object-contain rounded-xl shadow-sm border border-theme-forest/10">
-                                        <div>
-                                            <h3 class="text-lg font-semibold text-theme-forest transition">
-                                                AGC Plover Hill</h3>
-                                            <span class="inline-block mt-1 text-theme-sea text-xs font-medium">
-                                                freelance &middot; web
-                                            </span>
-                                        </div>
+                        <a href="https://agcploverhill.com" target="_blank"
+                            class="group block p-6 rounded-xl border border-theme-forest/10 bg-theme-white/40 hover:bg-theme-white hover:border-theme-sea/30 transition-all">
+                            <div class="flex items-center gap-4">
+                                <img src="public/images/plover.png" alt="AGC Plover Hill"
+                                    class="w-12 h-12 rounded-lg object-contain border border-theme-forest/10 flex-shrink-0">
+                                <div class="space-y-1">
+                                    <div class="flex items-center justify-between">
+                                        <h3
+                                            class="font-semibold text-theme-forest group-hover:text-theme-sea transition-colors">
+                                            AGC Plover Hill</h3>
+                                        <span
+                                            class="text-xs text-theme-sea font-medium bg-theme-lake/10 px-2 py-0.5 rounded">freelance</span>
                                     </div>
-                                    <p class="text-sm text-theme-forest/70 leading-relaxed">
-                                        Freelance web development for a client project, from design through build.
+                                    <p class="text-sm text-theme-forest/70 leading-relaxed pt-1">
+                                        Freelance web development for a client project, handling everything from initial
+                                        design specs to production build.
                                     </p>
                                 </div>
-                            </a>
-                        </div>
+                            </div>
+                        </a>
 
                     </div>
                 </section>
 
-                <div class="bg-theme-lake/20 lg:bg-theme-cream px-6 pt-6 lg:px-10">
-                    <section id="contact">
-                        <div class="mx-auto pb-10 lg:py-20">
-                            <span class="section-label">contact</span>
-
-                            <a href="mailto:charlottebmoche@gmail.com"
-                                class="block mt-4 font-display text-2xl lg:text-5xl text-theme-forest hover:text-theme-lake transition-colors duration-300">
-                                charlottebmoche@gmail.com
-                            </a>
-
-                            <div class="flex gap-4 mt-4 lg:mt-8">
-                                <a href="https://github.com/charlottemoche" target="_blank"
-                                    class="text-sm font-medium bg-theme-cream rounded-full px-5 py-2 hover:bg-theme-lake/20 transition-colors duration-300 flex items-center gap-2 shadow-md">
-                                    <img src="public/images/github-mark.png" class="w-4" />
-                                    github
-                                </a>
-
-                                <a href="https://www.linkedin.com/in/charlotte-moche/" target="_blank"
-                                    class="text-sm font-medium bg-theme-cream rounded-full px-5 py-2 hover:bg-theme-lake/20 transition-colors duration-300 flex items-center gap-2 shadow-md">
-                                    <img src="public/images/linkedin-mark.png" class="w-4" />
-                                    linkedin
-                                </a>
-                            </div>
-                        </div>
-                    </section>
-
-                </div>
+                <!-- Contact Section -->
+                <section id="contact" class="pt-6 border-t border-theme-forest/10">
+                    <span class="section-label">contact</span>
+                    <a href="mailto:charlottebmoche@gmail.com"
+                        class="font-display text-2xl lg:text-4xl text-theme-forest hover:text-theme-sea transition-colors">
+                        charlottebmoche@gmail.com
+                    </a>
+                </section>
 
             </main>
-            <footer class="bg-theme-lake/20 py-6 lg:bg-theme-white lg:border-t lg:border-theme-forest/20">
-                <div class="flex justify-between text-xs text-theme-forest/70 px-6 lg:px-10">
-                    <span>© 2026 charlotte moche</span>
-                    <span>brooklyn, new york</span>
-                </div>
+
+            <footer
+                class="px-8 lg:px-16 py-6 border-t border-theme-forest/10 flex justify-between text-xs text-theme-forest/50">
+                <span>© 2026 Charlotte Moche</span>
+                <span>Brooklyn, NY</span>
             </footer>
+
         </div>
     </div>
 </body>
