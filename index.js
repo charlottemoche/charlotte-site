@@ -22,7 +22,7 @@ const roles = [
   "Product engineer based in Brooklyn",
   "Painting major turned coder",
   "Bread baker and watercolor enthusiast",
-  "Sub-par musical instrument player"
+  "Mediocre player of musical instruments"
 ];
 
 const roleEl = document.getElementById('role-text');
@@ -32,7 +32,7 @@ function typeRole(text, i = 0) {
   if (i === 0) roleEl.textContent = '';
   if (i < text.length) {
     roleEl.textContent += text[i];
-    setTimeout(() => typeRole(text, i + 1), 60);
+    setTimeout(() => typeRole(text, i + 1), 50);
   } else {
     setTimeout(eraseRole, 1000);
   }
