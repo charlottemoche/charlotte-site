@@ -60,18 +60,10 @@
     </div>
 
     <div id="resume-modal"
-        class="fixed inset-0 z-50 bg-theme-wood/50 flex items-center justify-center p-6 transition-opacity duration-500 opacity-0 pointer-events-none"
+        class="hidden lg:flex fixed inset-0 z-50 bg-theme-wood/50 flex items-center justify-center p-6 transition-opacity duration-500 opacity-0 pointer-events-none"
         onclick="if(event.target === this) this.classList.add('opacity-0', 'pointer-events-none')">
-        <div class="bg-theme-white rounded-2xl overflow-hidden w-full max-w-3xl h-[85dvh] lg:h-[90dvh]">
-            <object data="public/Resume.pdf" type="application/pdf" width="100%" height="100%">
-                <div class="flex flex-col items-center justify-center h-full gap-3 text-center p-6">
-                    <p class="text-sm text-theme-forest/70">Can't preview the resume here.</p>
-                    <a href="public/Resume.pdf" download
-                        class="text-xs font-semibold bg-theme-forest text-theme-cream rounded-md px-4 py-2 hover:bg-theme-sky transition-colors">
-                        Download PDF
-                    </a>
-                </div>
-            </object>
+        <div class="bg-theme-white rounded-2xl overflow-hidden w-full max-w-6xl lg:h-[90dvh]">
+            <object data="public/Resume.pdf" type="application/pdf" width="100%" height="100%"></object>
         </div>
     </div>
 
@@ -165,7 +157,7 @@
                             class="text-xs lg:text-sm font-medium tracking-wide text-theme-forest hover:text-theme-sea transition-colors">Contact</a>
                         <a href="public/Resume.pdf"
                             onclick="event.preventDefault(); document.getElementById('resume-modal').classList.remove('opacity-0', 'pointer-events-none')"
-                            class="text-xs lg:text-sm font-semibold bg-theme-forest border border-theme-forest text-theme-cream hover:bg-theme-lake/20 hover:text-theme-forest transition-colors duration-300 rounded-md p-2">
+                            class="hidden lg:block text-sm font-semibold bg-theme-forest border border-theme-forest text-theme-cream hover:bg-theme-lake/20 hover:text-theme-forest transition-colors duration-300 rounded-md p-2">
                             Resume
                         </a>
                     </div>

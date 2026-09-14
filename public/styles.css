@@ -584,12 +584,6 @@ video {
 .h-9 {
   height: 2.25rem;
 }
-.h-\[85dvh\] {
-  height: 85dvh;
-}
-.h-full {
-  height: 100%;
-}
 .h-screen {
   height: 100vh;
 }
@@ -626,8 +620,8 @@ video {
 .min-w-0 {
   min-width: 0px;
 }
-.max-w-3xl {
-  max-width: 48rem;
+.max-w-6xl {
+  max-width: 72rem;
 }
 .max-w-7xl {
   max-width: 80rem;
@@ -822,10 +816,6 @@ video {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
 }
-.px-4 {
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
 .px-6 {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
@@ -837,10 +827,6 @@ video {
 .py-12 {
   padding-top: 3rem;
   padding-bottom: 3rem;
-}
-.py-2 {
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
 }
 .py-4 {
   padding-top: 1rem;
@@ -858,9 +844,6 @@ video {
 }
 .pt-6 {
   padding-top: 1.5rem;
-}
-.text-center {
-  text-align: center;
 }
 .text-6xl {
   font-size: 3.75rem;
@@ -1063,10 +1046,6 @@ body {
 .hover\:bg-theme-lake\/20:hover {
   background-color: rgb(78 117 189 / 0.2);
 }
-.hover\:bg-theme-sky:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(164 194 250 / var(--tw-bg-opacity));
-}
 .hover\:text-theme-forest:hover {
   --tw-text-opacity: 1;
   color: rgb(9 60 46 / var(--tw-text-opacity));
@@ -1117,6 +1096,10 @@ body {
 
   .lg\:mt-0 {
     margin-top: 0px;
+  }
+
+  .lg\:block {
+    display: block;
   }
 
   .lg\:flex {
