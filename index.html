@@ -40,11 +40,11 @@
 
             0%,
             100% {
-                height: 3px;
+                height: 5px;
             }
 
             50% {
-                height: 11px;
+                height: 16px;
             }
         }
     </style>
@@ -65,7 +65,8 @@
                 </div>
 
                 <div>
-                    <h1 class="font-display text-6xl text-theme-forest tracking-tight leading-[0.9]" style="margin-left: -5px;">
+                    <h1 class="font-display text-6xl text-theme-forest tracking-tight leading-[0.9]"
+                        style="margin-left: -5px;">
                         Charlotte Moche
                     </h1>
                     <p id="role-text" class="font-medium text-theme-sea mt-3 min-h-6">
@@ -75,7 +76,8 @@
 
                 <p class="text-sm lg:text-base text-theme-forest/60 leading-relaxed max-w-md">
                     Frontend-leaning full stack engineer with 6 years of product experience. I naturally gravitate
-                    toward the frontend because of my fine-arts background. I love collaborating, from bouncing around ideas
+                    toward the frontend because of my fine-arts background. I love collaborating, from bouncing around
+                    ideas
                     to the final product.
                 </p>
             </div>
@@ -96,21 +98,27 @@
                 </div>
                 <div class="lg:pt-4">
                     <div class="flex items-center gap-2.5 text-sm text-theme-forest/60">
-                        <div class="flex items-end gap-[2px] h-4 mb-1">
+                        <div class="flex items-end gap-[2px] h-6 -mb-1">
                             <span
                                 class="w-[2px] bg-theme-lake rounded-full animate-[eq_1s_ease-in-out_infinite]"></span>
                             <span
                                 class="w-[2px] bg-theme-sea rounded-full animate-[eq_1s_ease-in-out_infinite_0.2s]"></span>
                             <span
                                 class="w-[2px] bg-theme-lake rounded-full animate-[eq_1s_ease-in-out_infinite_0.4s]"></span>
+                            <span
+                                class="w-[2px] bg-theme-lake rounded-full animate-[eq_1s_ease-in-out_infinite_0.6s]"></span>
                         </div>
-                        <p class="truncate">
-                            <span class="font-normal text-theme-forest">Now playing:</span>
-                            <a href="https://open.spotify.com/track/6UOgyWbhnGvDpgTtfU2XAk?si=57f58dc58a1d4633"
-                                class="hover:underline hover:text-theme-sea transition-colors ml-1">
-                                Dulling The Horns - Wild Pink
-                            </a>
-                        </p>
+                        <a href="https://open.spotify.com/track/6UOgyWbhnGvDpgTtfU2XAk?si=57f58dc58a1d4633"
+                            class="flex items-center gap-2 group hover:text-theme-sea transition-all">
+                            <img src="./public/images/album-artwork.jpg"
+                                class="w-8 h-8 rounded object-cover flex-shrink-0" />
+                            <p class="truncate min-w-0">
+                                <span class="font-normal text-theme-forest block text-xs">Now playing</span>
+                                <span class="truncate block group-hover:underline">
+                                    Dulling The Horns - Wild Pink
+                                </span>
+                            </p>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -147,7 +155,8 @@
                 <section>
                     <span class="section-label">What I build with</span>
 
-                    <div class="p-4 lg:p-8 rounded-3xl bg-theme-forest/[0.02] border border-theme-forest/10 space-y-6 lg:space-y-8">
+                    <div
+                        class="p-4 lg:p-8 rounded-3xl bg-theme-forest/[0.02] border border-theme-forest/10 space-y-6 lg:space-y-8">
                         <div class="grid sm:grid-cols-3 gap-6 lg:gap-8">
                             <div class="space-y-3 lg:space-y-4">
                                 <h2 class="font-medium text-theme-sea">Frontend</h2>
@@ -345,7 +354,8 @@
                             </div>
                             <div>
                                 <p class="text-sm text-theme-forest/60 leading-relaxed">
-                                    I enjoy learning new technologies, and building is the best way to achieve that. It's
+                                    I enjoy learning new technologies, and building is the best way to achieve that.
+                                    It's
                                     kind of similar to learning a foreign language: you get there faster by immersion
                                     and speaking it with others.
                                 </p>
