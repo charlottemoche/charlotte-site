@@ -569,9 +569,6 @@ video {
 .h-\[100dvh\] {
   height: 100dvh;
 }
-.h-screen {
-  height: 100vh;
-}
 .min-h-6 {
   min-height: 1.5rem;
 }
