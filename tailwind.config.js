@@ -1,9 +1,11 @@
 /** @type {import('tailwindcss').Config} */
 
 let theme = {
+  sky: '#a4c2fa',
   lake: '#4e75bd',
-  forest: '#093c2e',
   sea: '#0f6d5b',
+  forest: '#093c2e',
+  wood: '#03110d',
   cream: '#fbfaf7',
   white: '#ffffff',
 }
