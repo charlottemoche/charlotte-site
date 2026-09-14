@@ -57,8 +57,8 @@
 
         <!-- Left Sidebar / Hero -->
         <aside
-            class="lg:col-span-5 lg:sticky lg:top-0 h-screen flex flex-col justify-between pt-12 pb-8 px-6 lg:p-16 lg:border-r border-theme-forest/10">
-            <div class="space-y-8 mt-16 lg:mt-0">
+            class="lg:col-span-5 lg:sticky lg:top-0 h-screen flex flex-col justify-between py-12 lg:border-r border-theme-forest/10">
+            <div class="space-y-8 mt-16 lg:mt-0 px-6 lg:p-16">
                 <div class="relative inline-block">
                     <img src="public/images/me.png" alt="Charlotte Moche"
                         class="w-32 h-32 lg:w-44 lg:h-44 object-cover rounded-full border border-theme-forest/20 lg:hover:grayscale transition-all duration-500" />
@@ -82,22 +82,9 @@
                 </p>
             </div>
 
-            <div class="pt-12">
-                <div class="hidden lg:flex items-center gap-3">
-                    <a href="https://github.com/charlottemoche" target="_blank"
-                        class="text-xs font-medium text-theme-forest/70 hover:text-theme-sea transition-colors flex items-center gap-1.5">
-                        <img src="./public/images/github-mark.png" class="w-3.5 h-3.5 opacity-70" alt="GitHub" />
-                        <span>GitHub</span>
-                    </a>
-                    <span class="text-theme-forest/20">&middot;</span>
-                    <a href="https://www.linkedin.com/in/charlotte-moche/" target="_blank"
-                        class="text-xs font-medium text-theme-forest/70 hover:text-theme-sea transition-colors flex items-center gap-1.5">
-                        <img src="./public/images/linkedin-mark.png" class="w-3.5 h-3.5 opacity-70" alt="LinkedIn" />
-                        <span>LinkedIn</span>
-                    </a>
-                </div>
-                <div class="pb-4 lg:pb-0 lg:pt-4">
-                    <div class="flex items-center gap-2.5 text-sm text-theme-forest/60">
+            <div class="lg:pl-16">
+                <div class="lg:border-b lg:border-theme-forest/10 lg:my-4 lg:py-4">
+                    <div class="flex items-center gap-2.5 text-sm text-theme-forest/60 px-6 lg:pl-0 lg:pr-16">
                         <div class="flex items-end gap-[2px] h-6 -mb-1">
                             <span
                                 class="w-[2px] bg-theme-lake rounded-full animate-[eq_1s_ease-in-out_infinite]"></span>
@@ -120,6 +107,19 @@
                             </p>
                         </a>
                     </div>
+                </div>
+                <div class="hidden lg:flex items-center gap-3 px-6 lg:pl-0 lg:pr-16">
+                    <a href="https://github.com/charlottemoche" target="_blank"
+                        class="text-xs font-medium text-theme-forest/70 hover:text-theme-sea transition-colors flex items-center gap-1.5">
+                        <img src="./public/images/github-mark.png" class="w-3.5 h-3.5 opacity-70" alt="GitHub" />
+                        <span>GitHub</span>
+                    </a>
+                    <span class="text-theme-forest/20">&middot;</span>
+                    <a href="https://www.linkedin.com/in/charlotte-moche/" target="_blank"
+                        class="text-xs font-medium text-theme-forest/70 hover:text-theme-sea transition-colors flex items-center gap-1.5">
+                        <img src="./public/images/linkedin-mark.png" class="w-3.5 h-3.5 opacity-70" alt="LinkedIn" />
+                        <span>LinkedIn</span>
+                    </a>
                 </div>
             </div>
         </aside>
@@ -391,7 +391,7 @@
 
             <footer class="lg:pr-16 lg:pl-0">
                 <div
-                    class="border-t border-theme-forest/10 flex justify-between text-xs text-theme-forest/50 px-6 py-6 lg:py-8 lg:pr-0 lg:pl-16">
+                    class="border-t border-theme-forest/10 flex justify-between text-xs text-theme-forest/50 px-6 py-6 lg:py-9 lg:pr-0 lg:pl-16">
                     <span>© 2026 Charlotte Moche</span>
                     <span>Brooklyn, NY</span>
                 </div>
