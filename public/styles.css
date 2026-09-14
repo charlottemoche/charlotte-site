@@ -566,6 +566,9 @@ video {
 .h-4 {
   height: 1rem;
 }
+.h-screen {
+  height: 100vh;
+}
 .min-h-6 {
   min-height: 1.5rem;
 }
@@ -1048,10 +1051,6 @@ body {
 
   .lg\:h-44 {
     height: 11rem;
-  }
-
-  .lg\:h-screen {
-    height: 100vh;
   }
 
   .lg\:w-44 {
