@@ -1129,6 +1129,10 @@ body {
     padding-bottom: 2rem;
   }
 
+  .lg\:pb-0 {
+    padding-bottom: 0px;
+  }
+
   .lg\:pl-0 {
     padding-left: 0px;
   }
