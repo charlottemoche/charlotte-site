@@ -774,6 +774,9 @@ video {
 .bg-theme-forest\/\[0\.02\] {
   background-color: rgb(9 60 46 / 0.02);
 }
+.bg-theme-forest\/\[0\.04\] {
+  background-color: rgb(9 60 46 / 0.04);
+}
 .bg-theme-lake {
   --tw-bg-opacity: 1;
   background-color: rgb(78 117 189 / var(--tw-bg-opacity));
@@ -1040,8 +1043,8 @@ body {
   --tw-text-opacity: 1;
   color: rgb(15 109 91 / var(--tw-text-opacity));
 }
-.hover\:bg-theme-forest\/\[0\.03\]:hover {
-  background-color: rgb(9 60 46 / 0.03);
+.hover\:bg-theme-forest\/\[0\.02\]:hover {
+  background-color: rgb(9 60 46 / 0.02);
 }
 .hover\:bg-theme-lake\/20:hover {
   background-color: rgb(78 117 189 / 0.2);
@@ -1186,6 +1189,11 @@ body {
 
   .lg\:border-theme-forest\/10 {
     border-color: rgb(9 60 46 / 0.1);
+  }
+
+  .lg\:bg-theme-white {
+    --tw-bg-opacity: 1;
+    background-color: rgb(255 255 255 / var(--tw-bg-opacity));
   }
 
   .lg\:p-16 {
