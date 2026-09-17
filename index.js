@@ -1,3 +1,22 @@
+function openModal(id) {
+  const modal = document.getElementById(id);
+  modal.classList.remove('hidden');
+  void modal.offsetWidth; // force layout so the fade-in transition plays
+  modal.classList.remove('opacity-0', 'pointer-events-none');
+}
+
+function closeModal(modal) {
+  modal.classList.add('opacity-0', 'pointer-events-none');
+}
+
+document.querySelectorAll('#photo-modal, #resume-modal').forEach(modal => {
+  modal.addEventListener('transitionend', e => {
+    if (e.propertyName === 'opacity' && modal.classList.contains('opacity-0')) {
+      modal.classList.add('hidden');
+    }
+  });
+});
+
 const nav = document.querySelector('nav');
 const navLinks = document.querySelectorAll('nav a[href^="#"]');
 
